@@ -2,7 +2,7 @@
   <header class="globalHeader">
     <div class="globalHeaderInner">
       <div class="logo" style="margin-bottom: 60px">
-        <a href= "" tess="over">
+        <a href= "{{ route('home') }}" tess="over">
           <img src="{{ asset('website/img/logo/satu-aisin-final.png') }}" alt="サイト名"
             style="width: 100%; max-width: 200px; height: auto;">
         </a>
@@ -33,15 +33,30 @@
                 <div class="megaNavSlideInner">
                   <div class="megaNavHeader view-pc">
                     <div class="navTtl">
-                      <span class="jp">News</span>
+                      <span class="jp">ABOUT AISIN AII - AIIA</span>
                     </div>
                     <div class="more">
-                      <a href="">Read more</a>
+                      <a href="#">Read more</a>
                     </div>
                   </div>
                   <!-- /megaNavHeader -->
 
-                  <!-- /megaNavContent -->
+                  <div class="megaNavContent">
+                    <ul>
+                      <li><a href="https://www.aisin.com/en/profile/policy/">Corporate Principle</a></li>
+                      <li><a href="{{ route('company-summary') }}">Company Summary</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="{{ route('management-message') }}">Message from Top Management</a></li>
+                      <li><a href="{{ route('executives') }}">Executives</a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="{{ route('company-history')}}">Company History</a></li>
+                      <li><a href="#">Brand</a></li>
+                      <li><a href="#">Global Network</a></li>
+                      <li><a href="#">Awards</a></li>
+                    </ul>
+                  </div><!-- /megaNavContent -->
                 </div>
               </div>
               <!-- /megaNavSlide -->

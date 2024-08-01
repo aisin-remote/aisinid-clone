@@ -1,5 +1,5 @@
 @extends('website.layouts.master')
-@section('title', 'Homepage')
+@section('title', 'Home')
 @section('pages')
   <!-- News Section -->
   {{-- <section id="whatsnew" class="newsSection"> --}}
