@@ -27,7 +27,7 @@
         <nav class="megaNav">
           <ul class="megaNavParent">
             <li class="xxx ">
-              <a>About Aisin</a>
+              <a href="#">About Aisin</a>
               <!-- megaNavSlide -->
               <div class="megaNavSlide">
                 <div class="megaNavSlideInner">
@@ -51,10 +51,10 @@
                       <li><a href="{{ route('executives') }}">Executives</a></li>
                     </ul>
                     <ul>
-                      <li><a href="{{ route('company-history')}}">Company History</a></li>
-                      <li><a href="#">Brand</a></li>
-                      <li><a href="#">Global Network</a></li>
-                      <li><a href="#">Awards</a></li>
+                      <li><a href="{{ route('company-history') }}">Company History</a></li>
+                      <li><a href="{{ route('brand') }}">Brand</a></li>
+                      <li><a href="https://www.aisin.com/en/profile/global/">Global Network</a></li>
+                      <li><a href="{{ route('awards') }}">Awards</a></li>
                     </ul>
                   </div><!-- /megaNavContent -->
                 </div>
@@ -67,13 +67,13 @@
             </li>
 
             <li class="xxx parent ">
-              <a href="">Product and Services</a>
+              <a href="#">Products</a>
               <!-- megaNavSlide -->
               <div class="megaNavSlide">
                 <div class="megaNavSlideInner">
                   <div class="megaNavHeader view-pc">
                     <div class="navTtl">
-                      <span class="jp">Product and Services</span>
+                      <span class="jp">Products AII-AIIA</span>
                     </div>
                     <div class="more">
                       <a href="">Read more</a>
@@ -82,16 +82,9 @@
 
                   <div class="megaNavContent">
                     <ul>
-                      <li class="view-notpc"><a href="">MENUNAMETOP</a></li>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                    </ul>
-                    <ul>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                    </ul>
-                    <ul>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
+                      <li><a href="{{ route('body-part') }}">Body Part</a></li>
+                      <li><a href="{{ route('engine-part') }}">Engine Part</a></li>
+                      <li><a href="{{ route('drive-train') }}">Drive Train</a></li>
                     </ul>
                   </div><!-- /megaNavContent -->
                 </div>
@@ -100,107 +93,37 @@
             </li>
 
             <li class="xxx parent ">
-              <a href="">Sustainability</a>
-              <!-- megaNavSlide -->
-              <div class="megaNavSlide">
-                <div class="megaNavSlideInner">
-                  <div class="megaNavHeader view-pc">
-                    <div class="navTtl">
-                      <span class="jp">Sustainability</span>
-                    </div>
-                    <div class="more">
-                      <a href="">Read more</a>
-                    </div>
-                  </div><!-- /megaNavHeader -->
-
-                  <div class="megaNavContent">
-                    <ul>
-                      <li class="view-notpc"><a href="">MENUNAMETOP</a></li>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                    </ul>
-                    <ul>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                    </ul>
-                    <ul>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                    </ul>
-                  </div><!-- /megaNavContent -->
-                </div>
-              </div>
-              <!-- /megaNavSlide -->
+              <a href="https://www.aisin.com/en/sustainability/">Sustainability</a>
             </li>
 
             <li class="xxx parent ">
-              <a href="/job-vacancies">Career</a>
-              <!-- megaNavSlide -->
-              <div class="megaNavSlide">
-                <div class="megaNavSlideInner">
-                  <div class="megaNavHeader view-pc">
-                    <div class="navTtl">
-                      <span class="jp">Career</span>
-                    </div>
-                    <div class="more">
-                      <a href="">Read more</a>
-                    </div>
-                  </div><!-- /megaNavHeader -->
+              <a href="#">Career</a>
+                <!-- megaNavSlide -->
+                <div class="megaNavSlide">
+                  <div class="megaNavSlideInner">
+                    <div class="megaNavHeader view-pc">
+                      <div class="navTtl">
+                        <span class="jp">Career AII-AIIA</span>
+                      </div>
+                      <div class="more">
+                        <a href="">Read more</a>
+                      </div>
+                    </div><!-- /megaNavHeader -->
 
-                  <div class="megaNavContent">
-                    <ul>
-                      <li class="view-notpc"><a href="">MENUNAMETOP</a></li>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                    </ul>
-                    <ul>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                    </ul>
-                    <ul>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                    </ul>
-                  </div><!-- /megaNavContent -->
+                    <div class="megaNavContent">
+                      <ul>
+                        <li><a href="{{ route('job-info') }}">General Information</a></li>
+                        <li><a href="{{ route('job-opportunities') }}">Job Opportunities</a></li>
+                      </ul>
+                    </div><!-- /megaNavContent -->
+                  </div>
                 </div>
-              </div>
-              <!-- /megaNavSlide -->
+                <!-- /megaNavSlide -->
             </li>
 
             <li class="xxx parent ">
-              <a href="">Contact</a>
-              <!-- megaNavSlide -->
-              <div class="megaNavSlide">
-                <div class="megaNavSlideInner">
-                  <div class="megaNavHeader view-pc">
-                    <div class="navTtl">
-                      <span class="jp">Contact</span>
-                    </div>
-                    <div class="more">
-                      <a href="">Read more</a>
-                    </div>
-                  </div><!-- /megaNavHeader -->
-
-                  <div class="megaNavContent">
-                    <ul>
-                      <li class="view-notpc"><a href="">MENUNAMETOP</a></li>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                    </ul>
-                    <ul>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                    </ul>
-                    <ul>
-                      <li><a href="{{ asset('tesx/') }}">SUBMENU</a></li>
-                    </ul>
-                  </div><!-- /megaNavContent -->
-                </div>
-              </div>
-              <!-- /megaNavSlide -->
+              <a href="{{ route('contact') }}">Contact</a>
             </li>
-
-            <!-- <li class="xxx ">
-              <a href="http://www.xxx.xx/')}}" target="_blank" class="icoWin">MENUNAME</a>
-            </li> -->
           </ul>
 
           <div class="searchBtn view-pc">
