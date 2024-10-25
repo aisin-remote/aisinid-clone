@@ -28,3 +28,7 @@ Route::get('/drive-train', [HomeController::class, 'driveTrain'])->name('drive-t
 Route::get('/job-info', [HomeController::class, 'jobInfo'])->name('job-info');
 Route::get('/job-opportunities', [HomeController::class, 'jobOpportunities'])->name('job-opportunities');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+
+Route::get('/test', function () {
+    return view('website.pages.test');
+});
