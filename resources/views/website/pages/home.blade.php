@@ -38,66 +38,7 @@
   <!-- /News Section -->
 
   <!-- Main Page Section -->
-  <section class="mainpageSection" id="menu1">
-    <div class="inner">
-      <h2>
-        <span class="h2Inner">
-          <span class="en">AISIN Promotes a Safe Driving Community, Indonesia</span>
-        </span>
-      </h2>
-      <div class="pageContent">
-        <p class="copy">
-          Headline<br>
-          HeadlineHeadline
-        </p>
-        <div class="moreBtn">
-          <a href=""><span>Read more</span></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Main Page Section -->
-
-  <!-- Main Page Section -->
-  <section class="mainpageSection" id="menu2">
-    <div class="inner">
-      <h2>
-        <span class="h2Inner">
-          <span class="en">MENUNAME</span>
-        </span>
-      </h2>
-      <div class="pageContent">
-        <p class="copy">
-          Headline<br>
-          HeadlineHeadline
-        </p>
-        <div class="moreBtn">
-          <a href=""><span>Read more</span></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Main Page Section -->
-
-  <!-- Main Page Section -->
-  <section class="mainpageSection" id="menu3">
-    <div class="inner">
-      <h2>
-        <span class="h2Inner">
-          <span class="en">MENUNAME</span>
-        </span>
-      </h2>
-      <div class="pageContent">
-        <p class="copy">
-          Headline<br>
-          HeadlineHeadline
-        </p>
-        <div class="moreBtn">
-          <a href=""><span>Read more</span></a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <x-big-menu image="" big-title="" text="" link="" />
   <!-- /Main Page Section -->
 
   <!-- Subpage Section -->

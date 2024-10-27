@@ -81,12 +81,12 @@ class HomeController extends Controller
 
         ];
 
-        return view('website.pages.company_summary')->with('data', $data);
+        return view('website.pages.about.company_summary')->with('data', $data);
     }
 
     public function managementMessage()
     {
-        return view('website.pages.management_message');
+        return view('website.pages.about.management_message');
     }
 
     public function executives()
@@ -139,7 +139,7 @@ class HomeController extends Controller
             ]
         ];
 
-        return view('website.pages.executives')->with('data', $data);
+        return view('website.pages.about.executives')->with('data', $data);
     }
 
     public function companyHistory()
@@ -190,7 +190,7 @@ class HomeController extends Controller
             ],
         ];
 
-        return view('website.pages.company_history', compact('profile', 'history'));
+        return view('website.pages.about.company_history', compact('profile', 'history'));
     }
 
     public function brand()
@@ -200,22 +200,22 @@ class HomeController extends Controller
 
     public function awards()
     {
-        return view('website.pages.awards');
+        return view('website.pages.about.awards');
     }
 
     public function bodyPart()
     {
-        return view('website.pages.body_part');
+        return view('website.pages.product.body_part');
     }
 
     public function enginePart()
     {
-        return view('website.pages.engine_part');
+        return view('website.pages.product.engine_part');
     }
 
     public function driveTrain()
     {
-        return view('website.pages.drive_train');
+        return view('website.pages.product.drive_train');
     }
 
     public function jobInfo()

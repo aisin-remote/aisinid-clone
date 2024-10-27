@@ -1,39 +1,26 @@
   <!-- globalHeader -->
   <header class="globalHeader">
     <div class="globalHeaderInner">
-      <div class="logo" style="margin-bottom: 60px">
+      <div class="logo" style="display: flex; align-items: center; gap: 1rem;">
         <a href= "{{ route('home') }}" tess="over">
-          <img src="{{ asset('website/img/logo/satu-aisin-final.png') }}" alt="サイト名"
-            style="width: 100%; max-width: 200px; height: auto;">
+          <img src="{{ asset('logo.svg') }}" alt="サイト名" style="width: 100%; max-width: 135px; height: auto;">
         </a>
+        <span>| Indonesia </span>
       </div>
 
-      <div class="mask"></div>
-
-      <div class="langBtn view-notpc">
-        <a href="javascript:void(0)" class="over"><img src="{{ asset('website/img/common/ico_lang.png') }}"
-            alt=""></a>
-      </div>
-
-      <div id="acdBtn">
-        <span class="btnDesign btnTop"></span>
-        <span class="btnDesign btnMdl"></span>
-        <span class="btnDesign btnBom"></span>
-      </div>
-      <!-- acdBtn-->
       <!-- drawerMenu -->
       <div class="drawerMenu">
         <!-- megaNav -->
         <nav class="megaNav">
           <ul class="megaNavParent">
-            <li class="xxx ">
-              <a href="#">About Aisin</a>
+            <li class="xxx parent">
+              <a href="#">About</a>
               <!-- megaNavSlide -->
               <div class="megaNavSlide">
                 <div class="megaNavSlideInner">
                   <div class="megaNavHeader view-pc">
                     <div class="navTtl">
-                      <span class="jp">ABOUT AISIN AII - AIIA</span>
+                      <span class="jp">About Aisin</span>
                     </div>
                     <div class="more">
                       <a href="#">Read more</a>
@@ -45,13 +32,14 @@
                     <ul>
                       <li><a href="https://www.aisin.com/en/profile/policy/">Corporate Principle</a></li>
                       <li><a href="{{ route('company-summary') }}">Company Summary</a></li>
+                      <li><a href="{{ route('company-summary') }}">Company Core Value</a></li>
+                      <li><a href="{{ route('company-summary') }}">Company History</a></li>
                     </ul>
                     <ul>
                       <li><a href="{{ route('management-message') }}">Message from Top Management</a></li>
-                      <li><a href="{{ route('executives') }}">Executives</a></li>
+                      <li><a href="{{ route('executives') }}">Executive Management</a></li>
                     </ul>
                     <ul>
-                      <li><a href="{{ route('company-history') }}">Company History</a></li>
                       <li><a href="{{ route('brand') }}">Brand</a></li>
                       <li><a href="https://www.aisin.com/en/profile/global/">Global Network</a></li>
                       <li><a href="{{ route('awards') }}">Awards</a></li>
@@ -62,18 +50,18 @@
               <!-- /megaNavSlide -->
             </li>
 
-            <li class="xxx parent ">
+            {{-- <li class="xxx parent ">
               <a href="{{ route('events') }}"> Events</a>
-            </li>
+            </li> --}}
 
             <li class="xxx parent ">
-              <a href="#">Products</a>
+              <a href="#">Product</a>
               <!-- megaNavSlide -->
               <div class="megaNavSlide">
                 <div class="megaNavSlideInner">
                   <div class="megaNavHeader view-pc">
                     <div class="navTtl">
-                      <span class="jp">Products AII-AIIA</span>
+                      <span class="jp">Aisin Product</span>
                     </div>
                     <div class="more">
                       <a href="">Read more</a>
@@ -85,6 +73,7 @@
                       <li><a href="{{ route('body-part') }}">Body Part</a></li>
                       <li><a href="{{ route('engine-part') }}">Engine Part</a></li>
                       <li><a href="{{ route('drive-train') }}">Drive Train</a></li>
+                      <li><a href="{{ route('drive-train') }}">Electrical Part</a></li>
                     </ul>
                   </div><!-- /megaNavContent -->
                 </div>
@@ -98,27 +87,27 @@
 
             <li class="xxx parent ">
               <a href="#">Career</a>
-                <!-- megaNavSlide -->
-                <div class="megaNavSlide">
-                  <div class="megaNavSlideInner">
-                    <div class="megaNavHeader view-pc">
-                      <div class="navTtl">
-                        <span class="jp">Career AII-AIIA</span>
-                      </div>
-                      <div class="more">
-                        <a href="">Read more</a>
-                      </div>
-                    </div><!-- /megaNavHeader -->
+              <!-- megaNavSlide -->
+              {{-- <div class="megaNavSlide">
+                <div class="megaNavSlideInner">
+                  <div class="megaNavHeader view-pc">
+                    <div class="navTtl">
+                      <span class="jp">Career AII-AIIA</span>
+                    </div>
+                    <div class="more">
+                      <a href="">Read more</a>
+                    </div>
+                  </div><!-- /megaNavHeader -->
 
-                    <div class="megaNavContent">
-                      <ul>
-                        <li><a href="{{ route('job-info') }}">General Information</a></li>
-                        <li><a href="{{ route('job-opportunities') }}">Job Opportunities</a></li>
-                      </ul>
-                    </div><!-- /megaNavContent -->
-                  </div>
+                  <div class="megaNavContent">
+                    <ul>
+                      <li><a href="{{ route('job-info') }}">General Information</a></li>
+                      <li><a href="{{ route('job-opportunities') }}">Job Opportunities</a></li>
+                    </ul>
+                  </div><!-- /megaNavContent -->
                 </div>
-                <!-- /megaNavSlide -->
+              </div> --}}
+              <!-- /megaNavSlide -->
             </li>
 
             <li class="xxx parent ">
