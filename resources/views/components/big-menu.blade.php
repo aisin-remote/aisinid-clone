@@ -1,16 +1,16 @@
-<section class="mainpageSection" id="menu1">
-  <div class="inner">
+<section {{ $attributes->merge(['class' => 'mainpageSection']) }}>
+  <div class="inner" style="--banner-bg-image: url('{{ $image }}')">
     <h2>
       <span class="h2Inner">
-        <span class="en">AISIN</span>
+        <span class="en">{{ $bigTitle }}</span>
       </span>
     </h2>
     <div class="pageContent">
       <p class="copy">
-        Bringing further joy and ease to the mobility experience for all.
+        {{ $text }}
       </p>
       <div class="moreBtn">
-        <a href=""><span>Read more</span></a>
+        <a href="{{ $link }}"><span>Read more</span></a>
       </div>
     </div>
   </div>

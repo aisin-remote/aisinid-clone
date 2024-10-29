@@ -3,7 +3,7 @@
 @section('pages')
   <!-- News Section -->
   {{-- <section id="whatsnew" class="newsSection"> --}}
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-bottom: 5rem">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -11,18 +11,11 @@
     </ol>
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="{{ asset('website/img/aiia.png') }}" data-color="lightblue" alt="First Image">
-        <div class="carousel-caption d-md-block">
-          <h5>PT Aisin Indonesia Automotive</h5>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="{{ asset('website/img/aii.png') }}" data-color="firebrick" alt="Second Image">
-        <div class="carousel-caption d-md-block">
-          <h5>PT Aisin Indonesia</h5>
-        </div>
-      </div>
+      <x-carousel-item image="{{ asset('website/img/aiia.png') }}" text="Inspiring “movement”, creating tomorrow." />
+      <x-carousel-item image="{{ asset('website/img/aii.png') }}" text="Excellence operation, world class result" />
+      <x-carousel-item image="{{ asset('website/img/aii.png') }}"
+        text="Consistent and keep continuing improvement and innovation" />
+      <x-carousel-item image="{{ asset('website/img/aii.png') }}" text="Innovation, Collaboration" />
     </div>
     <!-- Controls -->
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -38,93 +31,18 @@
   <!-- /News Section -->
 
   <!-- Main Page Section -->
-  <x-big-menu image="" big-title="" text="" link="" />
+  <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_technology_bg.jpg" big-title="About"
+    text="Becoming a global supplier of automotive component." link="#" />
+  <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_products_bg.jpg" big-title="Product"
+    text="With a focus on excellence and detail, we create the best products." link="#" />
+  <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_products_bg.jpg" big-title="Sustainability"
+    text="Think and act autonomously in our efforts to build a sustainable society." link="#" />
+  <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_products_bg.jpg" big-title="Career"
+    text="With a focus on excellence and detail, we create the best products." link="#" />
+  <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_products_bg.jpg" big-title="Contact"
+    text="With a focus on excellence and detail, we create the best products." link="{{ route('contact') }}" />
   <!-- /Main Page Section -->
 
-  <!-- Subpage Section -->
-  <section class="subpageSection" id="submenu1">
-    <a href="">
-      <div class="pageContent">
-        <div class="txt">
-          <h2>AISIN Promotes a Safe Driving Community, Indonesia</h2>
-          <div class="moreBtn white">
-            <div><span>Read more</span></div>
-          </div>
-        </div>
-      </div>
-    </a>
-  </section>
-  <!-- /Subpage Section -->
-
-  <!-- Subpage Section -->
-  <section class="subpageSection" id="submenu2">
-    <a href="">
-      <div class="pageContent">
-        <div class="txt">
-          <h2>MENUNAME</h2>
-          <div class="moreBtn white">
-            <div><span>Read more</span></div>
-          </div>
-        </div>
-      </div>
-    </a>
-  </section>
-  <!-- /Subpage Section -->
-
-  <!-- Subpage Section -->
-  <section class="subpageSection" id="other1">
-    <div class="inner">
-      <div class="pageContent">
-        <figure class="img">
-          <img src="{{ asset('website/img/home/other1_img.jpg') }}" alt="">
-        </figure>
-        <div class="txt">
-          <h2>AISIN Promotes a Safe Driving Community, Indonesia</h2>
-          <div class="moreBtn">
-            <a href="xxx" target="_blank" class="icoWin"><span>Read more</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /Subpage Section -->
-
-  <!-- Notice Section -->
-  <section class="noticeSection" id="notice">
-    <div class="inner">
-      <div class="noticeHeader">
-        <h2 class="noticeTtl">NOTICE</h2>
-      </div><!-- /noticeHeader -->
-
-      <div class="newsBlock">
-        <div class="newsList">
-          <div class="entryVox">
-            <time datetime="0000-00-00">0000.00.00</time>
-            <div class="category">Category</div>
-            <div class="title">
-              <a href="xxx"><span>Title</span></a>
-            </div>
-          </div><!-- /entryVox -->
-          <div class="entryVox">
-            <time datetime="0000-00-00">0000.00.00</time>
-            <div class="category">Category</div>
-            <div class="title">
-              <a href="xxx"><span>Title</span></a>
-            </div>
-          </div><!-- /entryVox -->
-          <div class="entryVox">
-            <time datetime="0000-00-00">0000.00.00</time>
-            <div class="category">Category</div>
-            <div class="title">
-              <a href="xxx"><span>Title</span></a>
-            </div>
-          </div><!-- /entryVox -->
-        </div>
-        <p class="moreLink"><a href="">Read more</a></p>
-      </div>
-    </div>
-  </section>
-  <!-- /Notice Section -->
 
   <script>
     $(document).ready(function() {
@@ -151,7 +69,7 @@
 
       $('.carousel').carousel({
         interval: 6000,
-        pause: "false"
+        pause: "true"
       });
     });
   </script>
