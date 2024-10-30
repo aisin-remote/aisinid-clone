@@ -92,10 +92,6 @@
   <!-- wrapper -->
   <div class="wrapper">
 
-    <div class="bg-wrap">
-
-    </div>
-
     @yield('pages')
 
     @include('website.includes.footer')

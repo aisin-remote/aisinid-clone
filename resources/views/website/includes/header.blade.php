@@ -8,13 +8,23 @@
         <span>| Indonesia </span>
       </div>
 
+      <div class="langBtn view-notpc">
+        <a href="javascript:void(0)" class="over"><img src="{{ url('website/img/common/ico_lang.png') }}" alt=""></a>
+      </div>
+
+      <div id="acdBtn">
+        <span class="btnDesign btnTop"></span>
+        <span class="btnDesign btnMdl"></span>
+        <span class="btnDesign btnBom"></span>
+      </div>
+
       <!-- drawerMenu -->
       <div class="drawerMenu">
         <!-- megaNav -->
         <nav class="megaNav">
           <ul class="megaNavParent">
             <li class="xxx parent">
-              <a href="#">About</a>
+              <a href="{{ route('about') }}">About</a>
               <!-- megaNavSlide -->
               <div class="megaNavSlide">
                 <div class="megaNavSlideInner">
@@ -23,7 +33,7 @@
                       <span class="jp">About Aisin</span>
                     </div>
                     <div class="more">
-                      <a href="#">Read more</a>
+                      <a href="{{ route('about') }}">Read more</a>
                     </div>
                   </div>
                   <!-- /megaNavHeader -->
@@ -127,18 +137,6 @@
 
           <div class="searchVox view-notpc">
             <div id="siteSearchSp" class="search"></div>
-          </div>
-
-          <div class="snsVox view-notpc">
-            <span class="snsTtl">Official SNS</span>
-            <ul class="snsList">
-              <li class="twitter"><a href="xxx" target="_blank" class="over"><img
-                    src="{{ asset('website/img/common/ico_twitter_color.png') }}" alt="Twitter"></a></li>
-              <li class="facebook"><a href="xxx" target="_blank" class="over"><img
-                    src="{{ asset('website/img/common/ico_facebook_color.png') }}" alt="Facebook"></a></li>
-              <li class="in"><a href="xxx" target="_blank" class="over"><img
-                    src="{{ asset('website/img/common/ico_in_color.png') }}" alt=""></a></li>
-            </ul>
           </div>
         </nav>
         <!-- megaNav -->

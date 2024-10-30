@@ -18,12 +18,11 @@
         </ul>
       </div> --}}
       <ul class="footList">
-        <li><a href="" class="over">About Aisin</a></li>
-        <li><a href="" class="over">News</a></li>
-        <li><a href="" class="over">Product and Services </a></li>
+        <li><a href="{{ route('about') }}" class="over">About</a></li>
+        <li><a href="" class="over">Product</a></li>
         <li><a href="" class="over">Sustainability</a></li>
         <li><a href="" class="over">Career</a></li>
-        <li><a href="" class="over">Contact</a></li>
+        <li><a href="" class="{{ route('contact') }}">Contact</a></li>
       </ul>
     </div>
     <div class="footBottom">

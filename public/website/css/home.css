@@ -543,6 +543,9 @@ body#home .noticeSection .bnrArea .bnr a .icoCaution {
         margin: 0 auto;
         background: no-repeat center center / cover;
     }
+    body#home .mainpageSection h2 {
+        background-image: var(--banner-bg-image);
+    }
     body#home .mainpageSection#menu1 h2 {
         background-image: url(../img/home/SP_menu1_bg.jpg);
     }
@@ -679,7 +682,7 @@ body#home .noticeSection .bnrArea .bnr a .icoCaution {
 }
 
 .carousel-title {
-    font-family: "IBM Plex Mono", monospace !important;
+    /* font-family: "IBM Plex Mono", monospace !important; */
     font-size: 48px;
     padding: 20rem 10rem 10rem 10rem;
     color: #fff;
@@ -696,4 +699,91 @@ body#home .noticeSection .bnrArea .bnr a .icoCaution {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+}
+
+.banner-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-image: var(--banner-bg-image);
+    background-position: center;
+    transition: ease-in-out 0.5s;
+    padding: 8rem;
+}
+
+.banner-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner-container .banner-body {
+    display: flex;
+    position: relative;
+    color: white;
+    align-items: center;
+    z-index: 2;
+}
+
+.banner-body .banner-title {
+    font-size: 4rem;
+}
+.banner-body .banner-subtitle {
+    font-size: 2rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 10rem;
+}
+
+.menu-banner-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: end;
+    background-image: var(--bg-img);
+    background-position: center;
+    height: 250px;
+    margin-bottom: 2rem;
+}
+
+a.menu-banner-container,
+a:link.menu-banner-container {
+    text-decoration: none !important;
+}
+
+.menu-banner-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.menu-banner-body {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 1rem;
+}
+
+.menu-banner-title {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffffb0;
+    color: #1b1b1b;
+}
+
+@media only screen and (max-width: 960px) {
+    
 }

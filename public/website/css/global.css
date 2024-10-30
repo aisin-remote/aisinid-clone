@@ -2631,7 +2631,7 @@ a.icoNW {
         overflow: hidden;
     }
     .globalHeader .logo {
-        width: 100px;
+        /* width: 100px; */
         height: 20px;
         float: left;
         margin: 18px 0 0 18px;
