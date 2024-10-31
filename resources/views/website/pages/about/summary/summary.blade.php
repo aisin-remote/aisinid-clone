@@ -1,5 +1,5 @@
 @extends('website.layouts.master')
-@section('title', '{{ $pageTitle }} - Company Summary')
+@section('title',  $pageTitle . ' - Company Summary')
 @section('pages')
   <div class="mainContents">
     <div class="mainContents">
