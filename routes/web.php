@@ -20,10 +20,11 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::prefix('about')->group(function () {
     Route::get('/', [AboutController::class, 'index'])->name('about');
     Route::get('/events', [HomeController::class, 'eventIndex'])->name('events');
-    Route::get('/company-summary', [HomeController::class, 'companySummary'])->name('company-summary');
+    Route::get('/company-summary/{company?}', [HomeController::class, 'companySummary'])->name('company-summary');
     Route::get('/management-message', [HomeController::class, 'managementMessage'])->name('management-message');
     Route::get('/executives', [HomeController::class, 'executives'])->name('executives');
-    Route::get('/company-history', [HomeController::class, 'companyHistory'])->name('company-history');
+    Route::get('/company-history', [HomeController::class, 'companyHistory'])->name('company-history-main');
+    Route::get('/company-history/{company}', [HomeController::class, 'companyHistory'])->name('company-history');
     Route::get('/brand', [HomeController::class, 'brand'])->name('brand');
     Route::get('/awards', [HomeController::class, 'awards'])->name('awards');
 });

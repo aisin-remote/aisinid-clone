@@ -9,7 +9,8 @@
       </div>
 
       <div class="langBtn view-notpc">
-        <a href="javascript:void(0)" class="over"><img src="{{ url('website/img/common/ico_lang.png') }}" alt=""></a>
+        <a href="javascript:void(0)" class="over"><img src="{{ url('website/img/common/ico_lang.png') }}"
+            alt=""></a>
       </div>
 
       <div id="acdBtn">
@@ -42,15 +43,15 @@
                     <ul>
                       <li><a href="https://www.aisin.com/en/profile/policy/">Corporate Principle</a></li>
                       <li><a href="{{ route('company-summary') }}">Company Summary</a></li>
-                      <li><a href="{{ route('company-summary') }}">Company Core Value</a></li>
-                      <li><a href="{{ route('company-summary') }}">Company History</a></li>
+                      <li><a href="https://www.aisin.com/en/profile/policy/">Company Core Value</a></li>
+                      <li><a href="{{ route('company-history-main') }}">Company History</a></li>
                     </ul>
                     <ul>
                       <li><a href="{{ route('management-message') }}">Message from Top Management</a></li>
                       <li><a href="{{ route('executives') }}">Executive Management</a></li>
                     </ul>
                     <ul>
-                      <li><a href="{{ route('brand') }}">Brand</a></li>
+                      <li><a href="https://www.aisin.com/en/profile/brand/">Brand</a></li>
                       <li><a href="https://www.aisin.com/en/profile/global/">Global Network</a></li>
                       <li><a href="{{ route('awards') }}">Awards</a></li>
                     </ul>

@@ -290,6 +290,8 @@ td {
     position: relative;
 }
 .mainContents {
+    flex-shrink: 0;
+    flex-grow: 1;
 }
 .mainContents .pageHeader {
     width: 100%;

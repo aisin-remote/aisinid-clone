@@ -51,37 +51,121 @@ class HomeController extends Controller
         return view('website.pages.events')->with('events', $events);
     }
 
-    public function companySummary()
+    public function companySummary(?string $company = null)
     {
-        $data = [
-            (object)[
-                'title' => 'Company Name',
-                'content' => 'PT Aisin Indonesia',
-            ],
-            (object)[
-                'title' => 'Capital',
-                'content' => 'IDR.146,497,000,000 (Indonesian Rupiah)',
-            ],
-            (object)[
-                'title' => 'Head Office',
-                'content' => 'East Jakarta Industrial Park Plot 5J, Cikarang Selatan, Bekasi West Java, Indonesia',
-            ],
-            (object)[
-                'title' => 'Representative',
-                'content' => 'Mr. PB Ariawan Purwonugroho, President',
-            ],
-            (object)[
-                'title' => 'Employees',
-                'content' => '1,159 people by April 2024',
-            ],
-            (object)[
-                'title' => 'Businesses',
-                'content' => 'Manufacture of automotive parts (clutch covers, clutch disks, door latches, door checks, door hinges, door frames, window regulators, hood latches, inside/outside handles, intake manifolds, etc.)',
-            ],
+        if ($company == 'aii') {
+            $pageTitle = 'PT Aisin Indonesia';
+            $title = 'PT AISIN INDONESIA (AII)';
+            $subtitle = 'Company Summary AII';
+            $banner = asset('website/img/about/banner-about.png');
+            $description = 'PT AISIN Indonesia is a renowned automotive manufacturer that 
+                specializes in producing various essential components such as Clutch Cover, 
+                Clutch Disc, Door Lock, Door Frame, Door Hinge, Door Handle, Hood Lock, 
+                Hybrid Damper, Intake Manifold, and Cover Head Cylinder. Our company is dedicated 
+                to delivering high-quality products that contribute to the comfort and safety of 
+                drivers. We take pride in supporting car makers by providing them with valuable 
+                solutions for an enhanced driving experience.';
+            $image = asset('website/img/aii.png');
+            $profile = [
+                (object)[
+                    'title' => 'Company Name',
+                    'content' => 'PT Aisin Indonesia',
+                ],
+                (object)[
+                    'title' => 'Capital',
+                    'content' => 'IDR.146,497,000,000 (Indonesian Rupiah)',
+                ],
+                (object)[
+                    'title' => 'Head Office',
+                    'content' => 'East Jakarta Industrial Park Plot 5J, Cikarang Selatan, Bekasi West Java, Indonesia',
+                ],
+                (object)[
+                    'title' => 'Representative',
+                    'content' => 'Mr. PB Ariawan Purwonugroho, President',
+                ],
+                (object)[
+                    'title' => 'Employees',
+                    'content' => '1,159 people by April 2024',
+                ],
+                (object)[
+                    'title' => 'Businesses',
+                    'content' => 'Manufacture of automotive parts (clutch covers, clutch disks, door latches, door checks, door hinges, door frames, window regulators, hood latches, inside/outside handles, intake manifolds, etc.)',
+                ],
+            ];
+            $breadcrumbs = [
+                (object)[
+                    'name' => 'Company Summary',
+                    'url' => route('company-summary'),
+                    'active' => false,
+                ],
+                (object)[
+                    'name' => 'PT Aisin Indonesia',
+                    'url' => route('company-summary', 'aii'),
+                    'active' => true,
+                ],
+            ];
+        } else if ($company == 'aiia') {
+            $pageTitle = 'PT Aisin Indonesia Automotive';
+            $banner = asset('website/img/about/banner-about.png');
+            $title = 'PT AISIN INDONESIA AUTOMOTIVE (AIIA)';
+            $subtitle = 'Company Summary AIIA';
+            $description = 'PT AISIN Indonesia Automotive is a joint venture between PT AISIN 
+                Indonesia (AII) - part of the Astra Otoparts Group, and AISIN Corporation, 
+                a member of the Toyota Group. Founded on March 14, 2014, the company specializes 
+                in the production of automotive components for the industry.';
+            $image = asset('website/img/aiia.png');
+            $profile = [
+                (object)[
+                    'title' => 'Company Name',
+                    'content' => 'PT Aisin Indonesia Automotive',
+                ],
+                (object)[
+                    'title' => 'Capital',
+                    'content' => 'IDR.146,497,000,000 (Indonesian Rupiah)',
+                ],
+                (object)[
+                    'title' => 'Head Office',
+                    'content' => 'East Jakarta Industrial Park Plot 5J, Cikarang Selatan, Bekasi West Java, Indonesia',
+                ],
+                (object)[
+                    'title' => 'Representative',
+                    'content' => 'Mr. PB Ariawan Purwonugroho, President',
+                ],
+                (object)[
+                    'title' => 'Employees',
+                    'content' => '1,159 people by April 2024',
+                ],
+                (object)[
+                    'title' => 'Businesses',
+                    'content' => 'Manufacture of automotive parts (clutch covers, clutch disks, door latches, door checks, door hinges, door frames, window regulators, hood latches, inside/outside handles, intake manifolds, etc.)',
+                ],
+            ];
+            $breadcrumbs = [
+                (object)[
+                    'name' => 'Company Summary',
+                    'url' => route('company-summary'),
+                    'active' => false,
+                ],
+                (object)[
+                    'name' => 'PT Aisin Indonesia Automotive',
+                    'url' => route('company-summary', 'aiia'),
+                    'active' => true,
+                ],
+            ];
+        } else {
+            return view('website.pages.about.summary.index');
+        }
 
-        ];
-
-        return view('website.pages.about.company_summary')->with('data', $data);
+        return view('website.pages.about.summary.summary', compact(
+            'pageTitle',
+            'banner',
+            'title',
+            'subtitle',
+            'description',
+            'image',
+            'profile',
+            'breadcrumbs'
+        ));
     }
 
     public function managementMessage()
