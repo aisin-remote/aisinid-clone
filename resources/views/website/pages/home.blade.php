@@ -3,13 +3,7 @@
 @section('pages')
   <!-- News Section -->
   {{-- <section id="whatsnew" class="newsSection"> --}}
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-bottom: 5rem">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    </ol>
-    <!-- Wrapper for slides -->
+  <div id="mainCarousel" class="carousel slide" style="margin-bottom: 5rem">
     <div class="carousel-inner">
       <x-carousel-item image="{{ asset('website/img/aiia.png') }}" text="Inspiring “movement”, creating tomorrow." />
       <x-carousel-item image="{{ asset('website/img/aii.png') }}" text="Excellence operation, world class result" />
@@ -18,14 +12,14 @@
       <x-carousel-item image="{{ asset('website/img/aii.png') }}" text="Innovation, Collaboration" />
     </div>
     <!-- Controls -->
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <!-- <span class="sr-only">Previous</span> -->
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <!-- <span class="sr-only">Next</span> -->
-    </a>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
   {{-- </section> --}}
   <!-- /News Section -->
@@ -69,7 +63,7 @@
 
       $('.carousel').carousel({
         interval: 6000,
-        pause: "true"
+        pause: "false"
       });
     });
   </script>
