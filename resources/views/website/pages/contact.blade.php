@@ -5,6 +5,7 @@
     .list-group-item {
       border: none;
     }
+
     .form-label {
       font-size: 14px
     }
@@ -47,6 +48,7 @@
         @endforeach
 
         <div class="contact-form-container mt-5">
+          @csrf
           <div class="row">
             <h2 class="fw-medium">Contact Us</h2>
           </div>
@@ -55,44 +57,57 @@
               <div class="border-top border-dark-subtle my-4"></div>
             </div>
           </div>
-          <div class="row mt-3">
-            <div class="col-md-2 mb-4">
-              <label for="title" class="form-label">Title</label>
-              <select class="form-select-lg form-select" id="title" aria-label="Your Title" name="title">
-                <option selected>Select title</option>
-                <option value="1">Mr.</option>
-                <option value="2">Ms.</option>
-              </select>
+          <form action="#" id="contactForm">
+            <div class="row mt-3">
+              <div class="col-md-2 mb-4">
+                <label for="title" class="form-label">Title</label>
+                <select class="form-select-lg form-select" id="title" aria-label="Your Title" name="title">
+                  <option selected>Select title</option>
+                  <option value="1">Mr.</option>
+                  <option value="2">Ms.</option>
+                </select>
+              </div>
+              <div class="col-md-5 mb-4">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control form-control-lg" id="firstName" placeholder="John"
+                  name="first_name">
+              </div>
+              <div class="col-md-5 mb-4">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control form-control-lg" id="lastName" placeholder="Doe"
+                  name="last_name">
+              </div>
+              <div class="col-md-7 mb-4">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control form-control-lg" id="email" placeholder="name@example.com"
+                  name="email">
+              </div>
+              <div class="col-md-5 mb-4">
+                <label for="country" class="form-label">Country</label>
+                <select class="form-select-lg form-select" id="country" aria-label="Your Country" name="country">
+                  <option selected>Select country</option>
+                  <option value="1">Indonesia</option>
+                  <option value="2">Japan</option>
+                </select>
+              </div>
+              <div class="col-md-12 mb-4">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control form-control-lg" id="subject" placeholder="Your subject"
+                  name="subject">
+              </div>
+              <div class="col-md-12 mb-4">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control form-control-lg" id="message" placeholder="Write your message here ..." rows="8"
+                  name="message"></textarea>
+              </div>
             </div>
-            <div class="col-md-5 mb-4">
-              <label for="firstName" class="form-label">First Name</label>
-              <input type="text" class="form-control form-control-lg" id="firstName" placeholder="John" name="first_name">
+            <div class="row">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-primary btn-lg me-md-2" type="button">Submit <i
+                    class="bi bi-arrow-right"></i></button>
+              </div>
             </div>
-            <div class="col-md-5 mb-4">
-              <label for="lastName" class="form-label">Last Name</label>
-              <input type="text" class="form-control form-control-lg" id="lastName" placeholder="Doe" name="last_name">
-            </div>
-            <div class="col-md-7 mb-4">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control form-control-lg" id="email" placeholder="name@example.com" name="email">
-            </div>
-            <div class="col-md-5 mb-4">
-              <label for="country" class="form-label">Country</label>
-              <select class="form-select-lg form-select" id="country" aria-label="Your Country" name="country">
-                <option selected>Select country</option>
-                <option value="1">Indonesia</option>
-                <option value="2">Japan</option>
-              </select>
-            </div>
-            <div class="col-md-12 mb-4">
-              <label for="subject" class="form-label">Subject</label>
-              <input type="text" class="form-control form-control-lg" id="subject" placeholder="Your subject" name="subject">
-            </div>
-            <div class="col-md-12 mb-4">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control form-control-lg" id="message" placeholder="Write your message here ..." rows="8" name="message"></textarea>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
