@@ -274,7 +274,7 @@ class HomeController extends Controller
             ],
         ];
 
-        return view('website.pages.about.company_history', compact('profile', 'history'));
+        return view('website.pages.about.company-history', compact('profile', 'history'));
     }
 
     public function brand()
@@ -341,6 +341,32 @@ class HomeController extends Controller
 
     public function contact()
     {
-        return view('website.pages.contact');
+        $banner = asset('website/img/home/contact--.png');
+        $subtitle =  'Contact Us';
+        $contacts = [
+            (object) [
+                'title' => 'Aisin Indonesia',
+                'address' => 'East Jakarta Industrial Park (EJIP) Plot 5J South Cikarang, Indonesia 17550',
+                'phone' => '(021) 8970909',
+                'map' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5115919900622!2d107
+                    .10894440093854!3d-6.327687956420059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
+                    .1!3m3!1m2!1s0x2e699a8658dfc3b3%3A0xb2c5ecd250972b22!2sAisin%20Indonesia%20
+                    Pt.%2C%20Sukaresmi%2C%20Cikarang%20Sel.%2C%20Kabupaten%20Bekasi%2C%20Jawa%2
+                    0Barat!5e0!3m2!1sen!2sid!4v1730442972059!5m2!1sen!2sid',
+            ],
+            (object) [
+                'title' => 'Aisin Indonesia Automotive',
+                'address' => 'Kawasan Industri KIIC Lot LL No. 9 - 10, Jl. Harapan 8, 
+                    Kel. Parung Mulia, Kec. Ciampel, 
+                    Parungmulya, Kec. Ciampel, Karawang, Jawa Barat 41361',
+                'phone' => '	(0267) 8643131',
+                'map' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965
+                    .0397103475207!2d107.29623911177569!3d-6.388877493574868!2m3!1f0!2f0!3f0!3m2!
+                    1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69758dcd24635b%3A0x595bd54f4c69da48!2sPT%20
+                    Aisin%20Indonesia%20Automotive!5e0!3m2!1sen!2sid!4v1730444199231!5m2!1sen!2sid',
+            ],
+        ];
+
+        return view('website.pages.contact', compact('banner', 'subtitle', 'contacts'));
     }
 }

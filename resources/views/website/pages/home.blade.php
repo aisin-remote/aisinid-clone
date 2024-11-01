@@ -32,7 +32,7 @@
 
   <!-- Main Page Section -->
   <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_technology_bg.jpg" big-title="About"
-    text="Becoming a global supplier of automotive component." link="#" />
+    text="Becoming a global supplier of automotive component." link="{{ route('about') }}" />
   <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_products_bg.jpg" big-title="Product"
     text="With a focus on excellence and detail, we create the best products." link="#" />
   <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_products_bg.jpg" big-title="Sustainability"
