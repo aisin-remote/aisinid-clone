@@ -29,9 +29,15 @@ Route::prefix('about')->group(function () {
     Route::get('/awards', [HomeController::class, 'awards'])->name('awards');
 });
 
-Route::get('/body-part', [HomeController::class, 'bodyPart'])->name('body-part');
-Route::get('/engine-part', [HomeController::class, 'enginePart'])->name('engine-part');
-Route::get('/drive-train', [HomeController::class, 'driveTrain'])->name('drive-train');
+Route::prefix('products')->group(function () {
+    Route::get('/', [HomeController::class, 'productIndex'])->name('products');
+    Route::get('/{product}', [HomeController::class, 'products'])->name('product-list');
+});
+
+Route::prefix('awards')->group(function () {
+    Route::get('/', [HomeController::class, 'awards'])->name('awards');
+    Route::get('/{company}', [HomeController::class, 'award'])->name('award-list');
+});
 
 Route::get('/job-info', [HomeController::class, 'jobInfo'])->name('job-info');
 Route::get('/job-opportunities', [HomeController::class, 'jobOpportunities'])->name('job-opportunities');

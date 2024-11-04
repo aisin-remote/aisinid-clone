@@ -64,14 +64,14 @@
       z-index: -1;
     }
 
-    /* Custom CSS untuk carousel */
+    /* Custom CSS untuk carousel
     h5 {
       display: inline-block;
       padding: 10px;
       background: rgb(23, 23, 76);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
-    }
+    } */
 
     .full-screen {
       background-size: cover;
@@ -101,6 +101,7 @@
     @include('website.includes.footer')
   </div>
   <!-- wrapper -->
+  @yield('scripts')
 </body>
 
 </html>

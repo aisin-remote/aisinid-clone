@@ -66,7 +66,7 @@
             </li> --}}
 
             <li class="xxx parent ">
-              <a href="#">Product</a>
+              <a href="{{ route('products') }}">Product</a>
               <!-- megaNavSlide -->
               <div class="megaNavSlide">
                 <div class="megaNavSlideInner">
@@ -75,16 +75,16 @@
                       <span class="jp">Aisin Product</span>
                     </div>
                     <div class="more">
-                      <a href="">Read more</a>
+                      <a href="{{ route('products') }}">Read more</a>
                     </div>
                   </div><!-- /megaNavHeader -->
 
                   <div class="megaNavContent">
                     <ul>
-                      <li><a href="{{ route('body-part') }}">Body Part</a></li>
-                      <li><a href="{{ route('engine-part') }}">Engine Part</a></li>
-                      <li><a href="{{ route('drive-train') }}">Drive Train</a></li>
-                      <li><a href="{{ route('drive-train') }}">Electrical Part</a></li>
+                      <li><a href="{{ route('product-list', ['product' => 'body-part']) }}">Body Part</a></li>
+                      <li><a href="{{ route('product-list', ['product' => 'engine-part']) }}">Engine Part</a></li>
+                      <li><a href="{{ route('product-list', ['product' => 'drive-train']) }}">Drive Train</a></li>
+                      <li><a href="{{ route('product-list', ['product' => 'electrical-part']) }}">Electrical Part</a></li>
                     </ul>
                   </div><!-- /megaNavContent -->
                 </div>
