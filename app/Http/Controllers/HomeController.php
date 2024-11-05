@@ -170,60 +170,117 @@ class HomeController extends Controller
 
     public function managementMessage()
     {
-        return view('website.pages.about.management_message');
+        return view('website.pages.about.management-message');
     }
 
-    public function executives()
+    public function executiveIndex()
     {
-        $data = [
-            (object) [
-                'category' => 'Board of Directors',
-                'members' => [
-                    (object) [
-                        'name' => 'Moritaka Yoshida',
-                        'position' => 'President',
-                        'picture' => 'website/img/home/executives/President.png'
-                    ],
-                    (object) [
-                        'name' => 'Shintaro Ito',
-                        'position' => 'Directors',
-                        'picture' => 'website/img/home/executives/Director-ShintaroIto.png',
-                    ],
-                    (object) [
-                        'name' => 'Yoshihisa Yamamoto',
-                        'position' => 'Directors',
-                        'picture' => 'website/img/home/executives/Director-Yoshihisa.png',
-                    ],
-                    (object) [
-                        'name' => 'Masahiro Nishikawa',
-                        'position' => 'Directors',
-                        'picture' => 'website/img/home/executives/Director-Masahiro.png',
-                    ],
-                    (object) [
-                        'name' => 'Michiyo Hamada',
-                        'position' => 'Directors',
-                        'picture' => 'website/img/home/executives/Director-Michiyo.png',
-                    ],
-                    (object) [
-                        'name' => 'Seiichi Shin',
-                        'position' => 'Directors',
-                        'picture' => 'website/img/home/executives/Director-Seiichi.png',
-                    ],
-                    (object) [
-                        'name' => 'Koji Kobayashi',
-                        'position' => 'Directors',
-                        'picture' => 'website/img/home/executives/Director-Koji.png',
-                    ],
-                    (object) [
-                        'name' => 'Tsuguhiko Hoshino',
-                        'position' => 'Directors',
-                        'picture' => 'website/img/home/executives/Director-Tsuguhiko.png',
-                    ],
-                ]
-            ]
+        return view('website.pages.about.executive.index');
+    }
+
+    public function executives($company)
+    {
+        $executives = [];
+
+        if ($company == 'aii') {
+            $subtitle = 'PT Aisin Indonesia';
+            $executives = [
+                (object) [
+                    'members' => [
+                        (object) [
+                            'name' => 'Mr. PB Ariawan Purwonugroho',
+                            'position' => 'President Director',
+                            'picture' => asset('website/img/home/executives/presdir.png')
+                        ],
+                    ]
+                ],
+                (object) [
+                    'members' => [
+                        (object) [
+                            'name' => 'Mr. Aristoni Ardhi',
+                            'position' => 'Vice President Director',
+                            'picture' => asset('website/img/home/executives/presdir.png')
+                        ],
+                    ]
+                ],
+                (object) [
+                    'members' => [
+                        (object) [
+                            'name' => 'Mr. Hisatomo Kato',
+                            'position' => 'Plant Director',
+                            'picture' => asset('website/img/home/executives/presdir.png')
+                        ],
+                        (object) [
+                            'name' => 'Mr. Michael Loandouw',
+                            'position' => 'MKT & HC Director',
+                            'picture' => asset('website/img/home/executives/presdir.png'),
+                        ],
+                        (object) [
+                            'name' => 'Mrs. Herlina',
+                            'position' => 'FACC & Purc. Director',
+                            'picture' => asset('website/img/home/executives/presdir.png'),
+                        ],
+                    ]
+                ],
+            ];
+        } else {
+            $subtitle = 'PT Aisin Indonesia Automotive';
+            $executives = [
+                (object) [
+                    'members' => [
+                        (object) [
+                            'name' => 'Mr. PB Ariawan Purwonugroho',
+                            'position' => 'President Director',
+                            'picture' => asset('website/img/home/executives/presdir.png')
+                        ],
+                    ]
+                ],
+                (object) [
+                    'members' => [
+                        (object) [
+                            'name' => 'Mr. Aristoni Ardhi',
+                            'position' => 'Vice President Director',
+                            'picture' => asset('website/img/home/executives/presdir.png')
+                        ],
+                    ]
+                ],
+                (object) [
+                    'members' => [
+                        (object) [
+                            'name' => 'Mr. Dedi Irwanto',
+                            'position' => 'Plant Director',
+                            'picture' => asset('website/img/home/executives/presdir.png')
+                        ],
+                        (object) [
+                            'name' => 'Mr. Michael Loandouw',
+                            'position' => 'MKT & HC Director',
+                            'picture' => asset('website/img/home/executives/presdir.png'),
+                        ],
+                        (object) [
+                            'name' => 'Mr. Hisatomo Kato',
+                            'position' => 'FACC & Purc. Director',
+                            'picture' => asset('website/img/home/executives/presdir.png'),
+                        ],
+                    ]
+                ],
+            ];
+        }
+        
+        $banner = asset('website/img/about/banner-about.png');
+        $breadcrumbs = [
+            (object)[
+                'name' => 'Executives Management',
+                'url' => route('executives'),
+                'active' => false,
+            ],
+            (object)[
+                'name' => $subtitle,
+                'url' => route('executive-list', $company),
+                'active' => true,
+            ],
         ];
 
-        return view('website.pages.about.executives')->with('data', $data);
+        return view('website.pages.about.executive.executive', compact('banner', 'subtitle', 'executives', 'breadcrumbs'));
     }
 
     public function companyHistory()
@@ -282,15 +339,13 @@ class HomeController extends Controller
         return view('website.pages.brand');
     }
 
-    public function awardIndex() {
-
-    }
+    public function awardIndex() {}
 
     public function awards($company)
     {
         $banner = asset('website/img/about/banner-about.png');
         $title  = 'Awards';
-        
+
         return view('website.pages.about.awards');
     }
 

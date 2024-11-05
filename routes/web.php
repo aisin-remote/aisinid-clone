@@ -22,11 +22,19 @@ Route::prefix('about')->group(function () {
     Route::get('/events', [HomeController::class, 'eventIndex'])->name('events');
     Route::get('/company-summary/{company?}', [HomeController::class, 'companySummary'])->name('company-summary');
     Route::get('/management-message', [HomeController::class, 'managementMessage'])->name('management-message');
-    Route::get('/executives', [HomeController::class, 'executives'])->name('executives');
     Route::get('/company-history', [HomeController::class, 'companyHistory'])->name('company-history-main');
     Route::get('/company-history/{company}', [HomeController::class, 'companyHistory'])->name('company-history');
     Route::get('/brand', [HomeController::class, 'brand'])->name('brand');
-    Route::get('/awards', [HomeController::class, 'awards'])->name('awards');
+
+    Route::prefix('executives')->group(function () {
+        Route::get('/', [HomeController::class, 'executiveIndex'])->name('executives');
+        Route::get('/{company}', [HomeController::class, 'executives'])->name('executive-list');
+    });
+
+    Route::prefix('awards')->group(function () {
+        Route::get('/', [HomeController::class, 'awards'])->name('awards');
+        Route::get('/{company}', [HomeController::class, 'award'])->name('award-list');
+    });
 });
 
 Route::prefix('products')->group(function () {
@@ -34,10 +42,6 @@ Route::prefix('products')->group(function () {
     Route::get('/{product}', [HomeController::class, 'products'])->name('product-list');
 });
 
-Route::prefix('awards')->group(function () {
-    Route::get('/', [HomeController::class, 'awards'])->name('awards');
-    Route::get('/{company}', [HomeController::class, 'award'])->name('award-list');
-});
 
 Route::get('/job-info', [HomeController::class, 'jobInfo'])->name('job-info');
 Route::get('/job-opportunities', [HomeController::class, 'jobOpportunities'])->name('job-opportunities');
