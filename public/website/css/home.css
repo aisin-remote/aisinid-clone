@@ -844,6 +844,63 @@ a:link.menu-banner-container {
     left: 20px;
 }
 
+.history-card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 50%;
+    position: relative;
+}
+
+.history-card-container::before {
+    content: "";
+    position: absolute;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+.history-card-container:nth-child(odd)::before {
+    right: 0px;
+    top: 10rem;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #001a72 transparent transparent; /* Blue solid triangle */
+}
+.history-card-container:nth-child(even)::before {
+    left: 0px;
+    top: 10rem;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #001a72; /* Blue solid triangle */
+}
+
+.history-card-container:nth-child(odd) .year,
+.history-card-container:nth-child(odd) .card-title {
+    text-align: right;
+}
+
+.history-card-container:nth-child(even) {
+    align-self: flex-end;
+}
+
+.history-card-container:nth-child(even) {
+}
+
+#history {
+    position: relative;
+}
+
+#history::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px; /* Adjust thickness as needed */
+    background-color: #001a72;
+    transform: translateX(-50%);
+}
+
 @media only screen and (max-width: 960px) {
     .main-container {
         padding: 5rem 2rem;
@@ -864,4 +921,50 @@ a:link.menu-banner-container {
         padding: 8rem 4rem;
         justify-content: center;
     }
+
+    #history::before {
+        left: 0;
+    }
+    .history-card-container {
+        width: 100%;
+    }
+    .history-card-container:nth-child(odd)::before,
+    .history-card-container:nth-child(even)::before {
+        left: 0px;
+        top: 10rem;
+        border-width: 10px 0 10px 15px;
+        border-color: transparent transparent transparent #001a72; /* Blue solid triangle */
+    }
+    .history-card-container:nth-child(odd),
+    .history-card-container:nth-child(even) {
+        align-self: flex-start;
+    }
+
+    .history-card-container:nth-child(odd) .year,
+    .history-card-container:nth-child(odd) .card-title {
+        text-align: left;
+    }
+}
+
+/* Timeline */
+/* Timeline line */
+.timeline-item {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #001a72;
+    transform: translateX(-50%);
+}
+
+.year {
+    font-size: 1.5rem;
+    font-weight: bold;
 }

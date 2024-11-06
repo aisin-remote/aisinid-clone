@@ -265,7 +265,7 @@ class HomeController extends Controller
                 ],
             ];
         }
-        
+
         $banner = asset('website/img/about/banner-about.png');
         $breadcrumbs = [
             (object)[
@@ -300,38 +300,67 @@ class HomeController extends Controller
         $history = [
             (object) [
                 'year' => '1996',
-                'title' => 'BIRTH OF PT AISIN INDONESIA',
+                'title' => 'Birth of PT Aisin Indonesia',
                 'description' => 'After ten years of cooperation between PT Dharma Sarana 
                     Perdana and Aisin Seiki Co., Ltd. – in the form of technical assistance. 
                     They formed a joint venture that became PT Aisin Indonesia in 1996. 
                     The Company had definitely set a solid foundation and foothold in 
                     the automotive component manufacturing industry in Indonesia.',
-                'picture' => 'website/img/home/history/1996.jpg',
+                'picture' => asset('website/img/home/history/1996.jpg'),
+            ],
+            (object) [
+                'year' => '1998',
+                'title' => "New Culture and Economic Crisis",
+                'description' => 'Beyond the business attitude and technical & economic aspects, 
+                    the corporate cultures of both companies must merge and adapted into a new, distinct, 
+                    and specific one. This merging led to new practices adapted with local culture, 
+                    which are the Kaizen, Aisatsu (Greeting), 3S, Anzen & San Gen Shugi.',
+                'picture' => asset('website/img/home/history/2013.jpg'),
             ],
             (object) [
                 'year' => '2006',
-                'title' => 'FROM LOCAL TO GLOBAL',
+                'title' => 'From Local to Global',
                 'description' => 'PT Aisin Indonesia weathered the economic crisis of ’98 
                     and even became more resilient. The company achieved many certifications, 
                     expanded its Cikarang Plant, improved internally, and reached its 
                     10th Anniversary. In February 2006, the shareholder structure of 
                     the company went through some changes. Aisin Seiki Co., Ltd. & 
                     PT. Senantiasa Makmur dominated shareholder structure.',
-                'picture' => 'websitPe/img/home/history/2006.jpg',
+                'picture' => asset('website/img/home/history/2006.jpg'),
             ],
             (object) [
                 'year' => '2013',
-                'title' => "PT AISIN INDONESIA'S SUBSIDIARIES",
+                'title' => "PT Aisin Indonesia's Subsidiaries",
                 'description' => 'As PT Aisin Indonesia grows, competition and demand 
                     also intensify, thus the Company must expand in terms of organization and 
                     actual space. Therefore in 2013, PT Aisin Indonesia founded its 
                     subsidiaries: PT Aisin Indonesia Automotive & PT Advics Manufacturing 
                     Indonesia.',
-                'picture' => 'website/img/home/history/2013.jpg',
+                'picture' => asset('website/img/home/history/2013.jpg'),
+            ],
+            (object) [
+                'year' => '2016',
+                'title' => "Growing Up Together for The Best Future",
+                'description' => 'PT Aisin Indonesia then aims to go “From Local to Global” by applying 
+                    good production system that allows for the development of new technologies and products, 
+                    which are: Door Lock, Intake Manifold, Cover Head Cylinder, Door Frame, 
+                    Clutch Cover & Clutch Disc.',
+                'picture' => asset('website/img/home/history/2013.jpg'),
+            ],
+            (object) [
+                'year' => '2024',
+                'title' => "Aisin Collaboration (Satu Aisin)",
+                'description' => 'To strengthen and build harmonization of mindsets, participation of all members, 
+                    synergy and collaboration between functions from PT Aisin Indonesia and PT Aisin Indonesia Automotive 
+                    in the form of “Satu Aisin”.',
+                'picture' => asset('website/img/home/history/2013.jpg'),
             ],
         ];
 
-        return view('website.pages.about.company-history', compact('profile', 'history'));
+        $banner = asset('website/img/about/banner-about.png');
+        $subtitle  = 'Company History';
+
+        return view('website.pages.about.company-history', compact('banner', 'subtitle','profile', 'history'));
     }
 
     public function brand()
