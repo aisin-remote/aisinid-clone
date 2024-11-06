@@ -25,6 +25,7 @@ Route::prefix('about')->group(function () {
     Route::get('/company-history', [HomeController::class, 'companyHistory'])->name('company-history-main');
     Route::get('/company-history/{company}', [HomeController::class, 'companyHistory'])->name('company-history');
     Route::get('/brand', [HomeController::class, 'brand'])->name('brand');
+    Route::get('/company-core-value', [HomeController::class, 'coreValue'])->name('core');
 
     Route::prefix('executives')->group(function () {
         Route::get('/', [HomeController::class, 'executiveIndex'])->name('executives');

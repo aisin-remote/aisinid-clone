@@ -51,6 +51,10 @@ class HomeController extends Controller
         return view('website.pages.events')->with('events', $events);
     }
 
+    public function coreValue() {
+        return view('website.pages.about.core-value');
+    }
+
     public function companySummary(?string $company = null)
     {
         if ($company == 'aii') {

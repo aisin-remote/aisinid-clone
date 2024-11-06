@@ -968,3 +968,7 @@ a:link.menu-banner-container {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+.primary-title {
+    color: #001a72;
+}

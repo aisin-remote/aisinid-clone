@@ -38,7 +38,7 @@
                     <ul>
                       <li><a href="https://www.aisin.com/en/profile/policy/">Corporate Principle</a></li>
                       <li><a href="{{ route('company-summary') }}">Company Summary</a></li>
-                      <li><a href="https://www.aisin.com/en/profile/policy/">Company Core Value</a></li>
+                      <li><a href="{{ route('core') }}">Company Core Value</a></li>
                       <li><a href="{{ route('company-history-main') }}">Company History</a></li>
                     </ul>
                     <ul>
@@ -55,10 +55,6 @@
               </div>
               <!-- /megaNavSlide -->
             </li>
-
-            {{-- <li class="xxx parent ">
-              <a href="{{ route('events') }}"> Events</a>
-            </li> --}}
 
             <li class="xxx parent ">
               <a href="{{ route('products') }}">Product</a>
@@ -94,27 +90,6 @@
 
             <li class="xxx parent ">
               <a href="#">Career</a>
-              <!-- megaNavSlide -->
-              {{-- <div class="megaNavSlide">
-                <div class="megaNavSlideInner">
-                  <div class="megaNavHeader view-pc">
-                    <div class="navTtl">
-                      <span class="jp">Career AII-AIIA</span>
-                    </div>
-                    <div class="more">
-                      <a href="">Read more</a>
-                    </div>
-                  </div><!-- /megaNavHeader -->
-
-                  <div class="megaNavContent">
-                    <ul>
-                      <li><a href="{{ route('job-info') }}">General Information</a></li>
-                      <li><a href="{{ route('job-opportunities') }}">Job Opportunities</a></li>
-                    </ul>
-                  </div><!-- /megaNavContent -->
-                </div>
-              </div> --}}
-              <!-- /megaNavSlide -->
             </li>
 
             <li class="xxx parent ">
