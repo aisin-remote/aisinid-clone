@@ -8,11 +8,6 @@
         <span>| Indonesia </span>
       </div>
 
-      <div class="langBtn view-notpc">
-        <a href="javascript:void(0)" class="over"><img src="{{ url('website/img/common/ico_lang.png') }}"
-            alt=""></a>
-      </div>
-
       <div id="acdBtn">
         <span class="btnDesign btnTop"></span>
         <span class="btnDesign btnMdl"></span>
@@ -84,7 +79,8 @@
                       <li><a href="{{ route('product-list', ['product' => 'body-part']) }}">Body Part</a></li>
                       <li><a href="{{ route('product-list', ['product' => 'engine-part']) }}">Engine Part</a></li>
                       <li><a href="{{ route('product-list', ['product' => 'drive-train']) }}">Drive Train</a></li>
-                      <li><a href="{{ route('product-list', ['product' => 'electrical-part']) }}">Electrical Part</a></li>
+                      <li><a href="{{ route('product-list', ['product' => 'electrical-part']) }}">Electrical Part</a>
+                      </li>
                     </ul>
                   </div><!-- /megaNavContent -->
                 </div>
@@ -131,11 +127,6 @@
                 alt=""></a>
           </div>
 
-          <div class="langBtn view-pc">
-            <a href="javascript:void(0)" class="over"><img src="{{ asset('website/img/common/ico_lang.png') }}"
-                alt=""></a>
-          </div>
-
           <div class="searchVox view-notpc">
             <div id="siteSearchSp" class="search"></div>
           </div>
@@ -153,9 +144,5 @@
       </div>
     </div><!-- /searchArea -->
 
-    <ul class="langNav">
-      <li><a href="">本語</a></li>
-      <li><a href="">文</a></li>
-    </ul>
   </header>
   <!-- globalHeader -->

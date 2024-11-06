@@ -28,9 +28,10 @@
   <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_technology_bg.jpg" big-title="About"
     text="Becoming a global supplier of automotive component." link="{{ route('about') }}" />
   <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_products_bg.jpg" big-title="Product"
-    text="With a focus on excellence and detail, we create the best products." link="#" />
+    text="With a focus on excellence and detail, we create the best products." link="{{ route('products') }}" />
   <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_products_bg.jpg" big-title="Sustainability"
-    text="Think and act autonomously in our efforts to build a sustainable society." link="#" />
+    text="Think and act autonomously in our efforts to build a sustainable society."
+    link="https://www.aisin.com/en/sustainability/" />
   <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_products_bg.jpg" big-title="Career"
     text="With a focus on excellence and detail, we create the best products." link="#" />
   <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_products_bg.jpg" big-title="Contact"

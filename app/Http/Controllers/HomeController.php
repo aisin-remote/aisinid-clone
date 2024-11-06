@@ -360,7 +360,7 @@ class HomeController extends Controller
         $banner = asset('website/img/about/banner-about.png');
         $subtitle  = 'Company History';
 
-        return view('website.pages.about.company-history', compact('banner', 'subtitle','profile', 'history'));
+        return view('website.pages.about.company-history', compact('banner', 'subtitle', 'profile', 'history'));
     }
 
     public function brand()
@@ -368,14 +368,155 @@ class HomeController extends Controller
         return view('website.pages.brand');
     }
 
-    public function awardIndex() {}
+    public function awardIndex()
+    {
+        return view('website.pages.about.award.index');
+    }
 
     public function awards($company)
     {
         $banner = asset('website/img/about/banner-about.png');
-        $title  = 'Awards';
+        $subtitle  = '';
 
-        return view('website.pages.about.awards');
+        $awards = [];
+
+        if ($company == 'aii') {
+            $subtitle = 'PT Aisin Indonesia';
+            $awards = [
+                'Environment Awards' => [
+                    (object)[
+                        'name' => 'Green Proper KLHK RI',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'AOP Astra Green Company & Astra Friendly Company Award',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'INALUM Best Complients Award',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                ],
+                'TQM Awards' => [
+                    (object)[
+                        'name' => 'TMC 3rd Winner Inspection Shop 2023',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'TMC Gold Level QCC Improvement',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'AOP 4th Place QCC Non Technic Improvement',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                ],
+                'Occupational Health & Safety Awards' => [
+                    (object)[
+                        'name' => 'ADM Best Supplier in Fire Management System 2023',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'GOLD PROPER 2021 KLHK RI',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                ],
+                'Customer Awards & Other' => [
+                    (object)[
+                        'name' => 'MMKI After Sales Performance Award 2020',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'MMKI Best Delivery & Quality 2023',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'MMKI Excellent Performance for Support After Sales 2022',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'TMMIN Quality Target Achievement',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'INDI 4.0 Award 2021',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'Lighthouse Industry 4.0 2022',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                ],
+            ];
+        } else {
+            $subtitle = 'PT Aisin Indonesia Automotive';
+            $awards = [
+                'Environment Awards' => [
+                    (object)[
+                        'name' => 'Green Proper KLHK RI',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                ],
+                'TQM Awards' => [
+                    (object)[
+                        'name' => 'AOP 29th CONVENTION',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'INNOVASTRA 33',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'AOP 28th CONVENTION',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                ],
+                'Occupational Health & Safety Awards' => [
+                    (object)[
+                        'name' => 'GOLD SMK3 KEMENAKER RI',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'AGC AWARD 2017',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                ],
+                'Customer Awards & Other' => [
+                    (object)[
+                        'name' => 'AFT TOURNAMENT',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'TMMIN TOP 10 QUALITY ACHIEVEMENT',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'IAMI - EHS',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                    (object)[
+                        'name' => 'OTHERS - QUALITY',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                    ],
+                ],
+            ];
+        }
+
+        $banner = asset('website/img/about/banner-about.png');
+        $breadcrumbs = [
+            (object)[
+                'name' => 'Awards',
+                'url' => route('awards'),
+                'active' => false,
+            ],
+            (object)[
+                'name' => $subtitle,
+                'url' => route('award-list', $company),
+                'active' => true,
+            ],
+        ];
+
+        return view('website.pages.about.award.awards', compact('awards', 'banner', 'subtitle', 'breadcrumbs'));
     }
 
     public function productIndex()

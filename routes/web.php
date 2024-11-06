@@ -32,8 +32,8 @@ Route::prefix('about')->group(function () {
     });
 
     Route::prefix('awards')->group(function () {
-        Route::get('/', [HomeController::class, 'awards'])->name('awards');
-        Route::get('/{company}', [HomeController::class, 'award'])->name('award-list');
+        Route::get('/', [HomeController::class, 'awardIndex'])->name('awards');
+        Route::get('/{company}', [HomeController::class, 'awards'])->name('award-list');
     });
 });
 
