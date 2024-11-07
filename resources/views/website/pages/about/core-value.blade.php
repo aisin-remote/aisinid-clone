@@ -6,7 +6,7 @@
     <div class="main-container">
       <div class="row justify-content-center mb-5">
         <img src="{{ asset('website\img\logo\satu-aisin-final.png') }}" alt="Satu Aisin" class="img-fluid"
-          style="width: 300px">
+          style="width: 500px">
       </div>
       <div class="row p-3">
         <p>

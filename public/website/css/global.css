@@ -286,7 +286,7 @@ td {
 }
 /* wrapper */
 .wrapper {
-    padding-top: 110px;
+    padding-top: 140px;
     position: relative;
 }
 .mainContents {
@@ -559,7 +559,7 @@ td {
 /* globalHeader */
 .globalHeader {
     width: 100%;
-    height: 110px;
+    /* height: 110px; */
     background: #fff;
     position: fixed;
     z-index: 100;
@@ -2577,7 +2577,7 @@ a.icoNW {
 
     .wrapper {
         width: 100%;
-        padding-top: 55px;
+        padding-top: 104px;
         padding-left: 0;
     }
 
@@ -2624,7 +2624,7 @@ a.icoNW {
     }
 
     .globalHeader {
-        height: 55px;
+        /* height: 55px; */
     }
     .globalHeader .globalHeaderInner {
         display: block;
