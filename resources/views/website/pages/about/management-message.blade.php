@@ -2,7 +2,7 @@
 @section('title', 'Top Management Message')
 @section('pages')
   <div class="mainContents">
-    <x-banner image="{{ asset('website/img/about/banner-about.png') }}" title="About"
+    <x-banner image="{{ asset('website/img/about/banner-message-from-top.jpg') }}" title="About"
       subtitle="Message from Top Management" />
     <div class="main-container">
       <div class="row mb-5">

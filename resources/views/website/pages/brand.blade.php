@@ -10,8 +10,8 @@
 
 
           <div class="noticeHeader">
-            <p2 style="font-size: 15px; display: block; text-align: justify;">Aisin Seiki Co., Ltd. and its subsidiary,
-              Aisin AW Co., Ltd., merged business operations on April 1, 2021, making a new start as AISIN CORPORATION.
+            <p2 style="font-size: 15px; display: block; text-align: justify;">AISIN Seiki Co., Ltd. and its subsidiary,
+              AISIN AW Co., Ltd., merged business operations on April 1, 2021, making a new start as AISIN CORPORATION.
               Our logo and brand slogan represent our hopes and ideas, as well as our determination to realize the brand
               we are aiming for.
             </p2>

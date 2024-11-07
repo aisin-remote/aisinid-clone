@@ -1,5 +1,5 @@
 @extends('website.layouts.master')
-@section('title', 'PT Aisin Indonesia - Company Summary')
+@section('title', 'PT AISIN Indonesia - Company Summary')
 @section('pages')
   <div class="mainContents">
     <div class="mainContents">

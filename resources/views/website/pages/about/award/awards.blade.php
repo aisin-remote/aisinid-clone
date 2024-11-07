@@ -21,8 +21,7 @@
             <section class="company-summary" style="padding: 3rem 1rem 5rem;">
               <div class="row d-flex flex-wrap justify-content-center">
                 @foreach ($awards as $award)
-                  <div class="product-item col-sm-6 col-md-6 col-lg-4 mb-5 d-flex justify-content-center"
-                    style="cursor: pointer">
+                  <div class="product-item col-sm-6 col-md-6 col-lg-4 mb-5 d-flex justify-content-center">
                     <x-misc-item :picture="$award->picture" :title="$award->name" :border="true" />
                   </div>
                 @endforeach

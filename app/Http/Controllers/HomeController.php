@@ -59,10 +59,10 @@ class HomeController extends Controller
     public function companySummary(?string $company = null)
     {
         if ($company == 'aii') {
-            $pageTitle = 'PT Aisin Indonesia';
+            $pageTitle = 'PT AISIN Indonesia';
             $title = 'PT AISIN INDONESIA (AII)';
             $subtitle = 'Company Summary AII';
-            $banner = asset('website/img/about/banner-about.png');
+            $banner = asset('website/img/about/summary-aii.jpg');
             $description = 'PT AISIN Indonesia is a renowned automotive manufacturer that 
                 specializes in producing various essential components such as Clutch Cover, 
                 Clutch Disc, Door Lock, Door Frame, Door Hinge, Door Handle, Hood Lock, 
@@ -74,7 +74,7 @@ class HomeController extends Controller
             $profile = [
                 (object)[
                     'title' => 'Company Name',
-                    'content' => 'PT Aisin Indonesia',
+                    'content' => 'PT AISIN Indonesia',
                 ],
                 (object)[
                     'title' => 'Capital',
@@ -104,14 +104,14 @@ class HomeController extends Controller
                     'active' => false,
                 ],
                 (object)[
-                    'name' => 'PT Aisin Indonesia',
+                    'name' => 'PT AISIN Indonesia',
                     'url' => route('company-summary', 'aii'),
                     'active' => true,
                 ],
             ];
         } else if ($company == 'aiia') {
-            $pageTitle = 'PT Aisin Indonesia Automotive';
-            $banner = asset('website/img/about/banner-about.png');
+            $pageTitle = 'PT AISIN Indonesia Automotive';
+            $banner = asset('website/img/about/summary-aiia.jpg');
             $title = 'PT AISIN INDONESIA AUTOMOTIVE (AIIA)';
             $subtitle = 'Company Summary AIIA';
             $description = 'PT AISIN Indonesia Automotive is a joint venture between PT AISIN 
@@ -122,7 +122,7 @@ class HomeController extends Controller
             $profile = [
                 (object)[
                     'title' => 'Company Name',
-                    'content' => 'PT Aisin Indonesia Automotive',
+                    'content' => 'PT AISIN Indonesia Automotive',
                 ],
                 (object)[
                     'title' => 'Capital',
@@ -152,7 +152,7 @@ class HomeController extends Controller
                     'active' => false,
                 ],
                 (object)[
-                    'name' => 'PT Aisin Indonesia Automotive',
+                    'name' => 'PT AISIN Indonesia Automotive',
                     'url' => route('company-summary', 'aiia'),
                     'active' => true,
                 ],
@@ -188,7 +188,8 @@ class HomeController extends Controller
         $executives = [];
 
         if ($company == 'aii') {
-            $subtitle = 'PT Aisin Indonesia';
+            $subtitle = 'PT AISIN Indonesia';
+            $banner = asset('website/img/about/bod-aii.jpg');
             $executives = [
                 (object) [
                     'members' => [
@@ -229,7 +230,8 @@ class HomeController extends Controller
                 ],
             ];
         } else {
-            $subtitle = 'PT Aisin Indonesia Automotive';
+            $subtitle = 'PT AISIN Indonesia Automotive';
+            $banner = asset('website/img/about/bod-aiia.jpg');
             $executives = [
                 (object) [
                     'members' => [
@@ -271,7 +273,6 @@ class HomeController extends Controller
             ];
         }
 
-        $banner = asset('website/img/about/banner-about.png');
         $breadcrumbs = [
             (object)[
                 'name' => 'Executives Management',
@@ -305,64 +306,63 @@ class HomeController extends Controller
         $history = [
             (object) [
                 'year' => '1996',
-                'title' => 'Birth of PT Aisin Indonesia',
-                'description' => 'After ten years of cooperation between PT Dharma Sarana 
-                    Perdana and Aisin Seiki Co., Ltd. – in the form of technical assistance. 
-                    They formed a joint venture that became PT Aisin Indonesia in 1996. 
-                    The Company had definitely set a solid foundation and foothold in 
-                    the automotive component manufacturing industry in Indonesia.',
+                'title' => 'Birth of PT AISIN Indonesia',
+                'description' => 'After ten years of collaboration between PT Dharma Sarana Perdana and Aisin Seiki Co., Ltd., in the 
+                    form of technical assistance, a joint venture was established, which became PT AISIN Indonesia in 19
+                    96. This marked a solid foundation and strong foothold for the company in the automotive component m
+                    anufacturing industry in Indonesia.',
                 'picture' => asset('website/img/home/history/1996.jpg'),
             ],
             (object) [
                 'year' => '1998',
                 'title' => "New Culture and Economic Crisis",
-                'description' => 'Beyond the business attitude and technical & economic aspects, 
-                    the corporate cultures of both companies must merge and adapted into a new, distinct, 
-                    and specific one. This merging led to new practices adapted with local culture, 
-                    which are the Kaizen, Aisatsu (Greeting), 3S, Anzen & San Gen Shugi.',
-                'picture' => asset('website/img/home/history/2013.jpg'),
+                'description' => 'Beyond the business attitude and technical and economic aspects, 
+                    the corporate cultures of both companies had to merge and adapt into a new, 
+                    distinct, and specific one. This merger led to the adoption of new practices 
+                    aligned with the local culture, including Kaizen, Aisatsu (Greeting), 3S, Anzen, 
+                    and San Gen Shugi.',
+                'picture' => asset('website/img/home/history/1998.jpg'),
             ],
             (object) [
                 'year' => '2006',
                 'title' => 'From Local to Global',
-                'description' => 'PT Aisin Indonesia weathered the economic crisis of ’98 
-                    and even became more resilient. The company achieved many certifications, 
-                    expanded its Cikarang Plant, improved internally, and reached its 
-                    10th Anniversary. In February 2006, the shareholder structure of 
-                    the company went through some changes. Aisin Seiki Co., Ltd. & 
-                    PT. Senantiasa Makmur dominated shareholder structure.',
+                'description' => "PT AISIN Indonesia weathered the economic crisis of '98 and became 
+                    even more resilient. The company achieved numerous certifications, expanded its 
+                    Cikarang plant, improved internally, and celebrated its 10th anniversary. 
+                    In February 2006, the company’s shareholder structure underwent some changes, 
+                    with Aisin Seiki Co., Ltd. & PT. Senantiasa Makmur becoming the dominant 
+                    shareholders.",
                 'picture' => asset('website/img/home/history/2006.jpg'),
             ],
             (object) [
                 'year' => '2013',
-                'title' => "PT Aisin Indonesia's Subsidiaries",
-                'description' => 'As PT Aisin Indonesia grows, competition and demand 
-                    also intensify, thus the Company must expand in terms of organization and 
-                    actual space. Therefore in 2013, PT Aisin Indonesia founded its 
-                    subsidiaries: PT Aisin Indonesia Automotive & PT Advics Manufacturing 
-                    Indonesia.',
+                'title' => "PT AISIN Indonesia's Subsidiaries",
+                'description' => "As PT Aisin Indonesia grows, competition and demand also intensify, 
+                    and thus the company must expand both in terms of organization and physical space. 
+                    Therefore, in 2013, PT Aisin Indonesia established its subsidiaries: PT Aisin 
+                    Indonesia Automotive & PT Advics Manufacturing Indonesia.",
                 'picture' => asset('website/img/home/history/2013.jpg'),
             ],
             (object) [
                 'year' => '2016',
                 'title' => "Growing Up Together for The Best Future",
-                'description' => 'PT Aisin Indonesia then aims to go “From Local to Global” by applying 
-                    good production system that allows for the development of new technologies and products, 
-                    which are: Door Lock, Intake Manifold, Cover Head Cylinder, Door Frame, 
-                    Clutch Cover & Clutch Disc.',
-                'picture' => asset('website/img/home/history/2013.jpg'),
+                'description' => 'PT Aisin Indonesia aims to go "From Local to Global" by implementing a strong 
+                    production system that enables the development of new technologies and products, 
+                    including: Door Lock, Intake Manifold, Cylinder Head Cover, Door Frame, Clutch Cover, 
+                    and Clutch Disc.',
+                'picture' => asset('website/img/home/history/2016.jpg'),
             ],
             (object) [
                 'year' => '2024',
-                'title' => "Aisin Collaboration (Satu Aisin)",
-                'description' => 'To strengthen and build harmonization of mindsets, participation of all members, 
-                    synergy and collaboration between functions from PT Aisin Indonesia and PT Aisin Indonesia Automotive 
-                    in the form of “Satu Aisin”.',
-                'picture' => asset('website/img/home/history/2013.jpg'),
+                'title' => "AISIN Collaboration (Satu AISIN)",
+                'description' => 'To strengthen and build the harmonization of mindsets, the participation of 
+                    all members, and the synergy and collaboration between functions from PT AISIN Indonesia 
+                    and PT AISIN Indonesia Automotive in the form of “Satu Aisin”.',
+                'picture' => asset('website/img/home/history/2024.jpg'),
             ],
         ];
 
-        $banner = asset('website/img/about/banner-about.png');
+        $banner = asset('website/img/home/history/1996.jpg');
         $subtitle  = 'Company History';
 
         return view('website.pages.about.company-history', compact('banner', 'subtitle', 'profile', 'history'));
@@ -386,7 +386,7 @@ class HomeController extends Controller
         $awards = [];
 
         if ($company == 'aii') {
-            $subtitle = 'PT Aisin Indonesia';
+            $subtitle = 'PT AISIN Indonesia';
             $awards = [
                 'Environment Awards' => [
                     (object)[
@@ -454,7 +454,7 @@ class HomeController extends Controller
                 ],
             ];
         } else {
-            $subtitle = 'PT Aisin Indonesia Automotive';
+            $subtitle = 'PT AISIN Indonesia Automotive';
             $awards = [
                 'Environment Awards' => [
                     (object)[
@@ -544,55 +544,55 @@ class HomeController extends Controller
                         'name' => 'Door Lock',
                         'picture' => asset('website/img/home/products/bodypart-doorlock.jpg'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Striker',
                         'picture' => asset('website/img/home/products/bodypart-striker.jpg'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Door Hinge',
                         'picture' => asset('website/img/home/products/bodypart-doorhinge.jpg'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Door Check',
                         'picture' => asset('website/img/home/products/bodypart-doorcheck.jpg'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Door Frame',
                         'picture' => asset('website/img/home/products/bodypart-doorframe.jpg'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Outside Handle',
                         'picture' => asset('website/img/home/products/bodypart-outsidehandle.png'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia Automotive',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Power Sliding Door (PSD) System',
                         'picture' => asset('website/img/home/products/bodypart-psd.png'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia Automotive',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Center Pillar Garnish',
                         'picture' => asset('website/img/home/products/bodypart-centerpillar.png'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia Automotive',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Power Seat Motor Assembly',
                         'picture' => asset('website/img/home/products/bodypart-powerseatmotor.png'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia Automotive',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                 ];
                 break;
@@ -603,19 +603,19 @@ class HomeController extends Controller
                         'name' => 'HV Dumper',
                         'picture' => asset('website/img/home/products/drivetrain-hvdumper.png'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia Autoomotive',
+                        'manufacturer' => 'PT AISIN Indonesia Autoomotive',
                     ],
                     (object) [
                         'name' => 'Clutch Disc',
                         'picture' => asset('website/img/home/products/drivetrain-clutchdisc.jpg'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Clutch Cover',
                         'picture' => asset('website/img/home/products/drivetrain-clutchcover.jpg'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                 ];
 
@@ -627,43 +627,43 @@ class HomeController extends Controller
                         'name' => 'Intake Manifold',
                         'picture' => asset('website/img/home/products/enginepart-intakemanifold.jpg'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Cylinder Head Cover',
                         'picture' => asset('website/img/home/products/engineparts-cylinderheadcover.jpg'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Engine Front Module',
                         'picture' => asset('website/img/home/products/enginepart-enginefrontmodule.jpg'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia Automotive',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Camshaft Housing',
                         'picture' => asset('website/img/home/products/enginepart-camshafthousing.jpg'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia Automotive',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Water Pump',
                         'picture' => asset('website/img/home/products/enginepart-waterpump.png'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia Automotive',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Oil Pump',
                         'picture' => asset('website/img/home/products/enginepart-oilpump.png'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia Automotive',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Oil Pan',
                         'picture' => asset('website/img/home/products/enginepart-oilpan.png'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia Automotive',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                 ];
 
@@ -675,13 +675,13 @@ class HomeController extends Controller
                         'name' => 'Electronic Control Unit (ECU) W/P',
                         'picture' => asset('website/img/home/products/electricalpart-ecu.jpg'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia Automotive',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => '4WD Electronic Control Unit (ECU) CASE ASSEMBLY ',
                         'picture' => asset('website/img/home/products/electricalpart-ecu.jpg'),
                         'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT Aisin Indonesia Automotive',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                 ];
                 break;
@@ -757,17 +757,17 @@ class HomeController extends Controller
         $subtitle =  'Contact Us';
         $contacts = [
             (object) [
-                'title' => 'Aisin Indonesia',
+                'title' => 'AISIN Indonesia',
                 'address' => 'East Jakarta Industrial Park (EJIP) Plot 5J South Cikarang, Indonesia 17550',
                 'phone' => '(021) 8970909',
                 'map' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5115919900622!2d107
                     .10894440093854!3d-6.327687956420059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
-                    .1!3m3!1m2!1s0x2e699a8658dfc3b3%3A0xb2c5ecd250972b22!2sAisin%20Indonesia%20
+                    .1!3m3!1m2!1s0x2e699a8658dfc3b3%3A0xb2c5ecd250972b22!2sAISIN%20Indonesia%20
                     Pt.%2C%20Sukaresmi%2C%20Cikarang%20Sel.%2C%20Kabupaten%20Bekasi%2C%20Jawa%2
                     0Barat!5e0!3m2!1sen!2sid!4v1730442972059!5m2!1sen!2sid',
             ],
             (object) [
-                'title' => 'Aisin Indonesia Automotive',
+                'title' => 'AISIN Indonesia Automotive',
                 'address' => 'Kawasan Industri KIIC Lot LL No. 9 - 10, Jl. Harapan 8, 
                     Kel. Parung Mulia, Kec. Ciampel, 
                     Parungmulya, Kec. Ciampel, Karawang, Jawa Barat 41361',
@@ -775,7 +775,7 @@ class HomeController extends Controller
                 'map' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965
                     .0397103475207!2d107.29623911177569!3d-6.388877493574868!2m3!1f0!2f0!3f0!3m2!
                     1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69758dcd24635b%3A0x595bd54f4c69da48!2sPT%20
-                    Aisin%20Indonesia%20Automotive!5e0!3m2!1sen!2sid!4v1730444199231!5m2!1sen!2sid',
+                    AISIN%20Indonesia%20Automotive!5e0!3m2!1sen!2sid!4v1730444199231!5m2!1sen!2sid',
             ],
         ];
 

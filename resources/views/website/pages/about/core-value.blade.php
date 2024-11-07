@@ -5,12 +5,12 @@
     <x-banner image="{{ asset('website/img/about/banner-about.png') }}" title="About" subtitle="Company Core Value" />
     <div class="main-container">
       <div class="row justify-content-center mb-5">
-        <img src="{{ asset('website\img\logo\satu-aisin-final.png') }}" alt="Satu Aisin" class="img-fluid"
+        <img src="{{ asset('website\img\logo\satu-aisin-final.png') }}" alt="Satu AISIN" class="img-fluid"
           style="width: 500px">
       </div>
       <div class="row p-3">
         <p>
-          Our mission at Aisin is to drive economic growth, create meaningful employment opportunities, and cultivate top
+          Our mission at AISIN is to drive economic growth, create meaningful employment opportunities, and cultivate top
           talent. At the heart of this mission are our Core Values, which serve as the foundation and unifying force of
           our company culture, enabling sustainable performance improvement. Every member of our organization—from the
           Board of Directors to our dedicated employees—is encouraged to embrace and embody these values sincerely and
@@ -20,7 +20,7 @@
         <h2 class="p-3">Core Value</h2>
         <h3 class="primary-title">1. Trusworthy and Reliable</h3>
         <p>
-          "Building trust through reliability is fundamental to our mission. At Aisin, we take pride in being a dependable
+          "Building trust through reliability is fundamental to our mission. At AISIN, we take pride in being a dependable
           partner, ensuring that our commitments are met with integrity and consistency. By prioritizing transparency and
           accountability, we create relationships rooted in trust, where our customers and partners can rely on us to
           deliver quality and support. This unwavering commitment to trustworthiness and reliability not only defines our
@@ -28,7 +28,7 @@
         </p>
         <h3 class="primary-title">2. Customer Focus</h3>
         <p>
-          "Building trust through reliability is fundamental to our mission. At Aisin, we take pride in being a dependable
+          "Building trust through reliability is fundamental to our mission. At AISIN, we take pride in being a dependable
           partner, ensuring that our commitments are met with integrity and consistency. By prioritizing transparency and
           accountability, we create relationships rooted in trust, where our customers and partners can rely on us to
           deliver quality and support. This unwavering commitment to trustworthiness and reliability not only defines our

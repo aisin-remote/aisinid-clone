@@ -707,6 +707,7 @@ body#home .noticeSection .bnrArea .bnr a .icoCaution {
     align-items: center;
     background-image: var(--banner-bg-image);
     background-position: center;
+    background-size: cover;
     transition: ease-in-out 0.5s;
     padding: 8rem 25rem;
 }
@@ -752,6 +753,7 @@ body#home .noticeSection .bnrArea .bnr a .icoCaution {
     justify-content: end;
     background-image: var(--bg-img);
     background-position: center;
+    background-size: cover;
     height: 250px;
     margin-bottom: 2rem;
 }

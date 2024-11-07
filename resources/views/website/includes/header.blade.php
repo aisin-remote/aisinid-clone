@@ -27,7 +27,7 @@
                 <div class="megaNavSlideInner">
                   <div class="megaNavHeader view-pc">
                     <div class="navTtl">
-                      <span class="jp">About Aisin</span>
+                      <span class="jp">About AISIN</span>
                     </div>
                     <div class="more">
                       <a href="{{ route('about') }}">Read more</a>
@@ -64,7 +64,7 @@
                 <div class="megaNavSlideInner">
                   <div class="megaNavHeader view-pc">
                     <div class="navTtl">
-                      <span class="jp">Aisin Product</span>
+                      <span class="jp">AISIN Product</span>
                     </div>
                     <div class="more">
                       <a href="{{ route('products') }}">Read more</a>
