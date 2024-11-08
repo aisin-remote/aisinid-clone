@@ -531,7 +531,6 @@ class HomeController extends Controller
 
     public function products($product)
     {
-        $banner = asset('website/img/about/banner-about.png');
         $title  = 'Products';
         $subtitle = '';
         $products = [];
@@ -539,6 +538,7 @@ class HomeController extends Controller
         switch ($product) {
             case 'body-part':
                 $subtitle = 'Body Part';
+                $banner = asset('website/img/home/products/bodypart-doorlock.jpg');
                 $products = [
                     (object) [
                         'name' => 'Door Lock',
@@ -598,6 +598,7 @@ class HomeController extends Controller
                 break;
             case 'drive-train':
                 $subtitle = 'Drive Train';
+                $banner = asset('website/img/home/products/drivetrain-clutchcover.jpg');
                 $products = [
                     (object) [
                         'name' => 'HV Dumper',
@@ -622,6 +623,7 @@ class HomeController extends Controller
                 break;
             case 'engine-part':
                 $subtitle = 'Engine Part';
+                $banner = asset('website/img/home/products/engineparts-cylinderheadcover.jpg');
                 $products = [
                     (object) [
                         'name' => 'Intake Manifold',
@@ -670,6 +672,7 @@ class HomeController extends Controller
                 break;
             case 'electrical-part':
                 $subtitle = 'Electrical Part';
+                $banner = asset('website/img/home/products/electricalpart-ecu.jpg');
                 $products = [
                     (object) [
                         'name' => 'Electronic Control Unit (ECU) W/P',

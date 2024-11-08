@@ -2,7 +2,7 @@
 @section('title', 'Top Management Message')
 @section('pages')
   <div class="mainContents">
-    <x-banner image="{{ asset('website/img/about/banner-about.png') }}" title="About" subtitle="Company Core Value" />
+    <x-banner image="{{ asset('website/img/about/banner-executive-management.jpg') }}" title="About" subtitle="Company Core Value" />
     <div class="main-container">
       <div class="row justify-content-center mb-5">
         <img src="{{ asset('website\img\logo\satu-aisin-final.png') }}" alt="Satu AISIN" class="img-fluid"
