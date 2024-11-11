@@ -196,7 +196,7 @@ class HomeController extends Controller
                         (object) [
                             'name' => 'Mr. PB Ariawan Purwonugroho',
                             'position' => 'President Director',
-                            'picture' => asset('website/img/home/executives/presdir.png')
+                            'picture' => asset('website/img/home/executives/Mr_Ariawan_2.png')
                         ],
                     ]
                 ],
@@ -205,7 +205,7 @@ class HomeController extends Controller
                         (object) [
                             'name' => 'Mr. Aristoni Ardhi',
                             'position' => 'Vice President Director',
-                            'picture' => asset('website/img/home/executives/presdir.png')
+                            'picture' => asset('website/img/home/executives/Mr_Aristoni.png')
                         ],
                     ]
                 ],
@@ -214,17 +214,17 @@ class HomeController extends Controller
                         (object) [
                             'name' => 'Mr. Hisatomo Kato',
                             'position' => 'Plant Director',
-                            'picture' => asset('website/img/home/executives/presdir.png')
+                            'picture' => asset('website/img/home/executives/Mr_Kato_2.png')
                         ],
                         (object) [
                             'name' => 'Mr. Michael Loandouw',
                             'position' => 'MKT & HC Director',
-                            'picture' => asset('website/img/home/executives/presdir.png'),
+                            'picture' => asset('website/img/home/executives/Mr_Michael.png'),
                         ],
                         (object) [
                             'name' => 'Mrs. Herlina',
                             'position' => 'FACC & Purc. Director',
-                            'picture' => asset('website/img/home/executives/presdir.png'),
+                            'picture' => asset('website/img/home/executives/Mrs_Herlina_2.png'),
                         ],
                     ]
                 ],
@@ -238,7 +238,7 @@ class HomeController extends Controller
                         (object) [
                             'name' => 'Mr. PB Ariawan Purwonugroho',
                             'position' => 'President Director',
-                            'picture' => asset('website/img/home/executives/presdir.png')
+                            'picture' => asset('website/img/home/executives/Mr_Ariawan_2.png')
                         ],
                     ]
                 ],
@@ -247,7 +247,7 @@ class HomeController extends Controller
                         (object) [
                             'name' => 'Mr. Aristoni Ardhi',
                             'position' => 'Vice President Director',
-                            'picture' => asset('website/img/home/executives/presdir.png')
+                            'picture' => asset('website/img/home/executives/Mr_Aristoni.png')
                         ],
                     ]
                 ],
@@ -256,17 +256,17 @@ class HomeController extends Controller
                         (object) [
                             'name' => 'Mr. Dedi Irwanto',
                             'position' => 'Plant Director',
-                            'picture' => asset('website/img/home/executives/presdir.png')
+                            'picture' => asset('website/img/home/executives/Mr_Dedi_2.png')
                         ],
                         (object) [
                             'name' => 'Mr. Michael Loandouw',
                             'position' => 'MKT & HC Director',
-                            'picture' => asset('website/img/home/executives/presdir.png'),
+                            'picture' => asset('website/img/home/executives/Mr_Michael.png'),
                         ],
                         (object) [
                             'name' => 'Mr. Hisatomo Kato',
                             'position' => 'FACC & Purc. Director',
-                            'picture' => asset('website/img/home/executives/presdir.png'),
+                            'picture' => asset('website/img/home/executives/Mr_Kato_2.png'),
                         ],
                     ]
                 ],

@@ -15,6 +15,8 @@ class MiscItem extends Component
         public string $picture,
         public string $title,
         public bool $border = false,
+        public bool $rounded = false,
+        public string $color = '',
     ) {}
 
     /**

@@ -974,3 +974,17 @@ a:link.menu-banner-container {
 .primary-title {
     color: #001a72;
 }
+
+.misc-item-container img {
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+}
+
+.misc-item-container img.rounded-circle {
+    border-radius: 50%;
+}
+
+.misc-item-container img.with-background {
+    background-color: var(--bg-color);
+}

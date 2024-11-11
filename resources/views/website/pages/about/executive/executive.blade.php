@@ -19,7 +19,8 @@
                   <div
                     class="product-item col-sm-6 col-md-6 col-lg-4 mb-5 d-flex justify-content-center align-items-center flex-column">
                     <h3 style="color: #001A72" class="mb-4">{{ $member->position }}</h3>
-                    <x-misc-item :picture="$member->picture" :title="$member->name" />
+                    <x-misc-item :picture="$member->picture" :title="$member->name" :rounded="true" :color="'#E6E6E6'"
+                      style="--bg-color: #E6E6E6" />
                   </div>
                 @endforeach
               </div>
