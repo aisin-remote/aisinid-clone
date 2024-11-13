@@ -5,11 +5,12 @@
   {{-- <section id="whatsnew" class="newsSection"> --}}
   <div id="mainCarousel" class="carousel slide" style="margin-bottom: 5rem">
     <div class="carousel-inner">
-      <x-carousel-item image="{{ asset('website/img/aiia.png') }}" text="Inspiring “movement”, creating tomorrow." />
-      <x-carousel-item image="{{ asset('website/img/aii.png') }}" text="Excellence operation, world class result" />
-      <x-carousel-item image="{{ asset('website/img/aii.png') }}"
+      <x-carousel-item image="{{ asset('website/img/about/car2.png') }}" text="Inspiring “movement”, creating tomorrow." />
+      <x-carousel-item image="{{ asset('website/img/home/history/2024.jpg') }}"
+        text="Excellence operation, world class result" />
+      <x-carousel-item image="{{ asset('website/img/about/car2.png') }}"
         text="Consistent and keep continuing improvement and innovation" />
-      <x-carousel-item image="{{ asset('website/img/aii.png') }}" text="Innovation, Collaboration" />
+      <x-carousel-item image="{{ asset('website/img/home/history/2024.jpg') }}" text="Innovation, Collaboration" />
     </div>
     <!-- Controls -->
     <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
@@ -25,17 +26,17 @@
   <!-- /News Section -->
 
   <!-- Main Page Section -->
-  <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_technology_bg.jpg" big-title="About"
+  <x-big-menu image="{{ asset('website/img/about/main-about.jpg') }}" big-title="About"
     text="Becoming a global supplier of automotive component." link="{{ route('about') }}" />
-  <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_products_bg.jpg" big-title="Product"
+  <x-big-menu image="{{ asset('website/img/about/main-product.jpg') }}" big-title="Product"
     text="With a focus on excellence and detail, we create the best products." link="{{ route('products') }}" />
-  <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_products_bg.jpg" big-title="Sustainability"
+  <x-big-menu image="{{ asset('website/img/about/main-sustainability.jpg') }}" big-title="Sustainability"
     text="Think and act autonomously in our efforts to build a sustainable society."
     link="https://www.aisin.com/en/sustainability/" />
-  <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_products_bg.jpg" big-title="Career"
-    text="With a focus on excellence and detail, we create the best products." link="#" />
-  <x-big-menu image="https://www.aisin.com/jp/assets/img/home/PC_products_bg.jpg" big-title="Contact"
-    text="With a focus on excellence and detail, we create the best products." link="{{ route('contact') }}" />
+  <x-big-menu image="{{ asset('website/img/about/main-career.jpg') }}" big-title="Career"
+    text="Your Talent, Our Vision: Building the Future." link="#" />
+  <x-big-menu image="{{ asset('website/img/home/contact--.png') }}" big-title="Contact"
+    text="We can help. Our team of experts is on hand to answer your questions." link="{{ route('contact') }}" />
   <!-- /Main Page Section -->
 
 

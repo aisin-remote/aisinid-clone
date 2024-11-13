@@ -49,6 +49,10 @@ Route::get('/job-opportunities', [HomeController::class, 'jobOpportunities'])->n
 
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 
+Route::get('/search', function () {
+    return view('website.pages.search');
+});
+
 Route::get('/test', function () {
     return view('website.pages.test');
 });

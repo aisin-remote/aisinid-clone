@@ -2,7 +2,7 @@
 @section('title', 'Product - Main Menu')
 @section('pages')
   <div class="mainContents">
-    <x-banner image="{{ asset('website/img/about/banner-product.png') }}" title="Product" subtitle="Main Menu" />
+    <x-banner image="{{ asset('website/img/about/main-product.jpg') }}" title="Product" subtitle="Main Menu" />
     <div class="main-container">
       <div class="row">
         <x-menu-banner image="{{ asset('website/img/home/products/bodypart-doorlock.jpg') }}" title="Body Part"

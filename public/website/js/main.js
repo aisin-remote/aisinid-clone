@@ -169,7 +169,7 @@ $.common = {
     };
 
     (function() {
-      var cx = '002976147444611154820:cg7xj6ejg70';
+      var cx = '96b21d61496e6423c';
       var gcse = document.createElement('script');
       gcse.type = 'text/javascript';
       gcse.async = true;

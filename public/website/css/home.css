@@ -245,6 +245,17 @@ body#home .mainpageSection .inner::before {
     background-image: var(--banner-bg-image);
 }
 
+body#home .mainpageSection .inner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+}
+
 body#home .mainpageSection h2 {
     color: #fff;
     font-weight: normal;
@@ -252,7 +263,7 @@ body#home .mainpageSection h2 {
     width: 80%;
     margin: 0 auto 35px auto;
     position: relative;
-    z-index: 2;
+    z-index: 10;
 }
 body#home .mainpageSection h2 span {
     display: block;
@@ -269,7 +280,7 @@ body#home .mainpageSection .pageContent {
     position: absolute;
     right: 0;
     bottom: -40px;
-    z-index: 2;
+    z-index: 10;
 }
 body#home .mainpageSection .pageContent .copy {
     font-size: 2.6rem;
@@ -535,13 +546,29 @@ body#home .noticeSection .bnrArea .bnr a .icoCaution {
     body#home .mainpageSection .inner::before {
         display: none;
     }
+    body#home .mainpageSection .inner::after {
+        display: none;
+    }
+
+    body#home .mainpageSection .inner h2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
     body#home .mainpageSection h2 {
+        position: relative;
         max-width: inherit;
         width: auto;
         height: 250px;
         padding: 0 40px;
         margin: 0 auto;
         background: no-repeat center center / cover;
+        z-index: 6;
     }
     body#home .mainpageSection h2 {
         background-image: var(--banner-bg-image);
