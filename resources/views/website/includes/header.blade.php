@@ -4,7 +4,7 @@
     <div class="globalHeaderInner">
       <div class="logo" style="display: flex; align-items: center; gap: 1rem;">
         <a href= "{{ route('home') }}" tess="over">
-          <img src="{{ asset('logo.svg') }}" alt="サイト名" style="width: 100%; max-width: 135px; height: auto;">
+          <img src="{{ asset('logo.svg') }}" alt="サイト名">
         </a>
         <span>| Indonesia </span>
       </div>

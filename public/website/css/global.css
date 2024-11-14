@@ -581,6 +581,7 @@ td {
 .globalHeader .logo img {
     width: 100%;
     height: 100%;
+    max-width: 135px;
 }
 .globalHeader .logo span {
   user-select: none; /* Standard syntax */
@@ -2640,6 +2641,7 @@ a.icoNW {
     }
     .globalHeader .logo img {
         width: 100%;
+        max-width: 100px;
     }
     .globalHeader #acdBtn {
         cursor: pointer;

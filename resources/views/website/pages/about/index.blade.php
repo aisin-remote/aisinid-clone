@@ -7,7 +7,7 @@
       <div class="row">
         <x-menu-banner image="{{ asset('website/img/about/banner-policy.jpg') }}" title="Company Principle"
           link="https://www.aisin.com/en/profile/policy/" column="col-lg-12" />
-        <x-menu-banner image="{{ asset('website/img/about/banner-core.png') }}" title="Company Core Value"
+        <x-menu-banner image="{{ asset('website/img/about/banner-core-value.jpg') }}" title="Company Core Value"
           link="{{ route('core') }}" column="col-lg-12" />
         <x-menu-banner image="{{ asset('website/img/about/banner-message-from-top.jpg') }}"
           title="Message from Top Management" link="{{ route('management-message') }}" column="col-lg-12" />

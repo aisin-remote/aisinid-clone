@@ -2,9 +2,9 @@
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-body">
-        <button style="right:0" type="button" class="position-absolute me-2 pull-right btn-close" data-bs-dismiss="modal"
+        <button style="right:0" type="button" class="position-absolute me-4 mt-2 pull-right btn-close" data-bs-dismiss="modal"
           aria-label="Close"></button>
-        <div class="row p-5 p-lg-3">
+        <div class="d-lg-flex flex-lg-row flex-sm-column p-5 p-lg-3 border border-dark-subtle">
           <div class="col-lg-5 mb-5 mb-lg-0 d-flex justify-content-center align-items-center">
             <div class="row">
               <img id="productPicture" alt="" style="width: 280px; height: 280px; object-fit: contain;">

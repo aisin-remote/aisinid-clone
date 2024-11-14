@@ -2,7 +2,7 @@
 @section('title', 'Top Management Message')
 @section('pages')
   <div class="mainContents">
-    <x-banner image="{{ asset('website/img/about/banner-executive-management.jpg') }}" title="About" subtitle="Company Core Value" />
+    <x-banner image="{{ asset('website/img/about/banner-core-value.jpg') }}" title="About" subtitle="Company Core Value" />
     <div class="main-container">
       <div class="row justify-content-center mb-5">
         <img src="{{ asset('website\img\logo\satu-aisin-final.png') }}" alt="Satu AISIN" class="img-fluid"
@@ -17,7 +17,7 @@
           consistently. By embedding these Core Values into daily actions, we shape a work culture that thrives on
           integrity, accountability, and continuous growth, as outlined in our Core Values guidelines. <br><br>
         </p>
-        <h2 class="p-3">Core Value</h2>
+        <h1 class="p-3">Core Value</h1>
         <h3 class="primary-title">1. Trusworthy and Reliable</h3>
         <p>
           "Building trust through reliability is fundamental to our mission. At AISIN, we take pride in being a dependable

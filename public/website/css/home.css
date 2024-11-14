@@ -881,6 +881,13 @@ a:link.menu-banner-container {
     width: 50%;
     position: relative;
 }
+.history-card-container:not(:first-child):nth-child(odd) {
+    margin-top: -200px
+}
+
+.history-card-container:not(:first-child):nth-child(even) {
+    margin-top: -350px;
+}
 
 .history-card-container::before {
     content: "";
@@ -910,9 +917,6 @@ a:link.menu-banner-container {
 
 .history-card-container:nth-child(even) {
     align-self: flex-end;
-}
-
-.history-card-container:nth-child(even) {
 }
 
 #history {

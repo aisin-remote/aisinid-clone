@@ -1,5 +1,5 @@
 @extends('website.layouts.master')
-@section('title',  $pageTitle . ' - Company Summary')
+@section('title', $pageTitle . ' - Company Summary')
 @section('pages')
   <div class="mainContents">
     <div class="mainContents">
@@ -19,11 +19,12 @@
         <div class="row">
           <section class="company-summary" style="padding: 3rem 1rem 5rem;">
             <div class="row">
-              <div class="col-md-6 mt-4 mt-md-0 order-2 order-md-1">
+              <div class="d-flex align-items-center col-md-6 mt-4 mt-md-0 order-2 order-md-1">
                 <p>{{ $description }}</p>
               </div>
               <div class="col-md-6 d-flex align-items-center mb-4 mb-md-0 order-1 order-md-2">
-                <img src="{{ $image }}" alt="" class="img-fluid w-100 h-100">
+                <img src="{{ $image }}" alt="" class="img-fluid w-100 h-100 object-fit-cover"
+                  style="min-height: 300px">
               </div>
           </section>
         </div>

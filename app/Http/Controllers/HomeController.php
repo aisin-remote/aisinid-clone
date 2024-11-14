@@ -101,7 +101,7 @@ class HomeController extends Controller
                 (object)[
                     'name' => 'Company Summary',
                     'url' => route('company-summary'),
-                    'active' => false,
+                    'active' => true,
                 ],
                 (object)[
                     'name' => 'PT AISIN Indonesia',
@@ -149,7 +149,7 @@ class HomeController extends Controller
                 (object)[
                     'name' => 'Company Summary',
                     'url' => route('company-summary'),
-                    'active' => false,
+                    'active' => true,
                 ],
                 (object)[
                     'name' => 'PT AISIN Indonesia Automotive',
@@ -277,7 +277,7 @@ class HomeController extends Controller
             (object)[
                 'name' => 'Executives Management',
                 'url' => route('executives'),
-                'active' => false,
+                'active' => true,
             ],
             (object)[
                 'name' => $subtitle,
@@ -512,7 +512,7 @@ class HomeController extends Controller
             (object)[
                 'name' => 'Awards',
                 'url' => route('awards'),
-                'active' => false,
+                'active' => true,
             ],
             (object)[
                 'name' => $subtitle,
@@ -543,55 +543,55 @@ class HomeController extends Controller
                     (object) [
                         'name' => 'Door Lock',
                         'picture' => asset('website/img/home/products/bodypart-doorlock.jpg'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => 'This locking-unlocking key is an important safety feature that functions firmly to hold the door onto the body while locking. AISIN Indonesia manufactures door locks using the laser welding technology.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Striker',
                         'picture' => asset('website/img/home/products/bodypart-striker.jpg'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => 'A mechanical counterpart to the door lock that hooks and locks door to body',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Door Hinge',
                         'picture' => asset('website/img/home/products/bodypart-doorhinge.jpg'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => 'A mechanical part tahat connects side door with body, allowing only the ideal opening angle.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Door Check',
                         'picture' => asset('website/img/home/products/bodypart-doorcheck.jpg'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => 'A device which controls the closing of a door and prevents it from slamming.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Door Frame',
                         'picture' => asset('website/img/home/products/bodypart-doorframe.jpg'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => 'The main frame from car door. Frame product made from 0.8-0.9 mm coil plate through profile roll forming process to ensure strong but light structure. AISIN  Indonesia manufactures the door frame parts for 80% of all cars using DF in Indonesia.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Outside Handle',
                         'picture' => asset('website/img/home/products/bodypart-outsidehandle.png'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => "The Outside Handle is a device that allows for easy opening of a vehicle's door. It provides convenient access for entering the vehicle. Additionally, certain models may include a feature that can be operated using a key or smart button.",
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Power Sliding Door (PSD) System',
                         'picture' => asset('website/img/home/products/bodypart-psd.png'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => "The Power Sliding Door (PSD) is a feature found in vehicles, particularly vans and minivans, that allows for automatic opening and closing of sliding doors. Its primary function is to enhance passenger convenience by providing easier access to the vehicle's interior, especially for passengers seated in the rear. The PSD system is typically operated by electric motors and controlled by sensors, enabling hands-free or remote operation for added convenience. This feature improves accessibility, particularly in situations where passengers have their hands full or limited mobility, and it often includes safety features such as obstacle detection to prevent accidents during door operation.",
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Center Pillar Garnish',
                         'picture' => asset('website/img/home/products/bodypart-centerpillar.png'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => "The Center Pillar Garnishment is located on the center pillar of a vehicle's body. It serves to enhance the visual appearance of the vehicle's interior and exterior and provides additional protection of cover certain structural elements within the center pillar.",
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Power Seat Motor Assembly',
                         'picture' => asset('website/img/home/products/bodypart-powerseatmotor.png'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => 'The Power Seat Motor is a component of power-adjustable seats in vehicles, responsible for moving the seat forward, backward, up, and down, as well as adjusting the seatback angle. Its main function is to provide convenient and customizable seating positions for the driver and passengers, enhancing comfort and ergonomics. Powered by electricity, the motor translates input from seat adjustment controls into mechanical movement, allowing occupants to achieve their desired seating position with ease.',
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                 ];
@@ -603,19 +603,19 @@ class HomeController extends Controller
                     (object) [
                         'name' => 'HV Dumper',
                         'picture' => asset('website/img/home/products/drivetrain-hvdumper.png'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
-                        'manufacturer' => 'PT AISIN Indonesia Autoomotive',
+                        'description' => 'A mechanical device which transfer the rotational power from the engine to the wheels and generator motor. AISIN Indonesia is the first manufacturer of Hybrid Damper Indonesia.',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Clutch Disc',
                         'picture' => asset('website/img/home/products/drivetrain-clutchdisc.jpg'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => 'A device for connecting and disconnectiong between the transmission and engine when starting the vehicle or changing gears.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Clutch Cover',
                         'picture' => asset('website/img/home/products/drivetrain-clutchcover.jpg'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => 'The component in the clutch system that functions to clamp the clutch disc is the pressure plate.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                 ];
@@ -628,43 +628,43 @@ class HomeController extends Controller
                     (object) [
                         'name' => 'Intake Manifold',
                         'picture' => asset('website/img/home/products/enginepart-intakemanifold.jpg'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => 'Part of engine that supplies the fuel/airmixture to the cylinders. AISIN Indonesia manufactures 800,000 Intake Manifolds/year for Toyota, Daihatsu, and Suzuki.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Cylinder Head Cover',
                         'picture' => asset('website/img/home/products/engineparts-cylinderheadcover.jpg'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => 'Part which covers the camshaft of an engine, functions as lubrication chamber to grease cam shaft of car engine.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Engine Front Module',
                         'picture' => asset('website/img/home/products/enginepart-enginefrontmodule.jpg'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => 'The Engine Front Module or Timing Chain Cover (TCC) is positioned at the front of the engine block and houses crucial components like the timing chain or belt, tensioners, guides, and sometimes the water pump. Its primary function is to protect and enclose these components, ensuring proper engine timing by synchronizing valve operation with piston movement.',
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Camshaft Housing',
                         'picture' => asset('website/img/home/products/enginepart-camshafthousing.jpg'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => "The Camshaft Housing is a component of the engine that encloses and supports the camshaft, which is responsible for controlling the opening and closing of the engine's valves. Its main function is to provide a secure housing for the camshaft, ensuring proper alignment and operation of the valves for optimal engine performance.",
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Water Pump',
                         'picture' => asset('website/img/home/products/enginepart-waterpump.png'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => 'The Water Pump is responsible for circulating coolant throughout the engine to regulate its temperature. Its main function is to pump coolant from the radiator through the engine block and cylinder head, where it absorbs heat, and then returns it to the radiator to dissipate that heat.',
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Oil Pump',
                         'picture' => asset('website/img/home/products/enginepart-oilpump.png'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => 'The Oil Pump is responsible for drawing up the oil from the oil pan and delivering it to lubricate the various parts of the engine. Its main function is to provide lubrication to the friction surfaces, reducing wear and ensuring smooth operation.',
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Oil Pan',
                         'picture' => asset('website/img/home/products/enginepart-oilpan.png'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => 'An oil pan or oil tank is a container that functions to temporarily store oil. The installation location for this component is at the bottom of the engine block. When changing the oil, this component must be emptied and cleaned.',
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                 ];
@@ -677,7 +677,7 @@ class HomeController extends Controller
                     (object) [
                         'name' => 'Electronic Control Unit (ECU) W/P',
                         'picture' => asset('website/img/home/products/electricalpart-ecu.jpg'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'description' => "The ECU Water Pump is an electronically controlled water pump in vehicles managed by the Electronic Control Unit (ECU). Its function is to regulate coolant circulation within the engine and cooling system, maintaining optimal engine temperature by adjusting the pump's speed and flow rate based on engine parameters monitored by the ECU, such as coolant temperature, engine load, and driving conditions. This ensures effective cooling while minimizing energy consumption, improving fuel efficiency, and reducing emissions.",
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
@@ -698,7 +698,7 @@ class HomeController extends Controller
             (object)[
                 'name' => 'Products',
                 'url' => route('products'),
-                'active' => false,
+                'active' => true,
             ],
             (object)[
                 'name' => $subtitle,
