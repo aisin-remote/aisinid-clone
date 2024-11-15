@@ -69,13 +69,13 @@
               </div>
               <div class="col-md-5 mb-4">
                 <label for="firstName" class="form-label">First Name</label>
-                <input type="text" class="form-control form-control-lg" id="firstName" placeholder="Enter your first name"
-                  name="first_name">
+                <input type="text" class="form-control form-control-lg" id="firstName"
+                  placeholder="Enter your first name" name="first_name">
               </div>
               <div class="col-md-5 mb-4">
                 <label for="lastName" class="form-label">Last Name</label>
-                <input type="text" class="form-control form-control-lg" id="lastName" placeholder="Enter your last name"
-                  name="last_name">
+                <input type="text" class="form-control form-control-lg" id="lastName"
+                  placeholder="Enter your last name" name="last_name">
               </div>
               <div class="col-md-7 mb-4">
                 <label for="email" class="form-label">Email</label>
@@ -108,6 +108,28 @@
               </div>
             </div>
           </form>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
         </div>
       </div>
     </div>

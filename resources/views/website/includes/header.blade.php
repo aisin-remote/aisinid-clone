@@ -1,6 +1,8 @@
   <!-- globalHeader -->
   <header class="globalHeader">
-    <div class="d-flex justify-content-end border-bottom border-dark-subtle py-2 px-4"><img src="{{ asset('website/img/logo/satu-aisin-final.png') }}" style="height: 40px;"></div>
+    <div class="d-flex justify-content-end border-bottom border-dark-subtle py-2 px-4"><a href="{{ route('core') }}">
+        <img src="{{ asset('website/img/logo/satu-aisin-final.png') }}" style="height: 40px;"></div>
+    </a>
     <div class="globalHeaderInner">
       <div class="logo" style="display: flex; align-items: center; gap: 1rem;">
         <a href= "{{ route('home') }}" tess="over">

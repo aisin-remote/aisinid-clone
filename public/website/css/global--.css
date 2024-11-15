@@ -18,7 +18,7 @@ html {
         "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif !important;
     font-size: 62.5%;
     letter-spacing: 0.1em;
-    /* overflow: auto; */
+    overflow: auto;
     color: #000;
 }
 html,

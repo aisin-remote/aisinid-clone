@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="row">
-          <section class="company-summary" style="padding: 3rem 1rem 5rem;">
+          <section class="products" style="padding: 3rem 1rem 5rem;">
             <div class="row d-flex flex-wrap justify-content-center">
               @foreach ($products as $index => $product)
                 <div data-id="{{ $index }}" data-product="{{ json_encode($product) }}"
@@ -32,22 +32,37 @@
       </div>
     </div>
   </div>
+
   <x-product-modal />
 @endsection
 
 @section('scripts')
   <script>
     $(document).ready(function() {
-      $('.product-item').on('click', function() {
-        $('#productModal').modal('show');
+      let scrollPosition;
+
+      $('.product-item').on('click', function(e) {
+        e.preventDefault();
+        scrollPosition = window.pageYOffset;
+
         const id = $(this).data('id');
         const product = $(this).data('product');
-        console.log(id, product);
-        $('#productTitle').text(product.name)
-        $('#productPicture').attr('src', product.picture)
-        $('#productCategory').text('{{ $subtitle }}')
-        $('#productDescription').html(product.description)
-        $('#productManufacturer').text(product.manufacturer)
+
+        // Update modal content
+        $('#productTitle').text(product.name);
+        $('#productPicture').attr('src', product.picture);
+        $('#productCategory').text('{{ $subtitle }}');
+        $('#productDescription').html(product.description);
+        $('#productManufacturer').text(product.manufacturer);
+
+        $('#productModal').modal({
+          backdrop: true,
+          focus: false
+        }).modal('show');
+      });
+
+      $('#productModal').on('hidden.bs.modal', function() {
+        window.scrollTo(0, scrollPosition);
       })
     })
   </script>
