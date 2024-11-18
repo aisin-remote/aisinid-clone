@@ -185,4 +185,5 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
+    'contact_mail_address' => env('CONTACT_MAIL_ADDRESS', 'itsokdevelopment@gmail.com'),
 ];

@@ -97,6 +97,7 @@ class HomeController extends Controller
                     'content' => 'Manufacture of automotive parts (clutch covers, clutch disks, door latches, door checks, door hinges, door frames, window regulators, hood latches, inside/outside handles, intake manifolds, etc.)',
                 ],
             ];
+
             $breadcrumbs = [
                 (object)[
                     'name' => 'Company Summary',
@@ -145,6 +146,7 @@ class HomeController extends Controller
                     'content' => 'Manufacture of automotive parts (clutch covers, clutch disks, door latches, door checks, door hinges, door frames, window regulators, hood latches, inside/outside handles, intake manifolds, etc.)',
                 ],
             ];
+
             $breadcrumbs = [
                 (object)[
                     'name' => 'Company Summary',

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -48,10 +49,12 @@ Route::get('/job-info', [HomeController::class, 'jobInfo'])->name('job-info');
 Route::get('/job-opportunities', [HomeController::class, 'jobOpportunities'])->name('job-opportunities');
 
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+Route::post('/contact', [ContactController::class, 'sendContactMail'])->name('contact-us');
 
 Route::get('/search', function () {
     return view('website.pages.search');
 });
+
 
 Route::get('/test', function () {
     return view('website.pages.test');
