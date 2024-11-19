@@ -28,11 +28,12 @@
         </p>
         <h3 class="primary-title">2. Customer Focus</h3>
         <p>
-          "Building trust through reliability is fundamental to our mission. At AISIN, we take pride in being a dependable
-          partner, ensuring that our commitments are met with integrity and consistency. By prioritizing transparency and
-          accountability, we create relationships rooted in trust, where our customers and partners can rely on us to
-          deliver quality and support. This unwavering commitment to trustworthiness and reliability not only defines our
-          work but also strengthens the foundation of our success." <br><br>
+          "Our dedication to teamwork stems from a single purpose: creating exceptional value for our customers. At Aisin,
+          collaboration isn’t just a process—it’s the core of how we achieve excellence. By combining trust, mutual
+          respect, and a unified vision, we bring out the best in every team member to surpass customer expectations. This
+          synergy fuels innovation, tackles challenges head-on, and ensures that every solution reflects our unwavering
+          commitment to quality. Together, we don’t just deliver results—we build a stronger, more connected organization
+          that thrives on serving you better every day." <br><br>
         </p>
         <h3 class="primary-title">3. Passion for Excellence</h3>
         <p>
