@@ -15,98 +15,105 @@
       </div>
 
       <!-- drawerMenu -->
-      <div class="drawerMenu">
-        <!-- megaNav -->
-        <nav class="megaNav">
-          <ul class="megaNavParent">
-            <li class="xxx parent">
-              <a href="{{ route('about') }}">About</a>
-              <!-- megaNavSlide -->
-              <div class="megaNavSlide">
-                <div class="megaNavSlideInner">
-                  <div class="megaNavHeader view-pc">
-                    <div class="navTtl">
-                      <span class="jp">About AISIN</span>
+      <div class="d-flex align-items-center">
+        <div class="drawerMenu">
+          <!-- megaNav -->
+          <nav class="megaNav">
+            <ul class="megaNavParent">
+              <li class="xxx parent">
+                <a href="{{ route('about') }}">About</a>
+                <!-- megaNavSlide -->
+                <div class="megaNavSlide">
+                  <div class="megaNavSlideInner">
+                    <div class="megaNavHeader view-pc">
+                      <div class="navTtl">
+                        <span class="jp">About AISIN</span>
+                      </div>
+                      <div class="more">
+                        <a href="{{ route('about') }}">Read more</a>
+                      </div>
                     </div>
-                    <div class="more">
-                      <a href="{{ route('about') }}">Read more</a>
-                    </div>
+                    <!-- /megaNavHeader -->
+
+                    <div class="megaNavContent">
+                      <ul>
+                        <li><a href="https://www.aisin.com/en/profile/policy/">Corporate Principle</a></li>
+                        <li><a href="{{ route('company-summary') }}">Company Summary</a></li>
+                        <li><a href="{{ route('core') }}">Company Core Value</a></li>
+                        <li><a href="{{ route('company-history-main') }}">Company History</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="{{ route('management-message') }}">Message from Top Management</a></li>
+                        <li><a href="{{ route('executives') }}">Executive Management</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="https://www.aisin.com/en/profile/brand/">Brand</a></li>
+                        <li><a href="https://www.aisin.com/en/profile/global/">Global Network</a></li>
+                        <li><a href="{{ route('awards') }}">Awards</a></li>
+                      </ul>
+                    </div><!-- /megaNavContent -->
                   </div>
-                  <!-- /megaNavHeader -->
-
-                  <div class="megaNavContent">
-                    <ul>
-                      <li><a href="https://www.aisin.com/en/profile/policy/">Corporate Principle</a></li>
-                      <li><a href="{{ route('company-summary') }}">Company Summary</a></li>
-                      <li><a href="{{ route('core') }}">Company Core Value</a></li>
-                      <li><a href="{{ route('company-history-main') }}">Company History</a></li>
-                    </ul>
-                    <ul>
-                      <li><a href="{{ route('management-message') }}">Message from Top Management</a></li>
-                      <li><a href="{{ route('executives') }}">Executive Management</a></li>
-                    </ul>
-                    <ul>
-                      <li><a href="https://www.aisin.com/en/profile/brand/">Brand</a></li>
-                      <li><a href="https://www.aisin.com/en/profile/global/">Global Network</a></li>
-                      <li><a href="{{ route('awards') }}">Awards</a></li>
-                    </ul>
-                  </div><!-- /megaNavContent -->
                 </div>
-              </div>
-              <!-- /megaNavSlide -->
-            </li>
+                <!-- /megaNavSlide -->
+              </li>
 
-            <li class="xxx parent ">
-              <a href="{{ route('products') }}">Product</a>
-              <!-- megaNavSlide -->
-              <div class="megaNavSlide">
-                <div class="megaNavSlideInner">
-                  <div class="megaNavHeader view-pc">
-                    <div class="navTtl">
-                      <span class="jp">AISIN Product</span>
-                    </div>
-                    <div class="more">
-                      <a href="{{ route('products') }}">Read more</a>
-                    </div>
-                  </div><!-- /megaNavHeader -->
+              <li class="xxx parent ">
+                <a href="{{ route('products') }}">Product</a>
+                <!-- megaNavSlide -->
+                <div class="megaNavSlide">
+                  <div class="megaNavSlideInner">
+                    <div class="megaNavHeader view-pc">
+                      <div class="navTtl">
+                        <span class="jp">AISIN Product</span>
+                      </div>
+                      <div class="more">
+                        <a href="{{ route('products') }}">Read more</a>
+                      </div>
+                    </div><!-- /megaNavHeader -->
 
-                  <div class="megaNavContent">
-                    <ul>
-                      <li><a href="{{ route('product-list', ['product' => 'body-part']) }}">Body Part</a></li>
-                      <li><a href="{{ route('product-list', ['product' => 'engine-part']) }}">Engine Part</a></li>
-                      <li><a href="{{ route('product-list', ['product' => 'drive-train']) }}">Drive Train</a></li>
-                      <li><a href="{{ route('product-list', ['product' => 'electrical-part']) }}">Electrical Part</a>
-                      </li>
-                    </ul>
-                  </div><!-- /megaNavContent -->
+                    <div class="megaNavContent">
+                      <ul>
+                        <li><a href="{{ route('product-list', ['product' => 'body-part']) }}">Body Part</a></li>
+                        <li><a href="{{ route('product-list', ['product' => 'engine-part']) }}">Engine Part</a></li>
+                        <li><a href="{{ route('product-list', ['product' => 'drive-train']) }}">Drive Train</a></li>
+                        <li><a href="{{ route('product-list', ['product' => 'electrical-part']) }}">Electrical Part</a>
+                        </li>
+                      </ul>
+                    </div><!-- /megaNavContent -->
+                  </div>
                 </div>
-              </div>
-              <!-- /megaNavSlide -->
-            </li>
+                <!-- /megaNavSlide -->
+              </li>
 
-            <li class="xxx parent ">
-              <a href="https://www.aisin.com/en/sustainability/">Sustainability</a>
-            </li>
+              <li class="xxx parent ">
+                <a href="https://www.aisin.com/en/sustainability/">Sustainability</a>
+              </li>
 
-            <li class="xxx parent ">
-              <a href="#">Career</a>
-            </li>
+              <li class="xxx parent ">
+                <a href="#">Career</a>
+              </li>
 
-            <li class="xxx parent ">
-              <a href="{{ route('contact') }}">Contact</a>
-            </li>
-          </ul>
+              <li class="xxx parent ">
+                <a href="{{ route('contact') }}">Contact</a>
+              </li>
+            </ul>
 
-          <div class="searchBtn view-pc">
-            <a href="javascript:void(0)" class="over"><img src="{{ asset('website/img/common/ico_search.png') }}"
-                alt=""></a>
-          </div>
+            <div class="searchBtn view-pc">
+              <a href="javascript:void(0)" class="over"><img src="{{ asset('website/img/common/ico_search.png') }}"
+                  alt=""></a>
+            </div>
 
-          <div class="searchVox view-notpc">
-            <div id="siteSearchSp" class="search"></div>
-          </div>
-        </nav>
-        <!-- megaNav -->
+            <div class="searchVox view-notpc">
+              <div id="siteSearchSp" class="search"></div>
+            </div>
+          </nav>
+          <!-- megaNav -->
+        </div>
+        <div class="d-flex align-items-center border-start border-dark-subtle px-4 mb-3 ms-5">
+          <a href="{{ route('core') }}">
+            <img src="{{ asset('website/img/logo/satu-aisin-final.png') }}" style="height: 40px;">
+          </a>
+        </div>
       </div>
     </div><!-- /drawerMenu-->
 
