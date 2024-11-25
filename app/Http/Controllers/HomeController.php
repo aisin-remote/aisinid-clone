@@ -394,64 +394,78 @@ class HomeController extends Controller
                     (object)[
                         'name' => 'Green Proper KLHK RI',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'AOP Astra Green Company & Astra Friendly Company Award',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'INALUM Best Complients Award',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                 ],
                 'TQM Awards' => [
                     (object)[
                         'name' => 'TMC 3rd Winner Inspection Shop 2023',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'TMC Gold Level QCC Improvement',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'AOP 4th Place QCC Non Technic Improvement',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                 ],
                 'Occupational Health & Safety Awards' => [
                     (object)[
                         'name' => 'ADM Best Supplier in Fire Management System 2023',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'GOLD PROPER 2021 KLHK RI',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                 ],
                 'Customer Awards & Other' => [
                     (object)[
                         'name' => 'MMKI After Sales Performance Award 2020',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'MMKI Best Delivery & Quality 2023',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'MMKI Excellent Performance for Support After Sales 2022',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'TMMIN Quality Target Achievement',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'INDI 4.0 Award 2021',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'Lighthouse Industry 4.0 2022',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                 ],
             ];
@@ -462,53 +476,63 @@ class HomeController extends Controller
                     (object)[
                         'name' => 'Green Proper KLHK RI',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                 ],
                 'TQM Awards' => [
                     (object)[
                         'name' => 'AOP 29th CONVENTION',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'INNOVASTRA 33',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'AOP 28th CONVENTION',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                 ],
                 'Occupational Health & Safety Awards' => [
                     (object)[
                         'name' => 'GOLD SMK3 KEMENAKER RI',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'AGC AWARD 2017',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                 ],
                 'Customer Awards & Other' => [
                     (object)[
                         'name' => 'AFT TOURNAMENT',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'TMMIN TOP 10 QUALITY ACHIEVEMENT',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'IAMI - EHS',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                     (object)[
                         'name' => 'OTHERS - QUALITY',
                         'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
                     ],
                 ],
             ];
         }
-
+        
         $banner = asset('website/img/about/banner-about.png');
         $breadcrumbs = [
             (object)[

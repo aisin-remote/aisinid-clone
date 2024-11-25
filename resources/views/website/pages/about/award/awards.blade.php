@@ -21,7 +21,9 @@
             <section class="company-summary" style="padding: 3rem 1rem 5rem;">
               <div class="row d-flex flex-wrap justify-content-center">
                 @foreach ($awards as $award)
-                  <div class="product-item col-sm-6 col-md-6 col-lg-4 mb-5 d-flex justify-content-center">
+                  <div data-award="{{ json_encode($award) }}"
+                    class="product-item col-sm-6 col-md-6 col-lg-4 mb-5 d-flex justify-content-center"
+                    style="cursor: pointer">
                     <x-misc-item :picture="$award->picture" :title="$award->name" :border="true" />
                   </div>
                 @endforeach
@@ -32,4 +34,27 @@
       </div>
     </div>
   </div>
+
+  <x-simple-modal modalName="awardModal" />
+@endsection
+
+@section('scripts')
+  <script>
+    $(document).ready(function() {
+      $('.product-item').on('click', function(e) {
+        e.preventDefault();
+
+        const award = $(this).data('award');
+
+        // Update modal content
+        $('#itemTitle strong').text(award.name);
+        $('#itemDescription').html(award.description);
+
+        $('#awardModal').modal({
+          backdrop: true,
+          focus: false
+        }).modal('show');
+      });
+    })
+  </script>
 @endsection
