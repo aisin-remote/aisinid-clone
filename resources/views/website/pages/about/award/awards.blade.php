@@ -19,15 +19,21 @@
           </div>
           <div class="row">
             <section class="company-summary" style="padding: 3rem 1rem 5rem;">
-              <div class="row d-flex flex-wrap justify-content-center">
-                @foreach ($awards as $award)
+              <div id="{{ Str::slug($category) }}" class="row d-flex flex-wrap justify-content-center">
+                @foreach ($awards as $index => $award)
                   <div data-award="{{ json_encode($award) }}"
-                    class="product-item col-sm-6 col-md-6 col-lg-4 mb-5 d-flex justify-content-center"
+                    class="product-item col-sm-6 col-md-6 col-lg-4 mb-5 d-flex justify-content-center {{ $index >= 6 ? 'd-none' : '' }}"
                     style="cursor: pointer">
                     <x-misc-item :picture="$award->picture" :title="$award->name" :border="true" />
                   </div>
                 @endforeach
               </div>
+              @if (count($awards) > 6)
+                <div class="d-flex justify-content-end">
+                  <a href="javascript:void(0);" onclick="loadMore('{{ Str::slug($category) }}')" class="show-more">Show
+                    More</a>
+                </div>
+              @endif
             </section>
           </div>
         @endforeach
@@ -40,6 +46,12 @@
 
 @section('scripts')
   <script>
+    function loadMore(category) {
+      const $items = $(`#${category} .d-none`);
+      $items.removeClass('d-none');
+      $('.show-more').remove();
+    }
+
     $(document).ready(function() {
       $('.product-item').on('click', function(e) {
         e.preventDefault();
