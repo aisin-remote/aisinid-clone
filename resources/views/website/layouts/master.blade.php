@@ -95,6 +95,7 @@
 
 <body id="home" class="home">
   @include('website.includes.header')
+  @include('cookie-consent::index')
   <!-- wrapper -->
   <div class="wrapper d-flex flex-column min-vh-100">
 
