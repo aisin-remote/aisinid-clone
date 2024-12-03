@@ -392,12 +392,12 @@ class HomeController extends Controller
             $awards = [
                 'Environment Awards' => [
                     (object)[
-                        'name' => 'Green Proper KLHK RI',
+                        'name' => 'Gold Proper KLHK RI',
                         'picture' => asset('website/img/home/awards/environment.png'),
                         'description' => 'The First Automotive Component Manufacturing Company to Achieve the GOLD PROPER Rating (Corporate Performance Rating Program in Environmental Management) from the Ministry of Environment and Forestry (KLHK RI) in 2021'
                     ],
                     (object)[
-                        'name' => 'Seven-Time GREEN PROPER Awardee from KLHK RI',
+                        'name' => 'GREEN PROPER KLHK RI',
                         'picture' => asset('website/img/home/awards/environment.png'),
                         'description' => 'Achieved the GREEN PROPER Rating (Corporate Performance Rating Program in Environmental Management) from the Ministry of Environment and Forestry (KLHK RI) seven times in 2015, 2016, 2017, 2018, 2019, 2020, and 2023.'
                     ],
@@ -407,7 +407,7 @@ class HomeController extends Controller
                         'description' => 'Green (AGC) and Five-Star (AFC) Ratings in the Manufacturing Category for the Implementation of the Astra Green Company and Astra Friendly Company Management Systems for the 2018-2019 Period'
                     ],
                     (object)[
-                        'name' => 'Two-Time Winner of the Astra Green Company Awards',
+                        'name' => 'Winner of the Astra Green Company Awards',
                         'picture' => asset('website/img/home/awards/environment.png'),
                         'description' => '
                             <ul>
@@ -416,7 +416,7 @@ class HomeController extends Controller
                             <ul>'
                     ],
                     (object)[
-                        'name' => 'Two-Time Winner of the Astra Green Energy Awards',
+                        'name' => 'Winner of the Astra Green Energy Awards',
                         'picture' => asset('website/img/home/awards/environment.png'),
                         'description' => '
                             <ul>
@@ -425,7 +425,7 @@ class HomeController extends Controller
                             <ul>'
                     ],
                     (object)[
-                        'name' => '2nd Place Astra Green Innovation',
+                        'name' => 'Astra Green Innovation',
                         'picture' => asset('website/img/home/awards/environment.png'),
                         'description' => '2nd Place Astra Green Innovation'
                     ],
@@ -468,6 +468,7 @@ class HomeController extends Controller
                         'picture' => asset('website/img/home/awards/environment.png'),
                         'description' => 'Quality Award in 2020 Presented to PT Aisin Indonesia, held by PT Toyota Motor Manufacturing Indonesia.'
                     ],
+                    //
                     (object)[
                         'name' => 'Appreciation for VA Contribution held by PT Toyota Motor Manufacturing Indonesia',
                         'picture' => asset('website/img/home/awards/environment.png'),
@@ -478,6 +479,7 @@ class HomeController extends Controller
                         'picture' => asset('website/img/home/awards/environment.png'),
                         'description' => 'Superior Cost Award for the period 2021-2022 in ADM Suppliers Awarding.'
                     ],
+                    //
                     (object)[
                         'name' => 'Good Delivery Performance to ADM Assembly Plant Held by PT Astra Daihatsu Motor',
                         'picture' => asset('website/img/home/awards/environment.png'),
@@ -508,67 +510,190 @@ class HomeController extends Controller
                         'picture' => asset('website/img/home/awards/environment.png'),
                         'description' => 'Twice recognized for Delivery Target Achievement over the last 5 years, in 2019 and 2021, held by PT Toyota Motor Manufacturing Indonesia.'
                     ],
+                    //
+                    (object)[
+                        'name' => 'Appreciation of Safety Performance held by PT Hino Motors Manufacturing Indonesia',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Appreciation of Safety Performance in Recognition of Outstanding Performance and Support in 2023, held by PT Hino Motors Manufacturing Indonesia.'
+                    ],
+                    (object)[
+                        'name' => 'Safety Awards held by PT Toyota Motor Manufacturing Indonesia',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Safety Award in 2020, held by PT Toyota Motor Manufacturing Indonesia.'
+                    ],
+                    //
+                    (object)[
+                        'name' => 'Appreciation of Kaizen Contribution',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Appreciation of Kaizen Contribution in Recognition of Outstanding Performance and Support in 2023, held by PT Hino Motors Manufacturing Indonesia.'
+                    ],
+                    (object)[
+                        'name' => 'Thematic Appreciation Structural Reform Monozukuri Evolution held by PT Toyota Motor Manufacturing Indonesia',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Thematic Appreciation for Structural Reform and Monozukuri Evolution in 2023, held by PT Toyota Motor Manufacturing Indonesia.'
+                    ],
+                    (object)[
+                        'name' => 'Excellent Commitment and Effort on TPS Jishuken Activity',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Excellent Commitment and Effort on TPS Jishuken Activity, presented during The 15th Annual TPS Jishuken Happyoukai Genba Host 2023 held by PT Toyota Motor Manufacturing Indonesia.'
+                    ],
+                    (object)[
+                        'name' => 'Breakthrough Innovation',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'In Recognition of Breakthrough Innovation in 2024, held by PT Toyota Motor Manufacturing Indonesia.'
+                    ],
+                    //
+                    (object)[
+                        'name' => 'Special Appreciation for Domestic Service Parts Performance',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Special Appreciation for Domestics Service Parts Performance in 2019, held by PT Toyota Motor Manufacturing Indonesia.'
+                    ],
+                    (object)[
+                        'name' => '5 Million Units Production Achievement',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Appreciation for 5 Millions Units Production Achivement, held by PT Astra Daihatsu Motor.'
+                    ],
+                    (object)[
+                        'name' => '2nd Winner Packaging Appreciation',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => '2nd Winner Packaging Appreciation, held by PT Toyota Astra Motor.'
+                    ],
+                    //
+                    (object)[
+                        'name' => 'Outstanding Environment Health & Safety Performance',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Twice recognized for Outstanding Environment Health & Safety Performance over the last 5 years in 2019 and 2021, held by PT Isuzu Astra Motor Indonesia.'
+                    ],
+                    //
                 ],
+                'TQM Awards' => [
+                    (object)[
+                        'name' => '1st Winner QCC',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => '1st Winner at the 31st Innovation Convention of Astra Otoparts Group, held in July - August 2020, with the theme "Enhancing Excellence Through Digitalization".'
+                    ],
+                    (object)[
+                        'name' => '1st Winner Suggestion System',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => '1st Winner at the 29th Quality Convention of Astra Otoparts.'
+                    ],
+                    (object)[
+                        'name' => '1st Winner QCP',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => '1st Winner at the 31st Innovation Convention of Astra Otoparts Group, held in July - August 2020, with the theme "Enhancing Excellence Through Digitalization".'
+                    ],
+                    (object)[
+                        'name' => 'Diamond Ranking QCP',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Diamond Ranking QCP CD Room at the 17th National Quality and Productivity Convention and International Quality & Productivity Convention in 2013.'
+                    ],
+                    (object)[
+                        'name' => '1st Winner Suggestion System',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => '1st Winner in the Suggestion System Category at Innovastra 35.'
+                    ],
+                ],
+                'Other Certificates and Awards' => [
+                    (object)[
+                        'name' => 'ISO 14001:2015',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'ISO 14001:2015 for the following activities: Manufacture of Automotive Components - Drive Train, Body Parts, and Engine Parts.'
+                    ],
+                    (object)[
+                        'name' => 'ISO 45001:2018',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'ISO 45001:2018 for the following activities: Manufacture of Automotive Components - Drive Train, Body Parts, and Engine Parts.'
+                    ],
+                    (object)[
+                        'name' => 'Achievement of 92.77% in Occupational Safety and Health Management System',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Certificate of Appreciation for achieving 92.77% in the implementation of the Advanced Level Occupational Safety and Health Management System (166 Criteria), awarded by the Ministry of Manpower of the Republic of Indonesia in 2023.'
+                    ],
+                    (object)[
+                        'name' => 'IATF 16949:2016',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'IATF 16949:2016 for the following scope: Design and Manufacture of Strikers, Clutch Covers, Clutch Discs, Door Locks, Intake Manifolds, Door Checks, Window Regulators, Roller Hinges, Center Rails, Damper Assemblies, and the Manufacture of Door Frames, Lower Frames, Bar Divisions, Door Hinges, Hood Locks, and Cylinder Head Covers.'
+                    ],
+                    (object)[
+                        'name' => 'Best on Export Contribution & Growth',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Twice recognized for Achivement in Best on Export Contribution & Growth over the last 5 years, in 2020 and 2024, held by PT Astra Otoparts Tbk'
+                    ],
+                    (object)[
+                        'name' => 'Stategic x-EV Ecosystem Supply Pioneering Award',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Achievement in Strategic x-EV Ecosystem Supply Pioneering Award in 2024, held by PT Astra Otoparts Tbk.'
+                    ],
+                    (object)[
+                        'name' => 'Best Implementation of Digitalization & Industry 4.0',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Achievement in Best Implementation of Digitalization & Industry 4.0 in 2023, held by PT Astra Otoparts.'
+                    ],
+                    (object)[
+                        'name' => 'AGC & AFC Award',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Achievement of 5 AGC & AFC Awards, in 2019, 2020, 2022, 2023, and 2024, held by PT Astra Otoparts '
+                    ],
+                ]
             ];
         } else {
             $subtitle = 'PT AISIN Indonesia Automotive';
             $awards = [
-                'Environment Awards' => [
+                'Environment Awards' => [],
+                'Corporate Social Responsibility Awards' => [
                     (object)[
-                        'name' => 'Green Proper KLHK RI',
+                        'name' => 'West Java Development Partner',
                         'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
+                        'description' => "West Java Development Partner through the Company's CSR/PKBL Program in 2017."
+                    ],
+                ],
+                'Customer Awards' => [
+                    (object)[
+                        'name' => 'Appreciation for Quality Target Achivement held by PT Toyota Boshoku Indonesia',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Appreciation for Quality Target Achivement In Recognition of The Outstanding Contribution in 2016, held by PT Toyota Boshoku Indonesia'
+                    ],
+                    (object)[
+                        'name' => 'Excellent Performance for Support After Sales Business held by PT Mitsubishi Motors Krama Yudha Indonesia',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'In Recognition for Excellent Performance for Support After Sales Business of MMKI in 2022 Period, held by PT Mitsubishi Motors Krama Yudha Indonesia.'
+                    ],
+                    (object)[
+                        'name' => 'After Sales Performance Award held by PT Mitsubishi Motors Krama Yudha Indonesia',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'After Sales Performance Award in Recognition of The Excellent Performance to Support MMKI After Sales Business in 2020, held by PT Mitsubishi Motors Krama Yudha Indonesia.'
+                    ],
+                    (object)[
+                        'name' => 'Appreciation of Support After Sales of Best Delivery and Quality held by PT Mitsubishi Motors Krama Yudha Indonesia',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Appreciation of Support After Sales of Best Delivery and Quality Fiscal Year 2023, held by PT Mitsubishi Motors Krama Yudha Indonesia.'
+                    ],
+                    (object)[
+                        'name' => 'Lighthouse Industry 4.0 by the Ministry of Industry',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Lighthouse Industry 4.0 by the Ministry of Industry in 2022.'
+                    ],
+                    (object)[
+                        'name' => 'INDI 4.0 Award in the Supply Chain Management Category by the Ministry of Industry',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'INDI 4.0 Award in the Supply Chain Management Category by the Ministry of Industry in 2022.'
+                    ],
+                    (object)[
+                        'name' => 'Best Compliments Inalum Award held by PT Indonesia Asahan Aluminium',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Best Compliments Inalum Award, held by PT Indonesia Asahan Aluminium.'
+                    ],
+                    (object)[
+                        'name' => 'Special Appreciation R-NR Project Contributionheld by PT Toyota Motor Manufacturing Indonesia',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Special Appreciation R-NR Project Contribution in 2015, held by PT Toyota Motor Manufacturing Indonesia'
                     ],
                 ],
                 'TQM Awards' => [
                     (object)[
-                        'name' => 'AOP 29th CONVENTION',
+                        'name' => '3rd Winner Inspection Shop Team Member',
                         'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
-                    ],
-                    (object)[
-                        'name' => 'INNOVASTRA 33',
-                        'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
-                    ],
-                    (object)[
-                        'name' => 'AOP 28th CONVENTION',
-                        'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
-                    ],
-                ],
-                'Occupational Health & Safety Awards' => [
-                    (object)[
-                        'name' => 'GOLD SMK3 KEMENAKER RI',
-                        'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
-                    ],
-                    (object)[
-                        'name' => 'AGC AWARD 2017',
-                        'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
-                    ],
-                ],
-                'Customer Awards & Other' => [
-                    (object)[
-                        'name' => 'AFT TOURNAMENT',
-                        'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
-                    ],
-                    (object)[
-                        'name' => 'TMMIN TOP 10 QUALITY ACHIEVEMENT',
-                        'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
-                    ],
-                    (object)[
-                        'name' => 'IAMI - EHS',
-                        'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
-                    ],
-                    (object)[
-                        'name' => 'OTHERS - QUALITY',
-                        'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'PT AISIN Indonesia has been awarded the Green Proper KLHK RI Award 2023.'
+                        'description' => '3rd Winner Inspection Shop Team Member in 2023 Manufacturing Skill Interchange Festival'
                     ],
                 ],
             ];

@@ -30,7 +30,8 @@
               </div>
               @if (count($awards) > 6)
                 <div class="d-flex justify-content-end">
-                  <a href="javascript:void(0);" onclick="loadMore('{{ Str::slug($category) }}')" class="show-more">Show
+                  <a href="javascript:void(0);" onclick="loadMore('{{ Str::slug($category) }}')"
+                    id="{{ Str::slug($category) }}" class="show-more">Show
                     More</a>
                 </div>
               @endif
@@ -49,7 +50,7 @@
     function loadMore(category) {
       const $items = $(`#${category} .d-none`);
       $items.removeClass('d-none');
-      $('.show-more').remove();
+      $(`#${category}.show-more`).remove();
     }
 
     $(document).ready(function() {
