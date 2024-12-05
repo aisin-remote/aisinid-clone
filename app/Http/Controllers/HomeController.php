@@ -307,12 +307,11 @@ class HomeController extends Controller
 
         $history = [
             (object) [
-                'year' => '1996',
+                'year' => '1995',
                 'title' => 'Birth of PT AISIN Indonesia',
                 'description' => 'After ten years of collaboration between PT Dharma Sarana Perdana and Aisin Seiki Co., Ltd., in the 
-                    form of technical assistance, a joint venture was established, which became PT AISIN Indonesia in 19
-                    96. This marked a solid foundation and strong foothold for the company in the automotive component m
-                    anufacturing industry in Indonesia.',
+                    form of technical assistance, a joint venture was established, which became PT AISIN Indonesia in 1995. This marked 
+                    a solid foundation and strong foothold for the company in the automotive component manufacturing industry in Indonesia.',
                 'picture' => asset('website/img/home/history/1996.jpg'),
             ],
             (object) [
@@ -594,26 +593,6 @@ class HomeController extends Controller
                     ],
                 ],
                 'Other Certificates and Awards' => [
-                    (object)[
-                        'name' => 'ISO 14001:2015',
-                        'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'ISO 14001:2015 for the following activities: Manufacture of Automotive Components - Drive Train, Body Parts, and Engine Parts.'
-                    ],
-                    (object)[
-                        'name' => 'ISO 45001:2018',
-                        'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'ISO 45001:2018 for the following activities: Manufacture of Automotive Components - Drive Train, Body Parts, and Engine Parts.'
-                    ],
-                    (object)[
-                        'name' => 'Achievement of 92.77% in Occupational Safety and Health Management System',
-                        'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'Certificate of Appreciation for achieving 92.77% in the implementation of the Advanced Level Occupational Safety and Health Management System (166 Criteria), awarded by the Ministry of Manpower of the Republic of Indonesia in 2023.'
-                    ],
-                    (object)[
-                        'name' => 'IATF 16949:2016',
-                        'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'IATF 16949:2016 for the following scope: Design and Manufacture of Strikers, Clutch Covers, Clutch Discs, Door Locks, Intake Manifolds, Door Checks, Window Regulators, Roller Hinges, Center Rails, Damper Assemblies, and the Manufacture of Door Frames, Lower Frames, Bar Divisions, Door Hinges, Hood Locks, and Cylinder Head Covers.'
-                    ],
                     (object)[
                         'name' => 'Best on Export Contribution & Growth',
                         'picture' => asset('website/img/home/awards/environment.png'),
@@ -954,7 +933,7 @@ class HomeController extends Controller
             (object) [
                 'title' => 'AISIN Indonesia',
                 'address' => 'East Jakarta Industrial Park (EJIP) Plot 5J South Cikarang, Indonesia 17550',
-                'phone' => '(021) 8970909',
+                'phone' => '(+62 21) 8970909',
                 'map' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5115919900622!2d107
                     .10894440093854!3d-6.327687956420059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
                     .1!3m3!1m2!1s0x2e699a8658dfc3b3%3A0xb2c5ecd250972b22!2sAISIN%20Indonesia%20
@@ -966,7 +945,7 @@ class HomeController extends Controller
                 'address' => 'Kawasan Industri KIIC Lot LL No. 9 - 10, Jl. Harapan 8, 
                     Kel. Parung Mulia, Kec. Ciampel, 
                     Parungmulya, Kec. Ciampel, Karawang, Jawa Barat 41361',
-                'phone' => '	(0267) 8643131',
+                'phone' => '	(+62 267) 8643131',
                 'map' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965
                     .0397103475207!2d107.29623911177569!3d-6.388877493574868!2m3!1f0!2f0!3f0!3m2!
                     1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69758dcd24635b%3A0x595bd54f4c69da48!2sPT%20

@@ -3,7 +3,7 @@
     <img src="{{ $picture }}" class="card-img-top" alt="Company Culture" style="height: 240px; object-fit: cover">
     <div class="card-body">
       <h4 class="year text-muted">{{ $year }}</h4>
-      <h5 class="card-title text-primary">{{ $title }}</h5>
+      <h3 class="card-title text-primary font-weight-bold">{{ $title }}</h3>
       <hr>
       <p class="card-text">
         {{ $description }}
