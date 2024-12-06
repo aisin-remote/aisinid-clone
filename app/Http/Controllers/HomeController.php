@@ -73,28 +73,28 @@ class HomeController extends Controller
             $image = asset('website/img/aii.png');
             $profile = [
                 (object)[
-                    'title' => 'Company Name',
-                    'content' => 'PT AISIN Indonesia',
+                    'title' => 'Establishment',
+                    'content' => 'July 13, 1995',
                 ],
                 (object)[
                     'title' => 'Capital',
                     'content' => 'IDR.146,497,000,000 (Indonesian Rupiah)',
                 ],
                 (object)[
-                    'title' => 'Head Office',
-                    'content' => 'East Jakarta Industrial Park Plot 5J, Cikarang Selatan, Bekasi West Java, Indonesia',
+                    'title' => 'Business',
+                    'content' => 'Manufacture of automotive parts (clutch covers, clutch disks, door latches, door checks, door hinges, door frames, window regulators, hood latches, inside/outside handles, intake manifolds, etc.)',
                 ],
                 (object)[
                     'title' => 'Representative',
-                    'content' => 'Mr. PB Ariawan Purwonugroho, President',
+                    'content' => 'Mr. PB Ariawan Purwonugroho',
                 ],
                 (object)[
                     'title' => 'Employees',
                     'content' => '1,159 people by April 2024',
                 ],
                 (object)[
-                    'title' => 'Businesses',
-                    'content' => 'Manufacture of automotive parts (clutch covers, clutch disks, door latches, door checks, door hinges, door frames, window regulators, hood latches, inside/outside handles, intake manifolds, etc.)',
+                    'title' => 'Address',
+                    'content' => 'East Jakarta Industrial Park Plot 5J, Cikarang Selatan, Bekasi West Java, Indonesia',
                 ],
             ];
 
@@ -122,28 +122,28 @@ class HomeController extends Controller
             $image = asset('website/img/aiia.png');
             $profile = [
                 (object)[
-                    'title' => 'Company Name',
-                    'content' => 'PT AISIN Indonesia Automotive',
+                    'title' => 'Establishment',
+                    'content' => 'March 14, 2014',
                 ],
                 (object)[
                     'title' => 'Capital',
-                    'content' => 'IDR.146,497,000,000 (Indonesian Rupiah)',
+                    'content' => 'IDR.1,160,000,000,000 (Indonesian Rupiah)',
                 ],
                 (object)[
-                    'title' => 'Head Office',
-                    'content' => 'East Jakarta Industrial Park Plot 5J, Cikarang Selatan, Bekasi West Java, Indonesia',
+                    'title' => 'Business',
+                    'content' => 'Manufacture and sales of automotive parts (power sliding doors, door handles, engine front modules and other die-cast parts, oil pumps, etc.)',
                 ],
                 (object)[
                     'title' => 'Representative',
-                    'content' => 'Mr. PB Ariawan Purwonugroho, President',
+                    'content' => 'Mr. PB Ariawan Purwonugroho',
                 ],
                 (object)[
                     'title' => 'Employees',
-                    'content' => '1,159 people by April 2024',
+                    'content' => '579 people by April 2024',
                 ],
                 (object)[
-                    'title' => 'Businesses',
-                    'content' => 'Manufacture of automotive parts (clutch covers, clutch disks, door latches, door checks, door hinges, door frames, window regulators, hood latches, inside/outside handles, intake manifolds, etc.)',
+                    'title' => 'Address',
+                    'content' => 'Jl. Harapan VIII Lot LL No. 9-10, Kawasan Industri KIIC, Karawang, 41361 West Java, Indonesia',
                 ],
             ];
 
