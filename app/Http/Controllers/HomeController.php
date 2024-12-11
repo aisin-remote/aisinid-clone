@@ -431,24 +431,6 @@ class HomeController extends Controller
                         'picture' => asset('website/img/home/awards/environment.png'),
                         'description' => '2nd Place Astra Green Innovation'
                     ],
-                    (object)[
-                        'name' => 'Astra Green Company (AGC) and Astra Friendly Company (AFC)',
-                        'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'Achieve GOLD for Astra Green Company (AGC) and 4-Star for Astra Friendly Company (AFC) 
-                        in the Manufacturing Category for implementing their Environmental Management Systems in 2024'
-                    ],
-                    (object)[
-                        'name' => 'BLUE PROPER KLHK RI',
-                        'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'Achieved the BLUE PROPER Rating (Corporate Performance Rating Program in Environmental Management) 
-                        from the Ministry of Environment and Forestry (KLHK RI)  in 2022, 2023, 2024'
-                    ],
-                    (object)[
-                        'name' => 'Kaizen Festival 36th by TMC',
-                        'picture' => asset('website/img/home/awards/environment.png'),
-                        'description' => 'Achieve the Gold Category at QCC Kaizen Festival 36th carrying 
-                        the theme of Environmental Sustainability Initiatives'
-                    ],
                 ],
                 'Corporate Social Responsibility Awards' => [
                     (object)[
@@ -640,7 +622,26 @@ class HomeController extends Controller
             $banner = asset('website/img/about/banner-awards.jpg');
             $subtitle = 'PT AISIN Indonesia Automotive';
             $awards = [
-                'Environment Awards' => [],
+                'Environment Awards' => [
+                    (object)[
+                        'name' => 'Astra Green Company (AGC) and Astra Friendly Company (AFC)',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Achieve GOLD for Astra Green Company (AGC) and 4-Star for Astra Friendly Company (AFC) 
+                        in the Manufacturing Category for implementing their Environmental Management Systems in 2024'
+                    ],
+                    (object)[
+                        'name' => 'BLUE PROPER KLHK RI',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Achieved the BLUE PROPER Rating (Corporate Performance Rating Program in Environmental Management) 
+                        from the Ministry of Environment and Forestry (KLHK RI)  in 2022, 2023, 2024'
+                    ],
+                    (object)[
+                        'name' => 'Kaizen Festival 36th by TMC',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Achieve the Gold Category at QCC Kaizen Festival 36th carrying 
+                        the theme of Environmental Sustainability Initiatives'
+                    ],
+                ],
                 'Corporate Social Responsibility Awards' => [
                     (object)[
                         'name' => 'West Java Development Partner',
