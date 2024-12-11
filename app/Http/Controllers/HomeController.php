@@ -874,9 +874,21 @@ class HomeController extends Controller
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
-                        'name' => '4WD Electronic Control Unit (ECU) CASE ASSEMBLY ',
-                        'picture' => asset('website/img/home/products/electricalpart-ecu.jpg'),
-                        'description' => 'The door lock is a mechanical device that is used to secure the doors of a vehicle. It is typically located on the door panel and is operated by a key or a remote control. The door lock is designed to prevent unauthorized access to the vehicle and to prevent the doors from being opened while the vehicle is in motion.',
+                        'name' => 'Antenna Keyless 4L45W',
+                        'picture' => asset('website/img/home/products/electricalpart-antenna_keyless.png'),
+                        'description' => 'An antenna keyless smart handle used for communicate with a key fob or smart device. When the fob is near the car, the antenna detects the signal from the fob. The vehicle will automatically unlock the doors, and, in some systems, the engine can be started by simply pressing a button on the dashboard. This antenna smart system used in modern cars to enable keyless access. ',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
+                    ],
+                    (object) [
+                        'name' => '4WD Electronic Control Unit (ECU)',
+                        'picture' => asset('website/img/home/products/electricalpart-ecu4wd.png'),
+                        'description' => 'The 4WD ECU is an electronic device used to control the engagement and disengagement of the four-wheel-drive system in a vehicle. It ensures proper distribution of torque between the front and rear wheels, improving vehicle stability and traction in various driving conditions. The ECU operates based on inputs from sensors and driver commands, optimizing performance and safety.',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
+                    ],
+                    (object) [
+                        'name' => 'Power Back Door Electronic Control Unit (ECU)',
+                        'picture' => asset('website/img/home/products/electricalpart-pbd_ecu.png'),
+                        'description' => 'The Power Back Door ECU Controller is an electronic unit that manages the operation of the power back door system in a vehicle. It facilitates automated opening, closing, and locking of the back door through remote control or manual switches. This system enhances convenience and safety by incorporating features like anti-pinch sensors and motion detection during operation.',
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                 ];
