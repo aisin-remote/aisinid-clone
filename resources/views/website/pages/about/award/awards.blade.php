@@ -3,10 +3,13 @@
 @section('pages')
   <div class="mainContents">
     <div class="mainContents">
-      <x-banner :image="$banner" title="Product" :subtitle="$subtitle" />
+      <x-banner :image="$banner" title="Awards" :subtitle="$subtitle" />
       <div class="main-container">
         <div class="row">
           <x-custom-breadcrumbs :breadcrumbs="$breadcrumbs" />
+        </div>
+        <div class="row mb-5">
+          <p>{{ $foreword }}</p>
         </div>
         @foreach ($awards as $category => $awards)
           <div class="row">

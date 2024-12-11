@@ -2,8 +2,8 @@
   <div class="card h-100 shadow-sm">
     <img src="{{ $picture }}" class="card-img-top" alt="Company Culture" style="height: 240px; object-fit: cover">
     <div class="card-body">
-      <h4 class="year text-muted">{{ $year }}</h4>
-      <h3 class="card-title text-primary font-weight-bold">{{ $title }}</h3>
+      <h3 class="year text-muted">{{ $year }}</h3>
+      <h2 class="card-title text-primary fw-bold">{{ $title }}</h2>
       <hr>
       <p class="card-text">
         {{ $description }}

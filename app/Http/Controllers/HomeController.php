@@ -381,12 +381,15 @@ class HomeController extends Controller
 
     public function awards($company)
     {
-        $banner = asset('website/img/about/banner-about.png');
         $subtitle  = '';
+        $foreword = 'AISIN is dedicated to delivering exceptional quality and innovation, backed by internationally recognized certifications 
+        such as ISO and IATF. These achievements underscore our commitment to upholding global standards 
+        while continuously enhancing our products, processes, and services to meet the needs of our customers.';
 
         $awards = [];
 
         if ($company == 'aii') {
+            $banner = asset('website/img/home/awards/rak.jpg');
             $subtitle = 'PT AISIN Indonesia';
             $awards = [
                 'Environment Awards' => [
@@ -412,21 +415,39 @@ class HomeController extends Controller
                             <ul>
                                 <li> Winner of the Pollution Prevention and Cleaner Production Program category in 2015
                                 <li> Winner of the Best Ergonomic Factory with Karakuri category in 2017
-                            <ul>'
+                                <ul>'
                     ],
                     (object)[
                         'name' => 'Winner of the Astra Green Energy Awards',
                         'picture' => asset('website/img/home/awards/environment.png'),
                         'description' => '
-                            <ul>
+                                <ul>
                                 <li> 1st Place in the Green Energy Project at the New and Renewable Energy Awards in 2017
                                 <li> 1st Place in the Best Medium-Scale Industry Project category in 2016
-                            <ul>'
+                                <ul>'
                     ],
                     (object)[
                         'name' => 'Astra Green Innovation',
                         'picture' => asset('website/img/home/awards/environment.png'),
                         'description' => '2nd Place Astra Green Innovation'
+                    ],
+                    (object)[
+                        'name' => 'Astra Green Company (AGC) and Astra Friendly Company (AFC)',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Achieve GOLD for Astra Green Company (AGC) and 4-Star for Astra Friendly Company (AFC) 
+                        in the Manufacturing Category for implementing their Environmental Management Systems in 2024'
+                    ],
+                    (object)[
+                        'name' => 'BLUE PROPER KLHK RI',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Achieved the BLUE PROPER Rating (Corporate Performance Rating Program in Environmental Management) 
+                        from the Ministry of Environment and Forestry (KLHK RI)  in 2022, 2023, 2024'
+                    ],
+                    (object)[
+                        'name' => 'Kaizen Festival 36th by TMC',
+                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'description' => 'Achieve the Gold Category at QCC Kaizen Festival 36th carrying 
+                        the theme of Environmental Sustainability Initiatives'
                     ],
                 ],
                 'Corporate Social Responsibility Awards' => [
@@ -616,6 +637,7 @@ class HomeController extends Controller
                 ]
             ];
         } else {
+            $banner = asset('website/img/about/banner-awards.jpg');
             $subtitle = 'PT AISIN Indonesia Automotive';
             $awards = [
                 'Environment Awards' => [],
@@ -678,7 +700,6 @@ class HomeController extends Controller
             ];
         }
 
-        $banner = asset('website/img/about/banner-about.png');
         $breadcrumbs = [
             (object)[
                 'name' => 'Awards',
@@ -692,7 +713,7 @@ class HomeController extends Controller
             ],
         ];
 
-        return view('website.pages.about.award.awards', compact('awards', 'banner', 'subtitle', 'breadcrumbs'));
+        return view('website.pages.about.award.awards', compact('foreword', 'awards', 'banner', 'subtitle', 'breadcrumbs'));
     }
 
     public function productIndex()

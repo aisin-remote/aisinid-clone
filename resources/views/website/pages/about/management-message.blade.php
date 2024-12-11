@@ -5,12 +5,13 @@
     <x-banner image="{{ asset('website/img/about/banner-message-from-top.jpg') }}" title="About"
       subtitle="Message from Top Management" />
     <div class="main-container">
+      <p class="fst-italic text-body-secondary">Update (November 1, 2024)</p>
       <div class="row mb-5">
         <h1 class="text-center fw-bold" style="color: #001A72;letter-spacing: 0.5rem;">" INNOVATION, COLLABORATION "</h1>
       </div>
       <div class="row justify-content-center mb-5">
         <img src="{{ asset('website/img/home/executives/presdir.png') }}" alt="President Director" class="img-fluid"
-          style="width: 300px">
+        style="width: 300px">
       </div>
       <div class="row p-3">
         <p>
@@ -43,6 +44,7 @@
           Mr. PB Ariawan Purwonugroho<br>
           President Director
         </p>
+        <p class="fst-italic text-body-secondary">Reference to Shachou's speech in 2024</p>
       </div>
     </div>
   </div>
