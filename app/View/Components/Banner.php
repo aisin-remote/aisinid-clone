@@ -14,7 +14,8 @@ class Banner extends Component
     public function __construct(
         public string $image,
         public string $title,
-        public string $subtitle
+        public string $subtitle,
+        public ?string $dateUpdate = null
     ) {}
 
     /**

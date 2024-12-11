@@ -3,9 +3,8 @@
 @section('pages')
   <div class="mainContents">
     <x-banner image="{{ asset('website/img/about/banner-message-from-top.jpg') }}" title="About"
-      subtitle="Message from Top Management" />
+      subtitle="Message from Top Management" dateUpdate="Update (December 1, 2024)" />
     <div class="main-container">
-      <p class="fst-italic text-body-secondary">Update (November 1, 2024)</p>
       <div class="row mb-5">
         <h1 class="text-center fw-bold" style="color: #001A72;letter-spacing: 0.5rem;">" INNOVATION, COLLABORATION "</h1>
       </div>

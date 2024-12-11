@@ -6,4 +6,7 @@
       <span class="banner-subtitle">{{ $subtitle }}</span>
     </div>
   </div>
+  @if ($dateUpdate)
+    <p class="fst-italic text-body-secondary text-end last-update-date">{{ $dateUpdate }}</p>
+  @endif
 </div>

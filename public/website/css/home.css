@@ -934,6 +934,12 @@ a:link.menu-banner-container {
     transform: translateX(-50%);
 }
 
+.last-update-date {
+    margin: 0 auto;
+    padding: 2rem 5rem 0;
+    font-size: 14px;
+}
+
 @media only screen and (max-width: 960px) {
     .main-container {
         padding: 5rem 2rem;
