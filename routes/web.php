@@ -46,7 +46,7 @@ Route::prefix('products')->group(function () {
 
 
 Route::get('/job-info', [HomeController::class, 'jobInfo'])->name('job-info');
-Route::get('/job-opportunities', [HomeController::class, 'jobOpportunities'])->name('job-opportunities');
+Route::get('/careers', [HomeController::class, 'careers'])->name('careers');
 
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/contact', [ContactController::class, 'sendContactMail'])->name('contact-us');

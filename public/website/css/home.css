@@ -559,7 +559,7 @@ body#home .noticeSection .bnrArea .bnr a .icoCaution {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
     }
-    
+
     body#home .mainpageSection h2 {
         position: relative;
         max-width: inherit;
@@ -882,7 +882,7 @@ a:link.menu-banner-container {
     position: relative;
 }
 .history-card-container:not(:first-child):nth-child(odd) {
-    margin-top: -200px
+    margin-top: -200px;
 }
 
 .history-card-container:not(:first-child):nth-child(even) {
@@ -1025,3 +1025,41 @@ a:link.menu-banner-container {
 .misc-item-container img.with-background {
     background-color: var(--bg-color);
 }
+
+.small-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    color: #1b1b1b;
+}
+
+.small-search-container input {
+    background-color: #e9e9e9;
+    border-left: none !important;
+}
+
+.small-search-container span {
+    background-color: #e9e9e9;
+}
+
+.circle-container {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    color: #130F26;
+    cursor: pointer;
+}
+
+.circle-container:hover {
+    background-color: #001a72;
+    color: #ffffff;
+}
+
+

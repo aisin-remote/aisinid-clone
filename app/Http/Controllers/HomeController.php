@@ -927,36 +927,12 @@ class HomeController extends Controller
         return view('website.pages.job_info');
     }
 
-    public function jobOpportunities()
+    public function careers()
     {
-        $data = [
-            (object) [
-                'title' => 'QA Engineer (Games) Intern',
-                'description' => [
-                    'Review requirements, specifications, and technical design documents to provide timely and meaningful feedback.',
-                    'Assist in creating detailed, comprehensive, and well-structured test plans and test cases.',
-                    'Support in estimating, prioritizing, planning, and executing manual testing activities (including smoke, functional, integration, and regression testing) and provide concise test reports.',
-                    'Learn to perform API interface testing and assist in API automation testing.',
-                    'Gain exposure to non-functional testing (such as load testing, stress testing) and contribute to detailed and comprehensive reports.',
-                    'Assist in creating clear bug tickets and reports (RCA) and help identify, communicate, and track issues in production.',
-                ],
-                'requirements' => [
-                    'Currently pursuing a Bachelor\'s or higher degree in Computer Science or a related discipline.',
-                    'Interest in software testing / software development life cycle.',
-                    'Basic understanding of HTML, CSS, JavaScript, and web development concepts (would be plus have visibility on JavaScript / Java / Python)',
-                    'Exposure to QA automation tools such as Karate Frameworks, Webdriver.io, or Appium (experience with any one tool is a plus).',
-                    'Eagerness to learn and work in an Agile/Scrum/Kanban environment with cross-functional teams.',
-                    'Basic understanding of testing tools such as Postman, and familiarity with Database SQL & NoSQL.',
-                    'Familiarity with Git version management tools is a plus.',
-                    'Demonstrates good logical and structural thinking skills.',
-                    'Good verbal and written communication skills.',
-                    'Willingness to gain hands-on experience in testing Android, iOS, Web, and REST APIs.',
-                    'Exhibits a strong sense of responsibility, result-oriented mindset, and a passion for delivering quality work.',
-                ],
-            ],
-        ];
+        $data = [];
+        $subtitle = 'Job Opportunities';
 
-        return view('website.pages.job_opportunities')->with('data', $data);
+        return view('website.pages.career', compact('data', 'subtitle'));
     }
 
     public function contact()

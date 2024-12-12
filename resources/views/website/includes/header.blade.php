@@ -90,7 +90,7 @@
               </li>
 
               <li class="xxx parent ">
-                <a href="#">Career</a>
+                <a href="{{ route('careers') }}">Career</a>
               </li>
 
               <li class="xxx parent ">
@@ -109,7 +109,7 @@
           </nav>
           <!-- megaNav -->
         </div>
-        <div class="d-flex align-items-center border-start border-dark-subtle px-4 mb-3 ms-5">
+        <div class="d-none d-lg-flex align-items-center border-start border-dark-subtle px-4 mb-3 ms-5">
           <a href="{{ route('core') }}">
             <img src="{{ asset('website/img/logo/satu-aisin-final.png') }}" style="height: 40px;">
           </a>
