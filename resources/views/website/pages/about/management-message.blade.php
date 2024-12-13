@@ -43,7 +43,7 @@
           Mr. PB Ariawan Purwonugroho<br>
           President Director
         </p>
-        <p class="fst-italic text-body-secondary">Reference to Shachou's speech in 2024</p>
+        <p class="text-body-secondary">(Reference to President's Letter in 2024)</p>
       </div>
     </div>
   </div>

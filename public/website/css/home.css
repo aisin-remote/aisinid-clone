@@ -837,7 +837,7 @@ a:link.menu-banner-container {
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
     width: max-content;
     max-width: 250px;
     font-size: 12px;
