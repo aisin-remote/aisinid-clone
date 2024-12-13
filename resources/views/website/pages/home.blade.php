@@ -34,7 +34,7 @@
     text="Think and act autonomously in our efforts to build a sustainable society."
     link="https://www.aisin.com/en/sustainability/" />
   <x-big-menu image="{{ asset('website/img/about/main-career.jpg') }}" big-title="Career"
-    text="Your Talent, Our Vision: Building the Future." link="#" />
+    text="Your Talent, Our Vision: Building the Future." link="{{ route('career') }}" />
   <x-big-menu image="{{ asset('website/img/home/contact--.png') }}" big-title="Contact"
     text="We can help. Our team of experts is on hand to answer your questions." link="{{ route('contact') }}" />
   <!-- /Main Page Section -->
