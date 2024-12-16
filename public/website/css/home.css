@@ -1062,4 +1062,8 @@ a:link.menu-banner-container {
     color: #ffffff;
 }
 
+.xxx.parent a {
+    font-weight: 700;
+}
+
 
