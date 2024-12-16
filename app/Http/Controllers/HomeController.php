@@ -735,33 +735,39 @@ class HomeController extends Controller
                 $products = [
                     (object) [
                         'name' => 'Door Lock',
-                        'picture' => asset('website/img/home/products/bodypart-doorlock.jpg'),
+                        'picture' => asset('website/img/home/products/bodypart-doorlock.png'),
                         'description' => 'This locking-unlocking key is an important safety feature that functions firmly to hold the door onto the body while locking. AISIN Indonesia manufactures door locks using the laser welding technology.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Striker',
-                        'picture' => asset('website/img/home/products/bodypart-striker.jpg'),
+                        'picture' => asset('website/img/home/products/bodypart-striker.png'),
                         'description' => 'A mechanical counterpart to the door lock that hooks and locks door to body',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Door Hinge',
-                        'picture' => asset('website/img/home/products/bodypart-doorhinge.jpg'),
+                        'picture' => asset('website/img/home/products/bodypart-doorhinge.png'),
                         'description' => 'A mechanical part tahat connects side door with body, allowing only the ideal opening angle.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
+                        'name' => 'Door Frame',
+                        'picture' => asset('website/img/home/products/bodypart-doorframe.png'),
+                        'description' => 'The main frame from car door. Frame product made from 0.8-0.9 mm coil plate through profile roll forming process to ensure strong but light structure. AISIN  Indonesia manufactures the door frame parts for 80% of all cars using DF in Indonesia.',
+                        'manufacturer' => 'PT AISIN Indonesia',
+                    ],
+                    (object) [
                         'name' => 'Door Check',
-                        'picture' => asset('website/img/home/products/bodypart-doorcheck.jpg'),
+                        'picture' => asset('website/img/home/products/bodypart-doorcheck.png'),
                         'description' => 'A device which controls the closing of a door and prevents it from slamming.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
-                        'name' => 'Door Frame',
-                        'picture' => asset('website/img/home/products/bodypart-doorframe.jpg'),
-                        'description' => 'The main frame from car door. Frame product made from 0.8-0.9 mm coil plate through profile roll forming process to ensure strong but light structure. AISIN  Indonesia manufactures the door frame parts for 80% of all cars using DF in Indonesia.',
-                        'manufacturer' => 'PT AISIN Indonesia',
+                        'name' => 'Power Seat Motor Assembly',
+                        'picture' => asset('website/img/home/products/bodypart-powerseatmotor.png'),
+                        'description' => 'The Power Seat Motor is a component of power-adjustable seats in vehicles, responsible for moving the seat forward, backward, up, and down, as well as adjusting the seatback angle. Its main function is to provide convenient and customizable seating positions for the driver and passengers, enhancing comfort and ergonomics. Powered by electricity, the motor translates input from seat adjustment controls into mechanical movement, allowing occupants to achieve their desired seating position with ease.',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Outside Handle',
@@ -781,12 +787,6 @@ class HomeController extends Controller
                         'description' => "The Center Pillar Garnishment is located on the center pillar of a vehicle's body. It serves to enhance the visual appearance of the vehicle's interior and exterior and provides additional protection of cover certain structural elements within the center pillar.",
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
-                    (object) [
-                        'name' => 'Power Seat Motor Assembly',
-                        'picture' => asset('website/img/home/products/bodypart-powerseatmotor.png'),
-                        'description' => 'The Power Seat Motor is a component of power-adjustable seats in vehicles, responsible for moving the seat forward, backward, up, and down, as well as adjusting the seatback angle. Its main function is to provide convenient and customizable seating positions for the driver and passengers, enhancing comfort and ergonomics. Powered by electricity, the motor translates input from seat adjustment controls into mechanical movement, allowing occupants to achieve their desired seating position with ease.',
-                        'manufacturer' => 'PT AISIN Indonesia Automotive',
-                    ],
                 ];
                 break;
             case 'drive-train':
@@ -800,15 +800,15 @@ class HomeController extends Controller
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
-                        'name' => 'Clutch Disc',
-                        'picture' => asset('website/img/home/products/drivetrain-clutchdisc.jpg'),
-                        'description' => 'A device for connecting and disconnectiong between the transmission and engine when starting the vehicle or changing gears.',
+                        'name' => 'Clutch Cover',
+                        'picture' => asset('website/img/home/products/drivetrain-clutchcover.png'),
+                        'description' => 'The component in the clutch system that functions to clamp the clutch disc is the pressure plate.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
-                        'name' => 'Clutch Cover',
-                        'picture' => asset('website/img/home/products/drivetrain-clutchcover.jpg'),
-                        'description' => 'The component in the clutch system that functions to clamp the clutch disc is the pressure plate.',
+                        'name' => 'Clutch Disc',
+                        'picture' => asset('website/img/home/products/drivetrain-clutchdisc.png'),
+                        'description' => 'A device for connecting and disconnectiong between the transmission and engine when starting the vehicle or changing gears.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                 ];
@@ -820,7 +820,7 @@ class HomeController extends Controller
                 $products = [
                     (object) [
                         'name' => 'Intake Manifold',
-                        'picture' => asset('website/img/home/products/enginepart-intakemanifold.jpg'),
+                        'picture' => asset('website/img/home/products/enginepart-intakemanifold.png'),
                         'description' => 'Part of engine that supplies the fuel/airmixture to the cylinders. AISIN Indonesia manufactures 800,000 Intake Manifolds/year for Toyota, Daihatsu, and Suzuki.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
@@ -832,13 +832,13 @@ class HomeController extends Controller
                     ],
                     (object) [
                         'name' => 'Engine Front Module',
-                        'picture' => asset('website/img/home/products/enginepart-enginefrontmodule.jpg'),
+                        'picture' => asset('website/img/home/products/enginepart-enginefrontmodule.png'),
                         'description' => 'The Engine Front Module or Timing Chain Cover (TCC) is positioned at the front of the engine block and houses crucial components like the timing chain or belt, tensioners, guides, and sometimes the water pump. Its primary function is to protect and enclose these components, ensuring proper engine timing by synchronizing valve operation with piston movement.',
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Camshaft Housing',
-                        'picture' => asset('website/img/home/products/enginepart-camshafthousing.jpg'),
+                        'picture' => asset('website/img/home/products/enginepart-camshafthousing.png'),
                         'description' => "The Camshaft Housing is a component of the engine that encloses and supports the camshaft, which is responsible for controlling the opening and closing of the engine's valves. Its main function is to provide a secure housing for the camshaft, ensuring proper alignment and operation of the valves for optimal engine performance.",
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
@@ -868,15 +868,15 @@ class HomeController extends Controller
                 $banner = asset('website/img/home/products/electricalpart-ecu.jpg');
                 $products = [
                     (object) [
-                        'name' => 'Electronic Control Unit (ECU) W/P',
-                        'picture' => asset('website/img/home/products/electricalpart-ecu.jpg'),
-                        'description' => "The ECU Water Pump is an electronically controlled water pump in vehicles managed by the Electronic Control Unit (ECU). Its function is to regulate coolant circulation within the engine and cooling system, maintaining optimal engine temperature by adjusting the pump's speed and flow rate based on engine parameters monitored by the ECU, such as coolant temperature, engine load, and driving conditions. This ensures effective cooling while minimizing energy consumption, improving fuel efficiency, and reducing emissions.",
-                        'manufacturer' => 'PT AISIN Indonesia Automotive',
-                    ],
-                    (object) [
                         'name' => 'Antenna Keyless 4L45W',
                         'picture' => asset('website/img/home/products/electricalpart-antenna_keyless.png'),
                         'description' => 'An antenna keyless smart handle used for communicate with a key fob or smart device. When the fob is near the car, the antenna detects the signal from the fob. The vehicle will automatically unlock the doors, and, in some systems, the engine can be started by simply pressing a button on the dashboard. This antenna smart system used in modern cars to enable keyless access. ',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
+                    ],
+                    (object) [
+                        'name' => 'Electronic Control Unit (ECU) W/P',
+                        'picture' => asset('website/img/home/products/electricalpart-ecu.png'),
+                        'description' => "The ECU Water Pump is an electronically controlled water pump in vehicles managed by the Electronic Control Unit (ECU). Its function is to regulate coolant circulation within the engine and cooling system, maintaining optimal engine temperature by adjusting the pump's speed and flow rate based on engine parameters monitored by the ECU, such as coolant temperature, engine load, and driving conditions. This ensures effective cooling while minimizing energy consumption, improving fuel efficiency, and reducing emissions.",
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
