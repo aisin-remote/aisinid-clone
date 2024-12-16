@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
   <title>Satu AISIN - @yield('title')</title>
+  <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
   <meta name="description" content="DESCRIPTION">
   <meta name="keywords" content="KEYWORD">
 
