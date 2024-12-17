@@ -10,7 +10,7 @@
         text="Excellence operation, world class result" />
       <x-carousel-item image="{{ asset('website/img/about/car2.png') }}"
         text="Consistent and keep continuing improvement and innovation" />
-      <x-carousel-item image="{{ asset('website/img/home/history/2024.jpg') }}" text="Innovation, Collaboration" />
+      <x-carousel-item image="{{ asset('website/img/home/history/2024.jpg') }}" text="Collaboration, Innovation" />
     </div>
     <!-- Controls -->
     <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">

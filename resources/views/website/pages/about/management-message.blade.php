@@ -6,7 +6,7 @@
       subtitle="Message from Top Management" dateUpdate="Update (December 1, 2024)" />
     <div class="main-container">
       <div class="row mb-5">
-        <h1 class="text-center fw-bold" style="color: #001A72;letter-spacing: 0.5rem;">" INNOVATION, COLLABORATION "</h1>
+        <h1 class="text-center fw-bold" style="color: #001A72;letter-spacing: 0.5rem;">" COLLABORATION, INNOVATION "</h1>
       </div>
       <div class="row justify-content-center mb-5">
         <img src="{{ asset('website/img/home/executives/presdir.png') }}" alt="President Director" class="img-fluid"

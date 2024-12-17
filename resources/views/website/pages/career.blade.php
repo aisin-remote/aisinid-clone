@@ -15,7 +15,7 @@
           <section class="products" style="padding: 3rem 1rem 5rem;">
             <div class="row d-flex flex-wrap justify-content-center">
               @if (count($data) == 0)
-                <div class="row rounded-3 p-3 bg-white shadow" style="min-height: 20rem">
+                <div class="row rounded-3 p-3 bg-white" style="min-height: 20rem">
                   <div class="col-12 text-center my-auto">
                     <h4><strong>No vacancies available</strong></h4>
                   </div>
