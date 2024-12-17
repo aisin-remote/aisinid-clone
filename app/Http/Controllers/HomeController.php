@@ -823,7 +823,7 @@ class HomeController extends Controller
                     ],
                     (object) [
                         'name' => 'Cylinder Head Cover',
-                        'picture' => asset('website/img/home/products/engineparts-cylinderheadcover.jpg'),
+                        'picture' => asset('website/img/home/products/enginepart-cylinderheadcover.png'),
                         'description' => 'Part which covers the camshaft of an engine, functions as lubrication chamber to grease cam shaft of car engine.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
