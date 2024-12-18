@@ -37,6 +37,8 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"
     integrity="sha256-1m4qVbsdcSU19tulVTbeQReg0BjZiW6yGffnlr/NJu4=" crossorigin="anonymous"></script>
 
+  <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+
   <style>
     .newsSection {
       position: absolute;

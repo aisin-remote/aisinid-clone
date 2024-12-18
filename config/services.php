@@ -30,5 +30,10 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    
+    'google' => [
+        'project_id' => env('GOOGLE_PROJECT_ID'),
+        'service_account_credentials' => env('GOOGLE_SERVICE_ACCOUNT_CREDENTIALS'),
+    ],
 
 ];

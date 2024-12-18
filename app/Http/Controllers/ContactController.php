@@ -6,6 +6,7 @@ use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
+use App\Rules\ReCaptcha;
 
 class ContactController extends Controller
 {
@@ -22,8 +23,9 @@ class ContactController extends Controller
             'country' => 'required|in:Indonesia,Japan',
             'subject' => 'required|string|max:255',
             'message' => 'required|string|max:1000',
+            'g-recaptcha-response' => ['required', new ReCaptcha]
         ];
-
+        $request->validate($rules);
         // Validate the request 
         $validator = Validator::make($request->all(), $rules);
 

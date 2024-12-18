@@ -130,9 +130,16 @@
               </div>
             </div>
             <div class="row">
+              <div class="form-group mt-4 mb-4 d-md-flex justify-content-md-end">
+                @error('g-recaptcha-response')
+                  <span class="text-danger">{{ $message }}</span>
+                @enderror
+                <div class="g-recaptcha" data-sitekey="{{ config('captcha.recaptcha_sitekey') }}" data-action="LOGIN"></div>
+              </div>
               <div class="d-grid gap-2 d-md-flex justify-content-md-end"> <button type="submit"
                   class="btn btn-primary btn-lg me-md-2" type="button">Submit
-                  <i class="bi bi-arrow-right"></i></button> </div>
+                  <i class="bi bi-arrow-right"></i></button>
+              </div>
             </div>
           </form>
         </div>
