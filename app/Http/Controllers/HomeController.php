@@ -628,7 +628,7 @@ class HomeController extends Controller
                     ],
                     (object)[
                         'name' => 'BLUE PROPER KLHK RI',
-                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'picture' => asset('website/img/home/awards/aiia/Sertifikat PROPER 2023 - PT Aisin Indonesia Automotive_page-0001 (1)-min.jpg'),
                         'description' => 'Achieved the BLUE PROPER Rating (Corporate Performance Rating Program in Environmental Management) 
                         from the Ministry of Environment and Forestry (KLHK RI)  in 2022, 2023, 2024'
                     ],
@@ -642,56 +642,56 @@ class HomeController extends Controller
                 'Corporate Social Responsibility Awards' => [
                     (object)[
                         'name' => 'West Java Development Partner',
-                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'picture' => asset('website/img/home/awards/aiia/West Java Development Partner.png'),
                         'description' => "West Java Development Partner through the Company's CSR/PKBL Program in 2017."
                     ],
                 ],
                 'Customer Awards' => [
                     (object)[
                         'name' => 'Appreciation for Quality Target Achivement held by PT Toyota Boshoku Indonesia',
-                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'picture' => asset('website/img/home/awards/aiia/Appreciation for Quality Target Achivement held by PT Toyota Boshoku Indonesia.png'),
                         'description' => 'Appreciation for Quality Target Achivement In Recognition of The Outstanding Contribution in 2016, held by PT Toyota Boshoku Indonesia'
                     ],
                     (object)[
                         'name' => 'Excellent Performance for Support After Sales Business held by PT Mitsubishi Motors Krama Yudha Indonesia',
-                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'picture' => asset('website/img/home/awards/aiia/Excellent Performance for Support After Sales Business held by PT Mitsubishi Motors Krama Yudha Indonesia.png'),
                         'description' => 'In Recognition for Excellent Performance for Support After Sales Business of MMKI in 2022 Period, held by PT Mitsubishi Motors Krama Yudha Indonesia.'
                     ],
                     (object)[
                         'name' => 'After Sales Performance Award held by PT Mitsubishi Motors Krama Yudha Indonesia',
-                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'picture' => asset('website/img/home/awards/aiia/After Sales Performance Award held by PT Mitsubishi Motors Krama Yudha Indonesia.png'),
                         'description' => 'After Sales Performance Award in Recognition of The Excellent Performance to Support MMKI After Sales Business in 2020, held by PT Mitsubishi Motors Krama Yudha Indonesia.'
                     ],
                     (object)[
                         'name' => 'Appreciation of Support After Sales of Best Delivery and Quality held by PT Mitsubishi Motors Krama Yudha Indonesia',
-                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'picture' => asset('website/img/home/awards/aiia/Picture8.png'),
                         'description' => 'Appreciation of Support After Sales of Best Delivery and Quality Fiscal Year 2023, held by PT Mitsubishi Motors Krama Yudha Indonesia.'
                     ],
                     (object)[
                         'name' => 'Lighthouse Industry 4.0 by the Ministry of Industry',
-                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'picture' => asset('website/img/home/awards/aiia/Lighthouse Industry 4.0 by the Ministry of Industry.jpg'),
                         'description' => 'Lighthouse Industry 4.0 by the Ministry of Industry in 2022.'
                     ],
                     (object)[
                         'name' => 'INDI 4.0 Award in the Supply Chain Management Category by the Ministry of Industry',
-                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'picture' => asset('website/img/home/awards/aiia/INDI 4.0 Award in the Supply Chain Management Category by the Ministry of Industry.png'),
                         'description' => 'INDI 4.0 Award in the Supply Chain Management Category by the Ministry of Industry in 2022.'
                     ],
                     (object)[
                         'name' => 'Best Compliments Inalum Award held by PT Indonesia Asahan Aluminium',
-                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'picture' => asset('website/img/home/awards/aiia/Picture7.png'),
                         'description' => 'Best Compliments Inalum Award, held by PT Indonesia Asahan Aluminium.'
                     ],
                     (object)[
                         'name' => 'Special Appreciation R-NR Project Contributionheld by PT Toyota Motor Manufacturing Indonesia',
-                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'picture' => asset('website/img/home/awards/aiia/Special Appreciation R-NR Project Contributionheld by PT Toyota Motor Manufacturing Indonesia.png'),
                         'description' => 'Special Appreciation R-NR Project Contribution in 2015, held by PT Toyota Motor Manufacturing Indonesia'
                     ],
                 ],
                 'TQM Awards' => [
                     (object)[
                         'name' => '3rd Winner Inspection Shop Team Member',
-                        'picture' => asset('website/img/home/awards/environment.png'),
+                        'picture' => asset('website/img/home/awards/aiia/3rd Winner Inspection Shop Team Member.png'),
                         'description' => '3rd Winner Inspection Shop Team Member in 2023 Manufacturing Skill Interchange Festival'
                     ],
                 ],
