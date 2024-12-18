@@ -18,11 +18,12 @@ class ReCaptcha implements ValidationRule
     {
         $response = Http::get("https://www.google.com/recaptcha/api/siteverify", [
             'secret' => config('captcha.recaptcha_secret'),
-            'response' => $value
+            'response' => $value,
+            'remoteip' => request()->ip(),
         ]);
 
         if (!($response->json()["success"] ?? false)) {
-            $fail('The google recaptcha is required.');
+            $fail('The :attribute is invalid.');
         }
     }
 }
