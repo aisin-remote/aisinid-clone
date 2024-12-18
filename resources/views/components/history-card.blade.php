@@ -6,7 +6,7 @@
       <h2 class="card-title text-primary fw-bold">{{ $title }}</h2>
       <hr>
       <p class="card-text">
-        {{ $description }}
+        {!! $description !!}
       </p>
     </div>
   </div>

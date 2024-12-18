@@ -8,9 +8,9 @@
       <x-carousel-item image="{{ asset('website/img/about/car2.png') }}" text="Inspiring “movement”, creating tomorrow." />
       <x-carousel-item image="{{ asset('website/img/home/history/2024.jpg') }}"
         text="Excellence operation, world class result" />
-      <x-carousel-item image="{{ asset('website/img/about/car2.png') }}"
+      <x-carousel-item image="{{ asset('website/img/about/banner-core.png') }}"
         text="Consistent and keep continuing improvement and innovation" />
-      <x-carousel-item image="{{ asset('website/img/home/history/2024.jpg') }}" text="Collaboration, Innovation" />
+      <x-carousel-item image="{{ asset('website/img/about/banner-core-value.jpg') }}" text="Collaboration, Innovation" />
     </div>
     <!-- Controls -->
     <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
@@ -35,7 +35,7 @@
     link="https://www.aisin.com/en/sustainability/" />
   <x-big-menu image="{{ asset('website/img/about/main-career.jpg') }}" big-title="Career"
     text="Your Talent, Our Vision: Building the Future." link="{{ route('careers') }}" />
-  <x-big-menu image="{{ asset('website/img/home/contact--.png') }}" big-title="Contact"
+  <x-big-menu image="{{ asset('website/img/about/banner-contact.jpg') }}" big-title="Contact"
     text="We can help. Our team of experts is on hand to answer your questions." link="{{ route('contact') }}" />
   <!-- /Main Page Section -->
 

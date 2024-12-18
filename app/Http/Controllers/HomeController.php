@@ -82,7 +82,7 @@ class HomeController extends Controller
                 ],
                 (object)[
                     'title' => 'Business',
-                    'content' => 'Manufacture of automotive parts (Clutch Covers, Clutch Disks, Door Latches, Door Checks, Door Hinges, Door Frames, Window Regulators, Hood Latches, Inside/Outside Handles, Intake Manifolds, etc.)',
+                    'content' => 'Manufacture of automotive parts (Clutch Covers, Clutch Discs, Door Checks, Door Hinges, Door Frames, Inside/Outside Handles, Intake Manifolds, etc.)',
                 ],
                 (object)[
                     'title' => 'Representative',
@@ -220,12 +220,12 @@ class HomeController extends Controller
                         ],
                         (object) [
                             'name' => 'Mr. Michael Loandouw',
-                            'position' => 'MKT & HC Director',
+                            'position' => 'Marketing HR IRL GA Director',
                             'picture' => asset('website/img/home/executives/Mr_Michael.png'),
                         ],
                         (object) [
                             'name' => 'Mrs. Herlina',
-                            'position' => 'FACC & Purc. Director',
+                            'position' => 'FACC & Purchasing Director',
                             'picture' => asset('website/img/home/executives/Mrs_Herlina_2.png'),
                         ],
                     ]
@@ -262,12 +262,12 @@ class HomeController extends Controller
                         ],
                         (object) [
                             'name' => 'Mr. Michael Loandouw',
-                            'position' => 'MKT & HC Director',
+                            'position' => 'Marketing HR IRL GA Director',
                             'picture' => asset('website/img/home/executives/Mr_Michael.png'),
                         ],
                         (object) [
                             'name' => 'Mr. Hisatomo Kato',
-                            'position' => 'FACC & Purc. Director',
+                            'position' => 'FACC & Purchasing Director',
                             'picture' => asset('website/img/home/executives/Mr_Kato_2.png'),
                         ],
                     ]
@@ -340,8 +340,8 @@ class HomeController extends Controller
                 'title' => "PT AISIN Indonesia's Subsidiaries",
                 'description' => "As PT Aisin Indonesia grows, competition and demand also intensify, 
                     and thus the company must expand both in terms of organization and physical space. 
-                    Therefore, in 2013, PT Aisin Indonesia established its subsidiaries: PT Aisin 
-                    Indonesia Automotive & PT Advics Manufacturing Indonesia.",
+                    Therefore, in 2013, PT Aisin Indonesia established its subsidiaries: <strong>PT Aisin 
+                    Indonesia Automotive & PT Advics Manufacturing Indonesia.</strong>",
                 'picture' => asset('website/img/home/history/2013.jpg'),
             ],
             (object) [
@@ -639,6 +639,18 @@ class HomeController extends Controller
                     //     the theme of Environmental Sustainability Initiatives'
                     // ],
                 ],
+                'Government Awards' => [
+                    (object)[
+                        'name' => 'Lighthouse Industry 4.0 by the Ministry of Industry',
+                        'picture' => asset('website/img/home/awards/aiia/Lighthouse Industry 4.0 by the Ministry of Industry.jpg'),
+                        'description' => 'Lighthouse Industry 4.0 by the Ministry of Industry in 2022.'
+                    ],
+                    (object)[
+                        'name' => 'INDI 4.0 Award in the Supply Chain Management Category by the Ministry of Industry',
+                        'picture' => asset('website/img/home/awards/aiia/INDI 4.0 Award in the Supply Chain Management Category by the Ministry of Industry.png'),
+                        'description' => 'INDI 4.0 Award in the Supply Chain Management Category by the Ministry of Industry in 2022.'
+                    ],
+                ],
                 'Corporate Social Responsibility Awards' => [
                     (object)[
                         'name' => 'West Java Development Partner',
@@ -666,16 +678,6 @@ class HomeController extends Controller
                         'name' => 'Appreciation of Support After Sales of Best Delivery and Quality held by PT Mitsubishi Motors Krama Yudha Indonesia',
                         'picture' => asset('website/img/home/awards/aiia/Picture8.png'),
                         'description' => 'Appreciation of Support After Sales of Best Delivery and Quality Fiscal Year 2023, held by PT Mitsubishi Motors Krama Yudha Indonesia.'
-                    ],
-                    (object)[
-                        'name' => 'Lighthouse Industry 4.0 by the Ministry of Industry',
-                        'picture' => asset('website/img/home/awards/aiia/Lighthouse Industry 4.0 by the Ministry of Industry.jpg'),
-                        'description' => 'Lighthouse Industry 4.0 by the Ministry of Industry in 2022.'
-                    ],
-                    (object)[
-                        'name' => 'INDI 4.0 Award in the Supply Chain Management Category by the Ministry of Industry',
-                        'picture' => asset('website/img/home/awards/aiia/INDI 4.0 Award in the Supply Chain Management Category by the Ministry of Industry.png'),
-                        'description' => 'INDI 4.0 Award in the Supply Chain Management Category by the Ministry of Industry in 2022.'
                     ],
                     (object)[
                         'name' => 'Best Compliments Inalum Award held by PT Indonesia Asahan Aluminium',
@@ -733,25 +735,25 @@ class HomeController extends Controller
                     (object) [
                         'name' => 'Door Lock',
                         'picture' => asset('website/img/home/products/bodypart-doorlock.png'),
-                        'description' => 'This locking-unlocking key is an important safety feature that functions firmly to hold the door onto the body while locking. AISIN Indonesia manufactures door locks using the laser welding technology.',
+                        'description' => 'This locking-unlocking key is an important safety feature that functions firmly to hold the door onto the body while locking. AISIN Indonesia manufactures Door Locks using the laser welding technology.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Striker',
                         'picture' => asset('website/img/home/products/bodypart-striker.png'),
-                        'description' => 'A mechanical counterpart to the door lock that hooks and locks door to body',
+                        'description' => 'A mechanical counterpart to the Door Lock that hooks and locks door to body.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Door Hinge',
                         'picture' => asset('website/img/home/products/bodypart-doorhinge.png'),
-                        'description' => 'A mechanical part tahat connects side door with body, allowing only the ideal opening angle.',
+                        'description' => 'A mechanical part that connects side door with body, allowing only the ideal opening angle.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Door Frame',
                         'picture' => asset('website/img/home/products/bodypart-doorframe.png'),
-                        'description' => 'The main frame from car door. Frame product made from 0.8-0.9 mm coil plate through profile roll forming process to ensure strong but light structure. AISIN  Indonesia manufactures the door frame parts for 80% of all cars using DF in Indonesia.',
+                        'description' => 'The main frame from car door. Frame product made from 0.8-0.9 mm coil plate through profile roll forming process to ensure strong but light structure. AISIN  Indonesia manufactures the Door Frame parts for 80% of all cars using Door Frame in Indonesia.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
@@ -791,21 +793,21 @@ class HomeController extends Controller
                 $banner = asset('website/img/home/products/drivetrain-clutchcover.jpg');
                 $products = [
                     (object) [
-                        'name' => 'HV Dumper',
+                        'name' => 'HV Damper',
                         'picture' => asset('website/img/home/products/drivetrain-hvdumper.png'),
-                        'description' => 'A mechanical device which transfer the rotational power from the engine to the wheels and generator motor. AISIN Indonesia is the first manufacturer of Hybrid Damper Indonesia.',
+                        'description' => 'A mechanical device which transfer the rotational power from the engine to the wheels and generator motor. AISIN Indonesia is the first manufacturer of Hybrid Damper in Indonesia.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Clutch Cover',
                         'picture' => asset('website/img/home/products/drivetrain-clutchcover.png'),
-                        'description' => 'The component in the clutch system that functions to clamp the clutch disc is the pressure plate.',
+                        'description' => 'The component in the clutch system that functions to clamp the Clutch Disc is the pressure plate.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Clutch Disc',
                         'picture' => asset('website/img/home/products/drivetrain-clutchdisc.png'),
-                        'description' => 'A device for connecting and disconnectiong between the transmission and engine when starting the vehicle or changing gears.',
+                        'description' => 'A device for connecting and disconnecting between the transmission and engine when starting the vehicle or changing gears.',
                         'manufacturer' => 'PT AISIN Indonesia',
                     ],
                 ];
@@ -848,13 +850,13 @@ class HomeController extends Controller
                     (object) [
                         'name' => 'Oil Pump',
                         'picture' => asset('website/img/home/products/enginepart-oilpump.png'),
-                        'description' => 'The Oil Pump is responsible for drawing up the oil from the oil pan and delivering it to lubricate the various parts of the engine. Its main function is to provide lubrication to the friction surfaces, reducing wear and ensuring smooth operation.',
+                        'description' => 'The Oil Pump is responsible for drawing up the oil from the Oil Pan and delivering it to lubricate the various parts of the engine. Its main function is to provide lubrication to the friction surfaces, reducing wear, and ensuring smooth operation.',
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Oil Pan',
                         'picture' => asset('website/img/home/products/enginepart-oilpan.png'),
-                        'description' => 'An oil pan or oil tank is a container that functions to temporarily store oil. The installation location for this component is at the bottom of the engine block. When changing the oil, this component must be emptied and cleaned.',
+                        'description' => 'An Oil Pan or oil tank is a container that functions to temporarily store oil. The installation location for this component is at the bottom of the engine block. When changing the oil, this component must be emptied and cleaned.',
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                 ];
@@ -867,7 +869,7 @@ class HomeController extends Controller
                     (object) [
                         'name' => 'Antenna Keyless 4L45W',
                         'picture' => asset('website/img/home/products/electricalpart-antenna_keyless.png'),
-                        'description' => 'An antenna keyless smart handle used for communicate with a key fob or smart device. When the fob is near the car, the antenna detects the signal from the fob. The vehicle will automatically unlock the doors, and, in some systems, the engine can be started by simply pressing a button on the dashboard. This antenna smart system used in modern cars to enable keyless access. ',
+                        'description' => 'An Antenna Keyless smart handle used for communicate with a key fob or smart device. When the fob is near the car, the antenna detects the signal from the fob. The vehicle will automatically unlock the doors, and, in some systems, the engine can be started by simply pressing a button on the dashboard. This antenna smart system used in modern cars to enable keyless access. ',
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
@@ -934,23 +936,21 @@ class HomeController extends Controller
 
     public function contact()
     {
-        $banner = asset('website/img/home/contact--.png');
+        $banner = asset('website/img/about/banner-contact.jpg');
         $subtitle =  'Contact Us';
         $contacts = [
             (object) [
-                'title' => 'AISIN Indonesia',
+                'title' => 'PT AISIN Indonesia',
                 'address' => 'East Jakarta Industrial Park Plot 5J, Cikarang Selatan, Bekasi, West Java, Indonesia 17550',
-                'phone' => '(+62 21) 8970909',
-                'map' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5115919900622!2d107
-                    .10894440093854!3d-6.327687956420059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
-                    .1!3m3!1m2!1s0x2e699a8658dfc3b3%3A0xb2c5ecd250972b22!2sAISIN%20Indonesia%20
-                    Pt.%2C%20Sukaresmi%2C%20Cikarang%20Sel.%2C%20Kabupaten%20Bekasi%2C%20Jawa%2
-                    0Barat!5e0!3m2!1sen!2sid!4v1730442972059!5m2!1sen!2sid',
+                'phone' => '(+62 267) 8643133',
+                'map' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.509039702219!2d107
+                    .110514!3d-6.3280205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13
+                    .1!3m3!1m2!1s0x2e699a8704f78a35%3A0xf5c18f15dd853cb5!2sPT.%20Aisin%20Indonesia!5e0!3m2!1sen!2sid!4v1734504585417!5m2!1sen!2sid',
             ],
             (object) [
-                'title' => 'AISIN Indonesia Automotive',
+                'title' => 'PT AISIN Indonesia Automotive',
                 'address' => 'Jl. Harapan VIII Lot LL No. 9-10, Kawasan Industri KIIC, Karawang, West Java, Indonesia 41361',
-                'phone' => '	(+62 267) 8643131',
+                'phone' => '(+62 267) 8643131',
                 'map' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965
                     .0397103475207!2d107.29623911177569!3d-6.388877493574868!2m3!1f0!2f0!3f0!3m2!
                     1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69758dcd24635b%3A0x595bd54f4c69da48!2sPT%20
