@@ -839,7 +839,7 @@ a:link.menu-banner-container {
     overflow: hidden;
     /* text-overflow: ellipsis; */
     width: max-content;
-    max-width: 250px;
+    /* max-width: 250px; */
     font-size: 12px;
 }
 
