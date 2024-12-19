@@ -5,9 +5,9 @@
     <x-banner image="{{ asset('website/img/about/banner-executive-management.jpg') }}" title="Executive Management" subtitle="Main Menu" />
     <div class="main-container">
       <div class="row">
-        <x-menu-banner image="{{ asset('website/img/about/bod-aii.jpg') }}" title="PT AISIN Indonesia"
+        <x-menu-banner image="{{ asset('website/img/about/bod-aii.jpg') }}" title="PT AISIN INDONESIA"
           link="{{ route('executive-list', ['company' => 'aii']) }}" column="col-lg-6" />
-        <x-menu-banner image="{{ asset('website/img/about/bod-aiia.jpg') }}" title="PT AISIN Indonesia Automotive"
+        <x-menu-banner image="{{ asset('website/img/about/bod-aiia.jpg') }}" title="PT AISIN INDONESIA AUTOMOTIVE"
           link="{{ route('executive-list', ['company' => 'aiia']) }}" column="col-lg-6" />
       </div>
     </div>

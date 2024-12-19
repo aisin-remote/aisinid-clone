@@ -11,7 +11,7 @@
           link="{{ route('product-list', ['product' => 'engine-part']) }}" column="col-lg-6" />
         <x-menu-banner image="{{ asset('website/img/home/products/drivetrain-clutchcover.jpg') }}" title="Drive Train"
           link="{{ route('product-list', ['product' => 'drive-train']) }}" column="col-lg-6" />
-        <x-menu-banner image="{{ asset('website/img/home/products/electricalpart-ecu.jpg') }}" title="Electrical Part"
+        <x-menu-banner image="{{ asset('website/img/home/products/electricalpart-ecu.jpg') }}" title="Electronic Part"
           link="{{ route('product-list', ['product' => 'electrical-part']) }}" column="col-lg-6" />
       </div>
     </div>

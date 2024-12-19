@@ -76,7 +76,7 @@
                         <li><a href="{{ route('product-list', ['product' => 'body-part']) }}">Body Part</a></li>
                         <li><a href="{{ route('product-list', ['product' => 'engine-part']) }}">Engine Part</a></li>
                         <li><a href="{{ route('product-list', ['product' => 'drive-train']) }}">Drive Train</a></li>
-                        <li><a href="{{ route('product-list', ['product' => 'electrical-part']) }}">Electrical Part</a>
+                        <li><a href="{{ route('product-list', ['product' => 'electrical-part']) }}">Electronic Part</a>
                         </li>
                       </ul>
                     </div><!-- /megaNavContent -->
