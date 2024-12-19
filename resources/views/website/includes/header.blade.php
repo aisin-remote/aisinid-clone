@@ -37,7 +37,8 @@
 
                     <div class="megaNavContent">
                       <ul>
-                        <li><a href="https://www.aisin.com/en/profile/policy/">Corporate Principle</a></li>
+                        <li><a href="https://www.aisin.com/en/profile/policy/" target="_blank">Corporate Principle</a>
+                        </li>
                         <li><a href="{{ route('company-summary') }}">Company Summary</a></li>
                         <li><a href="{{ route('core') }}">Company Core Value</a></li>
                         <li><a href="{{ route('company-history-main') }}">Company History</a></li>
@@ -47,8 +48,10 @@
                         <li><a href="{{ route('executives') }}">Executive Management</a></li>
                       </ul>
                       <ul>
-                        <li><a href="https://www.aisin.com/en/profile/brand/">Brand</a></li>
-                        <li><a href="https://www.aisin.com/en/profile/global/">Global Network</a></li>
+                        <li><a href="https://www.aisin.com/en/profile/brand/" target="_blank">Brand</a></li>
+                        <li><a href="https://www.aisin.com/en/profile/global/" target="_blank">Global Network</a></li>
+                        <li><a href="https://aisin-asean.com/about-aisin-group/asean/asean-network"
+                            target="_blank">ASEAN Network</a></li>
                         <li><a href="{{ route('awards') }}">Awards</a></li>
                       </ul>
                     </div><!-- /megaNavContent -->

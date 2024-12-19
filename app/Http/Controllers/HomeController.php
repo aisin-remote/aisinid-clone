@@ -341,8 +341,8 @@ class HomeController extends Controller
                 'title' => "PT AISIN INDONESIA's Subsidiaries",
                 'description' => "As PT AISIN INDONESIA grows, competition and demand also intensify, 
                     and thus the company must expand both in terms of organization and physical space. 
-                    Therefore, in 2013, PT AISIN INDONESIA established its subsidiaries: <strong>PT Aisin 
-                    Indonesia Automotive & PT Advics Manufacturing Indonesia.</strong>",
+                    Therefore, in 2013, PT AISIN INDONESIA established its subsidiaries: <strong>PT AISIN INDONESIA AUTONOTIVE 
+                    & PT ADVICS MANUFACTURING INDONESIA.</strong>",
                 'picture' => asset('website/img/home/history/2013.jpg'),
             ],
             (object) [
