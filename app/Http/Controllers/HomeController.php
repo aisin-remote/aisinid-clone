@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class HomeController extends Controller
 {
@@ -938,6 +939,12 @@ class HomeController extends Controller
     {
         $banner = asset('website/img/about/banner-contact.jpg');
         $subtitle =  'Contact Us';
+
+        // Get the country list
+        $jsonPath = resource_path('json/countries.json');
+        $json = File::get($jsonPath);
+        $countries = json_decode($json, false)->countries;
+
         $contacts = [
             (object) [
                 'title' => 'PT AISIN INDONESIA',
@@ -958,6 +965,6 @@ class HomeController extends Controller
             ],
         ];
 
-        return view('website.pages.contact', compact('banner', 'subtitle', 'contacts'));
+        return view('website.pages.contact', compact('banner', 'subtitle', 'contacts', 'countries'));
     }
 }

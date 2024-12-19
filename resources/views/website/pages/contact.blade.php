@@ -114,8 +114,11 @@
                 <select class="form-select-lg form-select" id="country" aria-label="Your Country" name="country"
                   required>
                   <option selected>Select your country</option>
-                  <option value="Indonesia" {{ old('country') == 'Indonesia' ? 'selected' : '' }}>Indonesia</option>
-                  <option value="Japan" {{ old('country') == 'Japan' ? 'selected' : '' }}>Japan</option>
+                  @foreach ($countries as $country)
+                    <option value="{{ $country }}" {{ old('country') == $country ? 'selected' : '' }}>
+                      {{ $country }}
+                    </option>
+                  @endforeach
                 </select>
               </div>
               <div class="col-md-12 mb-4">
@@ -125,8 +128,8 @@
               </div>
               <div class="col-md-12 mb-4">
                 <label for="message" class="form-label">Message</label>
-                <textarea class="form-control form-control-lg" id="message" placeholder="Enter your message here ..."
-                  rows="8" required name="message">{{ old('message') }}</textarea>
+                <textarea class="form-control form-control-lg" id="message" placeholder="Enter your message here ..." rows="8"
+                  required name="message">{{ old('message') }}</textarea>
               </div>
             </div>
             <div class="row">
@@ -134,7 +137,8 @@
                 @error('g-recaptcha-response')
                   <span class="text-danger">{{ $message }}</span>
                 @enderror
-                <div class="g-recaptcha" data-sitekey="{{ config('captcha.recaptcha_sitekey') }}" data-action="LOGIN"></div>
+                <div class="g-recaptcha" data-sitekey="{{ config('captcha.recaptcha_sitekey') }}" data-action="LOGIN">
+                </div>
               </div>
               <div class="d-grid gap-2 d-md-flex justify-content-md-end"> <button type="submit"
                   class="btn btn-primary btn-lg me-md-2" type="button">Submit
@@ -145,4 +149,14 @@
         </div>
       </div>
     </div>
+  @endsection
+
+  @section('scripts')
+    <script>
+      $(document).ready(function() {
+        $('#country').select2({
+          theme: 'bootstrap-5',
+        });
+      })
+    </script>
   @endsection
