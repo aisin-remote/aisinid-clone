@@ -60,11 +60,11 @@ class HomeController extends Controller
     public function companySummary(?string $company = null)
     {
         if ($company == 'aii') {
-            $pageTitle = 'PT AISIN INDONESIA';
-            $title = 'PT AISIN INDONESIA (AII)';
+            $pageTitle = 'PT AISIN Indonesia';
+            $title = 'PT AISIN Indonesia (AII)';
             $subtitle = 'Company Summary AII';
             $banner = asset('website/img/about/summary-aii.jpg');
-            $description = 'PT AISIN INDONESIA is a renowned automotive manufacturer that 
+            $description = 'PT AISIN Indonesia is a renowned automotive manufacturer that 
                 specializes in producing various essential components such as Clutch Cover, 
                 Clutch Disc, Door Lock, Door Frame, Door Hinge, Door Handle, Hood Lock, 
                 Hybrid Damper, Intake Manifold, and Cover Head Cylinder. Our company is dedicated 
@@ -75,7 +75,7 @@ class HomeController extends Controller
             $profile = [
                 (object)[
                     'title' => 'Establishment',
-                    'content' => 'July 13, 1995',
+                    'content' => 'July 3, 1995',
                 ],
                 (object)[
                     'title' => 'Capital',
@@ -91,7 +91,7 @@ class HomeController extends Controller
                 ],
                 (object)[
                     'title' => 'Employees',
-                    'content' => '1,159 people by April 2024',
+                    'content' => '1,150 people by November 2024',
                 ],
                 (object)[
                     'title' => 'Address',
@@ -106,17 +106,17 @@ class HomeController extends Controller
                     'active' => true,
                 ],
                 (object)[
-                    'name' => 'PT AISIN INDONESIA',
+                    'name' => 'PT AISIN Indonesia',
                     'url' => route('company-summary', 'aii'),
                     'active' => true,
                 ],
             ];
         } else if ($company == 'aiia') {
-            $pageTitle = 'PT AISIN INDONESIA AUTOMOTIVE';
+            $pageTitle = 'PT AISIN Indonesia Automotive';
             $banner = asset('website/img/about/summary-aiia.jpg');
-            $title = 'PT AISIN INDONESIA AUTOMOTIVE (AIIA)';
+            $title = 'PT AISIN Indonesia Automotive (AIIA)';
             $subtitle = 'Company Summary AIIA';
-            $description = 'PT AISIN INDONESIA AUTOMOTIVE is a joint venture between PT AISIN 
+            $description = 'PT AISIN Indonesia Automotive is a joint venture between PT AISIN 
                 Indonesia (AII) - part of the Astra Otoparts Group, and AISIN Corporation, 
                 a member of the Toyota Group. Founded on March 14, 2014, the company specializes 
                 in the production of automotive components for the industry.';
@@ -124,7 +124,7 @@ class HomeController extends Controller
             $profile = [
                 (object)[
                     'title' => 'Establishment',
-                    'content' => 'March 14, 2014',
+                    'content' => 'March 7, 2014',
                 ],
                 (object)[
                     'title' => 'Capital',
@@ -140,7 +140,7 @@ class HomeController extends Controller
                 ],
                 (object)[
                     'title' => 'Employees',
-                    'content' => '579 people by April 2024',
+                    'content' => '557 people by November 2024',
                 ],
                 (object)[
                     'title' => 'Address',
@@ -155,7 +155,7 @@ class HomeController extends Controller
                     'active' => true,
                 ],
                 (object)[
-                    'name' => 'PT AISIN INDONESIA AUTOMOTIVE',
+                    'name' => 'PT AISIN Indonesia Automotive',
                     'url' => route('company-summary', 'aiia'),
                     'active' => true,
                 ],
@@ -191,7 +191,7 @@ class HomeController extends Controller
         $executives = [];
 
         if ($company == 'aii') {
-            $subtitle = 'PT AISIN INDONESIA';
+            $subtitle = 'PT AISIN Indonesia';
             $banner = asset('website/img/about/bod-aii.jpg');
             $executives = [
                 (object) [
@@ -233,7 +233,7 @@ class HomeController extends Controller
                 ],
             ];
         } else {
-            $subtitle = 'PT AISIN INDONESIA AUTOMOTIVE';
+            $subtitle = 'PT AISIN Indonesia Automotive';
             $banner = asset('website/img/about/bod-aiia.jpg');
             $executives = [
                 (object) [
@@ -295,8 +295,8 @@ class HomeController extends Controller
     public function companyHistory()
     {
         $profile = (object) [
-            'title' => 'WHAT IS PT AISIN INDONESIA?',
-            'content' => 'PT AISIN INDONESIA is a renowned automotive manufacturer that 
+            'title' => 'WHAT IS PT AISIN Indonesia?',
+            'content' => 'PT AISIN Indonesia is a renowned automotive manufacturer that 
                 specializes in producing various essential components such as 
                 Clutch Cover, Clutch Disc, Door Lock, Door Frame, Door Hinge, 
                 Door Handle, Hood Lock, Hybrid Damper, Intake Manifold, 
@@ -309,9 +309,9 @@ class HomeController extends Controller
         $history = [
             (object) [
                 'year' => '1995',
-                'title' => 'Birth of PT AISIN INDONESIA',
+                'title' => 'Birth of PT AISIN Indonesia',
                 'description' => 'After ten years of collaboration between PT Dharma Sarana Perdana and Aisin Seiki Co., Ltd., in the 
-                    form of technical assistance, a joint venture was established, which became PT AISIN INDONESIA in 1995. This marked 
+                    form of technical assistance, a joint venture was established, which became PT AISIN Indonesia in 1995. This marked 
                     a solid foundation and strong foothold for the company in the automotive component manufacturing industry in Indonesia.',
                 'picture' => asset('website/img/home/history/1996.jpg'),
             ],
@@ -328,7 +328,7 @@ class HomeController extends Controller
             (object) [
                 'year' => '2006',
                 'title' => 'From Local to Global',
-                'description' => "PT AISIN INDONESIA weathered the economic crisis of '98 and became 
+                'description' => "PT AISIN Indonesia weathered the economic crisis of '98 and became 
                     even more resilient. The company achieved numerous certifications, expanded its 
                     Cikarang plant, improved internally, and celebrated its 10th anniversary. 
                     In February 2006, the company’s shareholder structure underwent some changes, 
@@ -338,17 +338,17 @@ class HomeController extends Controller
             ],
             (object) [
                 'year' => '2013',
-                'title' => "PT AISIN INDONESIA's Subsidiaries",
-                'description' => "As PT AISIN INDONESIA grows, competition and demand also intensify, 
+                'title' => "PT AISIN Indonesia's Subsidiaries",
+                'description' => "As PT AISIN Indonesia grows, competition and demand also intensify, 
                     and thus the company must expand both in terms of organization and physical space. 
-                    Therefore, in 2013, PT AISIN INDONESIA established its subsidiaries: <strong>PT AISIN INDONESIA AUTONOTIVE 
+                    Therefore, in 2013, PT AISIN Indonesia established its subsidiaries: <strong>PT AISIN Indonesia AUTONOTIVE 
                     & PT ADVICS MANUFACTURING INDONESIA.</strong>",
                 'picture' => asset('website/img/home/history/2013.jpg'),
             ],
             (object) [
                 'year' => '2016',
                 'title' => "Growing Up Together for The Best Future",
-                'description' => 'PT AISIN INDONESIA aims to go "From Local to Global" by implementing a strong 
+                'description' => 'PT AISIN Indonesia aims to go "From Local to Global" by implementing a strong 
                     production system that enables the development of new technologies and products, 
                     including: Door Lock, Intake Manifold, Cylinder Head Cover, Door Frame, Clutch Cover, 
                     and Clutch Disc.',
@@ -358,8 +358,8 @@ class HomeController extends Controller
                 'year' => '2024',
                 'title' => "AISIN Collaboration (Satu AISIN)",
                 'description' => 'To strengthen and build the harmonization of mindsets, the participation of 
-                    all members, and the synergy and collaboration between functions from PT AISIN INDONESIA 
-                    and PT AISIN INDONESIA AUTOMOTIVE in the form of “Satu Aisin”.',
+                    all members, and the synergy and collaboration between functions from PT AISIN Indonesia 
+                    and PT AISIN Indonesia Automotive in the form of “Satu Aisin”.',
                 'picture' => asset('website/img/home/history/2024.jpg'),
             ],
         ];
@@ -389,7 +389,7 @@ class HomeController extends Controller
 
         if ($company == 'aii') {
             $banner = asset('website/img/home/awards/rak.jpg');
-            $subtitle = 'PT AISIN INDONESIA';
+            $subtitle = 'PT AISIN Indonesia';
 
             $foreword = 'AISIN is dedicated to delivering exceptional quality and innovation, backed by internationally recognized certifications 
                 such as ISO (ISO 14001:2015, ISO 45001:2018) and IATF (IATF 16949:2016). These achievements underscore our commitment to upholding global standards 
@@ -448,9 +448,9 @@ class HomeController extends Controller
                         'description' => 'Active Participation in CSR Activities in Bekasi Regency, Organized by the Bekasi Regency Government in 2019'
                     ],
                     (object)[
-                        'name' => 'A Program for the Construction of 3 Temporary Housing Units in Collaboration with PT Cikarang Listrindo Tbk and PT AISIN INDONESIA',
+                        'name' => 'A Program for the Construction of 3 Temporary Housing Units in Collaboration with PT Cikarang Listrindo Tbk and PT AISIN Indonesia',
                         'picture' => asset('website/img/home/awards/aii/corporate social responsibility/edit/A Program for the Construction of 3 Temporary Housing Units in Collaboration with PT Cikarang Listrindo Tbk.JPG'),
-                        'description' => 'A Program for the Construction of 3 Temporary Housing Units in Collaboration between PT Cikarang Listrindo Tbk and PT AISIN INDONESIA in Gumantar Village, East Lombok, in 2019'
+                        'description' => 'A Program for the Construction of 3 Temporary Housing Units in Collaboration between PT Cikarang Listrindo Tbk and PT AISIN Indonesia in Gumantar Village, East Lombok, in 2019'
                     ],
                 ],
                 'Customer Awards' => [
@@ -472,7 +472,7 @@ class HomeController extends Controller
                     (object)[
                         'name' => 'Quality Award held by PT Toyota Motor Manufacturing Indonesia',
                         'picture' => asset('website/img/home/awards/aii/customer awards/quality/edit/Quality Award held by PT Toyota Motor Manufacturing Indonesia.jpg'),
-                        'description' => 'Quality Award in 2020 Presented to PT AISIN INDONESIA, held by PT Toyota Motor Manufacturing Indonesia.'
+                        'description' => 'Quality Award in 2020 Presented to PT AISIN Indonesia, held by PT Toyota Motor Manufacturing Indonesia.'
                     ],
                     //
                     (object)[
@@ -613,7 +613,7 @@ class HomeController extends Controller
             ];
         } else {
             $banner = asset('website/img/about/banner-awards.jpg');
-            $subtitle = 'PT AISIN INDONESIA AUTOMOTIVE';
+            $subtitle = 'PT AISIN Indonesia Automotive';
 
             $foreword = 'AISIN is dedicated to delivering exceptional quality and innovation, backed by internationally recognized certifications 
                 such as ISO (ISO 9001:2015, ISO 14001:2015, ISO 45001:2018) and IATF (IATF 16949:2016). These achievements underscore our commitment to upholding global standards 
@@ -629,7 +629,7 @@ class HomeController extends Controller
                     // ],
                     (object)[
                         'name' => 'BLUE PROPER KLHK RI',
-                        'picture' => asset('website/img/home/awards/aiia/Sertifikat PROPER 2023 - PT AISIN INDONESIA AUTOMOTIVE_page-0001 (1)-min.jpg'),
+                        'picture' => asset('website/img/home/awards/aiia/Sertifikat PROPER 2023 - PT AISIN Indonesia Automotive_page-0001 (1)-min.jpg'),
                         'description' => 'Achieved the BLUE PROPER Rating (Corporate Performance Rating Program in Environmental Management) 
                         from the Ministry of Environment and Forestry (KLHK RI)  in 2022, 2023, 2024'
                     ],
@@ -737,55 +737,55 @@ class HomeController extends Controller
                         'name' => 'Door Lock',
                         'picture' => asset('website/img/home/products/bodypart-doorlock.png'),
                         'description' => 'This locking-unlocking key is an important safety feature that functions firmly to hold the door onto the body while locking. AISIN Indonesia manufactures Door Locks using the laser welding technology.',
-                        'manufacturer' => 'PT AISIN INDONESIA',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Striker',
                         'picture' => asset('website/img/home/products/bodypart-striker.png'),
                         'description' => 'A mechanical counterpart to the Door Lock that hooks and locks door to body.',
-                        'manufacturer' => 'PT AISIN INDONESIA',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Door Hinge',
                         'picture' => asset('website/img/home/products/bodypart-doorhinge.png'),
                         'description' => 'A mechanical part that connects side door with body, allowing only the ideal opening angle.',
-                        'manufacturer' => 'PT AISIN INDONESIA',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Door Frame',
                         'picture' => asset('website/img/home/products/bodypart-doorframe.png'),
                         'description' => 'The main frame from car door. Frame product made from 0.8-0.9 mm coil plate through profile roll forming process to ensure strong but light structure. AISIN  Indonesia manufactures the Door Frame parts for 80% of all cars using Door Frame in Indonesia.',
-                        'manufacturer' => 'PT AISIN INDONESIA',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Door Check',
                         'picture' => asset('website/img/home/products/bodypart-doorcheck.png'),
                         'description' => 'A device which controls the closing of a door and prevents it from slamming.',
-                        'manufacturer' => 'PT AISIN INDONESIA',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Power Seat Motor Assembly',
                         'picture' => asset('website/img/home/products/bodypart-powerseatmotor.png'),
                         'description' => 'The Power Seat Motor is a component of power-adjustable seats in vehicles, responsible for moving the seat forward, backward, up, and down, as well as adjusting the seatback angle. Its main function is to provide convenient and customizable seating positions for the driver and passengers, enhancing comfort and ergonomics. Powered by electricity, the motor translates input from seat adjustment controls into mechanical movement, allowing occupants to achieve their desired seating position with ease.',
-                        'manufacturer' => 'PT AISIN INDONESIA AUTOMOTIVE',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Outside Handle',
                         'picture' => asset('website/img/home/products/bodypart-outsidehandle.png'),
                         'description' => "The Outside Handle is a device that allows for easy opening of a vehicle's door. It provides convenient access for entering the vehicle. Additionally, certain models may include a feature that can be operated using a key or smart button.",
-                        'manufacturer' => 'PT AISIN INDONESIA AUTOMOTIVE',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Power Sliding Door (PSD) System',
                         'picture' => asset('website/img/home/products/bodypart-psd.png'),
                         'description' => "The Power Sliding Door (PSD) is a feature found in vehicles, particularly vans and minivans, that allows for automatic opening and closing of sliding doors. Its primary function is to enhance passenger convenience by providing easier access to the vehicle's interior, especially for passengers seated in the rear. The PSD system is typically operated by electric motors and controlled by sensors, enabling hands-free or remote operation for added convenience. This feature improves accessibility, particularly in situations where passengers have their hands full or limited mobility, and it often includes safety features such as obstacle detection to prevent accidents during door operation.",
-                        'manufacturer' => 'PT AISIN INDONESIA AUTOMOTIVE',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Center Pillar Garnish',
                         'picture' => asset('website/img/home/products/bodypart-centerpillar.png'),
                         'description' => "The Center Pillar Garnishment is located on the center pillar of a vehicle's body. It serves to enhance the visual appearance of the vehicle's interior and exterior and provides additional protection of cover certain structural elements within the center pillar.",
-                        'manufacturer' => 'PT AISIN INDONESIA AUTOMOTIVE',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                 ];
                 break;
@@ -797,19 +797,19 @@ class HomeController extends Controller
                         'name' => 'HV Damper',
                         'picture' => asset('website/img/home/products/drivetrain-hvdumper.png'),
                         'description' => 'A mechanical device which transfer the rotational power from the engine to the wheels and generator motor. AISIN Indonesia is the first manufacturer of Hybrid Damper in Indonesia.',
-                        'manufacturer' => 'PT AISIN INDONESIA',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Clutch Cover',
                         'picture' => asset('website/img/home/products/drivetrain-clutchcover.png'),
                         'description' => 'The component in the clutch system that functions to clamp the Clutch Disc is the pressure plate.',
-                        'manufacturer' => 'PT AISIN INDONESIA',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Clutch Disc',
                         'picture' => asset('website/img/home/products/drivetrain-clutchdisc.png'),
                         'description' => 'A device for connecting and disconnecting between the transmission and engine when starting the vehicle or changing gears.',
-                        'manufacturer' => 'PT AISIN INDONESIA',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                 ];
 
@@ -822,43 +822,43 @@ class HomeController extends Controller
                         'name' => 'Intake Manifold',
                         'picture' => asset('website/img/home/products/enginepart-intakemanifold.png'),
                         'description' => 'Part of engine that supplies the fuel/airmixture to the cylinders. AISIN Indonesia manufactures 800,000 Intake Manifolds/year for Toyota, Daihatsu, and Suzuki.',
-                        'manufacturer' => 'PT AISIN INDONESIA',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Cylinder Head Cover',
                         'picture' => asset('website/img/home/products/enginepart-cylinderheadcover.png'),
                         'description' => 'Part which covers the camshaft of an engine, functions as lubrication chamber to grease cam shaft of car engine.',
-                        'manufacturer' => 'PT AISIN INDONESIA',
+                        'manufacturer' => 'PT AISIN Indonesia',
                     ],
                     (object) [
                         'name' => 'Engine Front Module',
                         'picture' => asset('website/img/home/products/enginepart-enginefrontmodule.png'),
                         'description' => 'The Engine Front Module or Timing Chain Cover (TCC) is positioned at the front of the engine block and houses crucial components like the timing chain or belt, tensioners, guides, and sometimes the water pump. Its primary function is to protect and enclose these components, ensuring proper engine timing by synchronizing valve operation with piston movement.',
-                        'manufacturer' => 'PT AISIN INDONESIA AUTOMOTIVE',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Camshaft Housing',
                         'picture' => asset('website/img/home/products/enginepart-camshafthousing.png'),
                         'description' => "The Camshaft Housing is a component of the engine that encloses and supports the camshaft, which is responsible for controlling the opening and closing of the engine's valves. Its main function is to provide a secure housing for the camshaft, ensuring proper alignment and operation of the valves for optimal engine performance.",
-                        'manufacturer' => 'PT AISIN INDONESIA AUTOMOTIVE',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Water Pump',
                         'picture' => asset('website/img/home/products/enginepart-waterpump.png'),
                         'description' => 'The Water Pump is responsible for circulating coolant throughout the engine to regulate its temperature. Its main function is to pump coolant from the radiator through the engine block and cylinder head, where it absorbs heat, and then returns it to the radiator to dissipate that heat.',
-                        'manufacturer' => 'PT AISIN INDONESIA AUTOMOTIVE',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Oil Pump',
                         'picture' => asset('website/img/home/products/enginepart-oilpump.png'),
                         'description' => 'The Oil Pump is responsible for drawing up the oil from the Oil Pan and delivering it to lubricate the various parts of the engine. Its main function is to provide lubrication to the friction surfaces, reducing wear, and ensuring smooth operation.',
-                        'manufacturer' => 'PT AISIN INDONESIA AUTOMOTIVE',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Oil Pan',
                         'picture' => asset('website/img/home/products/enginepart-oilpan.png'),
                         'description' => 'An Oil Pan or oil tank is a container that functions to temporarily store oil. The installation location for this component is at the bottom of the engine block. When changing the oil, this component must be emptied and cleaned.',
-                        'manufacturer' => 'PT AISIN INDONESIA AUTOMOTIVE',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                 ];
 
@@ -871,25 +871,25 @@ class HomeController extends Controller
                         'name' => 'Antenna Keyless 4L45W',
                         'picture' => asset('website/img/home/products/electricalpart-antenna_keyless.png'),
                         'description' => 'An Antenna Keyless smart handle used for communicate with a key fob or smart device. When the fob is near the car, the antenna detects the signal from the fob. The vehicle will automatically unlock the doors, and, in some systems, the engine can be started by simply pressing a button on the dashboard. This antenna smart system used in modern cars to enable keyless access. ',
-                        'manufacturer' => 'PT AISIN INDONESIA AUTOMOTIVE',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Electronic Control Unit (ECU) W/P',
                         'picture' => asset('website/img/home/products/electricalpart-ecu.png'),
                         'description' => "The ECU Water Pump is an electronically controlled water pump in vehicles managed by the Electronic Control Unit (ECU). Its function is to regulate coolant circulation within the engine and cooling system, maintaining optimal engine temperature by adjusting the pump's speed and flow rate based on engine parameters monitored by the ECU, such as coolant temperature, engine load, and driving conditions. This ensures effective cooling while minimizing energy consumption, improving fuel efficiency, and reducing emissions.",
-                        'manufacturer' => 'PT AISIN INDONESIA AUTOMOTIVE',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => '4WD Electronic Control Unit (ECU)',
                         'picture' => asset('website/img/home/products/electricalpart-ecu4wd.png'),
                         'description' => 'The 4WD ECU is an electronic device used to control the engagement and disengagement of the four-wheel-drive system in a vehicle. It ensures proper distribution of torque between the front and rear wheels, improving vehicle stability and traction in various driving conditions. The ECU operates based on inputs from sensors and driver commands, optimizing performance and safety.',
-                        'manufacturer' => 'PT AISIN INDONESIA AUTOMOTIVE',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
                         'name' => 'Power Back Door Electronic Control Unit (ECU)',
                         'picture' => asset('website/img/home/products/electricalpart-pbd_ecu.png'),
                         'description' => 'The Power Back Door ECU Controller is an electronic unit that manages the operation of the power back door system in a vehicle. It facilitates automated opening, closing, and locking of the back door through remote control or manual switches. This system enhances convenience and safety by incorporating features like anti-pinch sensors and motion detection during operation.',
-                        'manufacturer' => 'PT AISIN INDONESIA AUTOMOTIVE',
+                        'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                 ];
                 break;
@@ -947,7 +947,7 @@ class HomeController extends Controller
 
         $contacts = [
             (object) [
-                'title' => 'PT AISIN INDONESIA',
+                'title' => 'PT AISIN Indonesia',
                 'address' => 'East Jakarta Industrial Park Plot 5J, Cikarang Selatan, Bekasi, West Java, Indonesia 17550',
                 'phone' => '(+62 21) 8970909',
                 'map' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.509039702219!2d107
@@ -955,7 +955,7 @@ class HomeController extends Controller
                     .1!3m3!1m2!1s0x2e699a8704f78a35%3A0xf5c18f15dd853cb5!2sPT.%20Aisin%20Indonesia!5e0!3m2!1sen!2sid!4v1734504585417!5m2!1sen!2sid',
             ],
             (object) [
-                'title' => 'PT AISIN INDONESIA AUTOMOTIVE',
+                'title' => 'PT AISIN Indonesia Automotive',
                 'address' => 'Jl. Harapan VIII Lot LL No. 9-10, Kawasan Industri KIIC, Karawang, West Java, Indonesia 41361',
                 'phone' => '(+62 267) 8643131',
                 'map' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965

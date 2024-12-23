@@ -1,5 +1,5 @@
 @extends('website.layouts.master')
-@section('title', 'PT AISIN INDONESIA - Company Summary')
+@section('title', 'PT AISIN Indonesia - Company Summary')
 @section('pages')
   <div class="mainContents">
     <div class="mainContents">
@@ -9,7 +9,7 @@
           <x-custom-breadcrumbs :breadcrumbs="$breadcrumbs" />
         </div>
         <div class="row">
-          <h2 class="fw-medium">PT AISIN INDONESIA (AII)</h2>
+          <h2 class="fw-medium">PT AISIN Indonesia (AII)</h2>
         </div>
         <div class="row">
           <div class="col-12">
@@ -20,7 +20,7 @@
           <section class="company-summary" style="padding: 3rem 1rem 5rem;">
             <div class="row">
               <div class="col-md-6 mt-4 mt-md-0 order-2 order-md-1">
-                <p>PT AISIN INDONESIA is a renowned automotive manufacturer that specializes in producing various
+                <p>PT AISIN Indonesia is a renowned automotive manufacturer that specializes in producing various
                   essential
                   components such as Clutch Cover, Clutch Disc, Door Lock, Door Frame, Door Hinge, Door Handle, Hood Lock,
                   Hybrid Damper, Intake Manifold, and Cover Head Cylinder. Our company is dedicated to delivering
