@@ -629,7 +629,7 @@ class HomeController extends Controller
                     // ],
                     (object)[
                         'name' => 'BLUE PROPER KLHK RI',
-                        'picture' => asset('website/img/home/awards/aiia/Sertifikat PROPER 2023 - PT AISIN Indonesia Automotive_page-0001 (1)-min.jpg'),
+                        'picture' => asset('website/img/home/awards/aiia/sertifikat-blue-proper-klhk-ri.jpg'),
                         'description' => 'Achieved the BLUE PROPER Rating (Corporate Performance Rating Program in Environmental Management) 
                         from the Ministry of Environment and Forestry (KLHK RI)  in 2022, 2023, 2024'
                     ],
