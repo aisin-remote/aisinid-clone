@@ -868,19 +868,19 @@ class HomeController extends Controller
                 $banner = asset('website/img/home/products/electricalpart-ecu.jpg');
                 $products = [
                     (object) [
-                        'name' => 'Antenna Keyless 4L45W',
+                        'name' => 'Keyless Antenna',
                         'picture' => asset('website/img/home/products/electricalpart-antenna_keyless.png'),
                         'description' => 'An Antenna Keyless smart handle used for communicate with a key fob or smart device. When the fob is near the car, the antenna detects the signal from the fob. The vehicle will automatically unlock the doors, and, in some systems, the engine can be started by simply pressing a button on the dashboard. This antenna smart system used in modern cars to enable keyless access. ',
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
-                        'name' => 'Electronic Control Unit (ECU) W/P',
+                        'name' => 'Water Pump Electronic Control Unit (ECU)',
                         'picture' => asset('website/img/home/products/electricalpart-ecu.png'),
                         'description' => "The ECU Water Pump is an electronically controlled water pump in vehicles managed by the Electronic Control Unit (ECU). Its function is to regulate coolant circulation within the engine and cooling system, maintaining optimal engine temperature by adjusting the pump's speed and flow rate based on engine parameters monitored by the ECU, such as coolant temperature, engine load, and driving conditions. This ensures effective cooling while minimizing energy consumption, improving fuel efficiency, and reducing emissions.",
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
-                        'name' => '4WD Electronic Control Unit (ECU)',
+                        'name' => 'Four Wheel Drive (4WD) Electronic Control Unit (ECU)',
                         'picture' => asset('website/img/home/products/electricalpart-ecu4wd.png'),
                         'description' => 'The 4WD ECU is an electronic device used to control the engagement and disengagement of the four-wheel-drive system in a vehicle. It ensures proper distribution of torque between the front and rear wheels, improving vehicle stability and traction in various driving conditions. The ECU operates based on inputs from sensors and driver commands, optimizing performance and safety.',
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
