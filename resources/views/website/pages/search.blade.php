@@ -1,5 +1,5 @@
 @extends('website.layouts.master')
-@section('title', 'Contact')
+@section('title', 'Search Result')
 @section('pages')
   <style>
     .list-group-item {
