@@ -15,7 +15,8 @@ class MenuBanner extends Component
         public string $title,
         public string $link,
         public string $image,
-        public string $column
+        public string $column,
+        public bool $newTab = false
     ) {}
 
     /**

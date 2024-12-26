@@ -20,8 +20,8 @@
       <ul class="footList">
         <li><a href="{{ route('about') }}" class="over">About</a></li>
         <li><a href="{{ route('products') }}" class="over">Product</a></li>
-        <li><a href="" class="over">Sustainability</a></li>
-        <li><a href="" class="over">Career</a></li>
+        <li><a href="https://www.aisin.com/en/sustainability/" class="over" target="_blank">Sustainability</a></li>
+        <li><a href="{{ route('careers') }}" class="over">Career</a></li>
         <li><a href="{{ route('contact') }}" class="over">Contact</a></li>
       </ul>
     </div>

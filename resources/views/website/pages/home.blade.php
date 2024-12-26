@@ -5,7 +5,7 @@
   {{-- <section id="whatsnew" class="newsSection"> --}}
   <div id="mainCarousel" class="carousel slide" style="margin-bottom: 5rem" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <x-carousel-item image="{{ asset('website/img/about/car2.png') }}" text="Inspiring “movement”, creating tomorrow." />
+      <x-carousel-item image="{{ asset('website/img/about/car2.png') }}" text="Inspiring “movement”, creating tomorrow" />
       <x-carousel-item image="{{ asset('website/img/home/history/2024.jpg') }}"
         text="Excellence operation, world class result" />
       <x-carousel-item image="{{ asset('website/img/about/banner-core.png') }}"

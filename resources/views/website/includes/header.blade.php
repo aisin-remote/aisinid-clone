@@ -89,7 +89,7 @@
               </li>
 
               <li class="xxx parent ">
-                <a href="https://www.aisin.com/en/sustainability/">Sustainability</a>
+                <a href="https://www.aisin.com/en/sustainability/" target="_blank">Sustainability</a>
               </li>
 
               <li class="xxx parent ">
