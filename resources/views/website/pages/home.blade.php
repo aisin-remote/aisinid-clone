@@ -32,7 +32,7 @@
     text="With a focus on excellence and detail, we create the best products." link="{{ route('products') }}" />
   <x-big-menu image="{{ asset('website/img/about/main-sustainability.jpg') }}" big-title="Sustainability"
     text="Think and act autonomously in our efforts to build a sustainable society."
-    link="https://www.aisin.com/en/sustainability/" />
+    link="https://www.aisin.com/en/sustainability/" newTab="true" />
   <x-big-menu image="{{ asset('website/img/about/main-career.jpg') }}" big-title="Career"
     text="Your Talent, Our Vision: Building the Future." link="{{ route('careers') }}" />
   <x-big-menu image="{{ asset('website/img/about/banner-contact.jpg') }}" big-title="Contact"

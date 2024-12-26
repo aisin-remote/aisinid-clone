@@ -15,7 +15,8 @@ class BigMenu extends Component
         public string $image,
         public string $bigTitle,
         public string $text,
-        public string $link
+        public string $link,
+        public bool $newTab = false
     ) {}
 
     /**

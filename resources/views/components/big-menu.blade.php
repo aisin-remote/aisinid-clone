@@ -10,7 +10,7 @@
         {{ $text }}
       </p>
       <div class="moreBtn">
-        <a href="{{ $link }}"><span>Read more</span></a>
+        <a href="{{ $link }}" {{ $newTab ? 'target="blank' : '' }}><span>Read more</span></a>
       </div>
     </div>
   </div>
