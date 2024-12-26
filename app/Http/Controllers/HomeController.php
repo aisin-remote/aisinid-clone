@@ -118,7 +118,7 @@ class HomeController extends Controller
             $subtitle = 'Company Summary AIIA';
             $description = 'PT AISIN Indonesia Automotive is a joint venture between PT AISIN 
                 Indonesia (AII) - part of the Astra Otoparts Group, and AISIN Corporation, 
-                a member of the Toyota Group. Founded on March 14, 2014, the company specializes 
+                a member of the Toyota Group. Founded on March 7, 2014, the company specializes 
                 in the production of automotive components for the industry.';
             $image = asset('website/img/about/summary-aiia.jpg');
             $profile = [
@@ -278,7 +278,7 @@ class HomeController extends Controller
 
         $breadcrumbs = [
             (object)[
-                'name' => 'Executives Management',
+                'name' => 'Executive Management',
                 'url' => route('executives'),
                 'active' => true,
             ],
@@ -310,7 +310,7 @@ class HomeController extends Controller
             (object) [
                 'year' => '1995',
                 'title' => 'Birth of PT AISIN Indonesia',
-                'description' => 'After ten years of collaboration between PT Dharma Sarana Perdana and Aisin Seiki Co., Ltd., in the 
+                'description' => 'After ten years of collaboration between PT Dharma Sarana Perdana and AISIN Seiki Co., Ltd., in the 
                     form of technical assistance, a joint venture was established, which became PT AISIN Indonesia in 1995. This marked 
                     a solid foundation and strong foothold for the company in the automotive component manufacturing industry in Indonesia.',
                 'picture' => asset('website/img/home/history/1996.jpg'),
@@ -332,7 +332,7 @@ class HomeController extends Controller
                     even more resilient. The company achieved numerous certifications, expanded its 
                     Cikarang plant, improved internally, and celebrated its 10th anniversary. 
                     In February 2006, the company’s shareholder structure underwent some changes, 
-                    with Aisin Seiki Co., Ltd. & PT. Senantiasa Makmur becoming the dominant 
+                    with AISIN Seiki Co., Ltd. & PT Senantiasa Makmur becoming the dominant 
                     shareholders.",
                 'picture' => asset('website/img/home/history/2006.jpg'),
             ],
@@ -359,7 +359,7 @@ class HomeController extends Controller
                 'title' => "AISIN Collaboration (Satu AISIN)",
                 'description' => 'To strengthen and build the harmonization of mindsets, the participation of 
                     all members, and the synergy and collaboration between functions from PT AISIN Indonesia 
-                    and PT AISIN Indonesia Automotive in the form of “Satu Aisin”.',
+                    and PT AISIN Indonesia Automotive in the form of “Satu AISIN”.',
                 'picture' => asset('website/img/home/history/2024.jpg'),
             ],
         ];
@@ -400,7 +400,7 @@ class HomeController extends Controller
                     (object)[
                         'name' => 'Gold Proper KLHK RI',
                         'picture' => asset('website/img/home/awards/aii/environment/edit/GOLD PROPER KLHK RI.jpg'),
-                        'description' => 'The First Automotive Component Manufacturing Company to Achieve the GOLD PROPER Rating (Corporate Performance Rating Program in Environmental Management) from the Ministry of Environment and Forestry (KLHK RI) in 2021'
+                        'description' => 'The First Automotive Component Manufacturing Company to Achieve the GOLD PROPER Rating (Corporate Performance Rating Program in Environmental Management) from the Ministry of Environment and Forestry (KLHK RI) in 2021.'
                     ],
                     (object)[
                         'name' => 'GREEN PROPER KLHK RI',
@@ -410,15 +410,15 @@ class HomeController extends Controller
                     (object)[
                         'name' => 'Astra Green Company (AGC) and Astra Friendly Company (AFC)',
                         'picture' => asset('website/img/home/awards/aii/environment/edit/AGC & AFC Award 2024.jpg'),
-                        'description' => 'Achievement of 5 AGC & AFC Awards, in 2019, 2020, 2022, 2023, and 2024, held by PT Astra Otoparts '
+                        'description' => 'Achievement of 5 AGC & AFC Awards, in 2019, 2020, 2022, 2023, and 2024, held by PT Astra Otoparts.'
                     ],
                     (object)[
                         'name' => 'Winner of the Astra Green Company Awards',
                         'picture' => asset('website/img/home/awards/aii/environment/edit/Winner of the Astra Green Company Awards.jpg'),
                         'description' => '
                             <ul>
-                                <li> Winner of the Pollution Prevention and Cleaner Production Program category in 2015
-                                <li> Winner of the Best Ergonomic Factory with Karakuri category in 2017
+                                <li> Winner of the Pollution Prevention and Cleaner Production Program category in 2015.
+                                <li> Winner of the Best Ergonomic Factory with Karakuri category in 2017.
                                 <ul>'
                     ],
                     (object)[
@@ -426,31 +426,31 @@ class HomeController extends Controller
                         'picture' => asset('website/img/home/awards/aii/environment/edit/Winner of the Astra Green Energy Awards.jpg'),
                         'description' => '
                                 <ul>
-                                <li> 1st Place in the Green Energy Project at the New and Renewable Energy Awards in 2017
-                                <li> 1st Place in the Best Medium-Scale Industry Project category in 2016
+                                <li> 1st Place in the Green Energy Project at the New and Renewable Energy Awards in 2017.
+                                <li> 1st Place in the Best Medium-Scale Industry Project category in 2016.
                                 <ul>'
                     ],
                     (object)[
                         'name' => 'Astra Green Innovation',
                         'picture' => asset('website/img/home/awards/aii/environment/edit/Astra Green Innovation.jpg'),
-                        'description' => '2nd Place Astra Green Innovation'
+                        'description' => '2nd Place Astra Green Innovation.'
                     ],
                 ],
                 'Corporate Social Responsibility Awards' => [
                     (object)[
                         'name' => 'West Java Development Partner',
                         'picture' => asset('website/img/home/awards/aii/corporate social responsibility/edit/West Java Development Partner.jpg'),
-                        'description' => "West Java Development Partner through the Company's CSR/PKBL Program in 2019"
+                        'description' => "West Java Development Partner through the Company's CSR/PKBL Program in 2019."
                     ],
                     (object)[
                         'name' => 'Active Participation in CSR Activities in Bekasi Regency',
                         'picture' => asset('website/img/home/awards/aii/corporate social responsibility/edit/Active Participation in CSR Activities in Bekasi Regency.jpg'),
-                        'description' => 'Active Participation in CSR Activities in Bekasi Regency, Organized by the Bekasi Regency Government in 2019'
+                        'description' => 'Active Participation in CSR Activities in Bekasi Regency, Organized by the Bekasi Regency Government in 2019.'
                     ],
                     (object)[
                         'name' => 'A Program for the Construction of 3 Temporary Housing Units in Collaboration with PT Cikarang Listrindo Tbk and PT AISIN Indonesia',
                         'picture' => asset('website/img/home/awards/aii/corporate social responsibility/edit/A Program for the Construction of 3 Temporary Housing Units in Collaboration with PT Cikarang Listrindo Tbk.JPG'),
-                        'description' => 'A Program for the Construction of 3 Temporary Housing Units in Collaboration between PT Cikarang Listrindo Tbk and PT AISIN Indonesia in Gumantar Village, East Lombok, in 2019'
+                        'description' => 'A Program for the Construction of 3 Temporary Housing Units in Collaboration between PT Cikarang Listrindo Tbk and PT AISIN Indonesia in Gumantar Village, East Lombok, in 2019.'
                     ],
                 ],
                 'Customer Awards' => [
@@ -489,7 +489,7 @@ class HomeController extends Controller
                     (object)[
                         'name' => 'Good Delivery Performance to ADM Assembly Plant Held by PT Astra Daihatsu Motor',
                         'picture' => asset('website/img/home/awards/aii/customer awards/delivery/edit/Good Delivery Performance to ADM Assembly Plant held by PT Astra Daihatsu Motor.jpg'),
-                        'description' => 'In recognition of Good Delivery Performance to ADM Assembly Plant for the period January - December 2023, held by PT Astra Daihatsu Motor'
+                        'description' => 'In recognition of Good Delivery Performance to ADM Assembly Plant for the period January - December 2023, held by PT Astra Daihatsu Motor.'
                     ],
                     (object)[
                         'name' => 'Supplier Award for Excellence in Delivery Held by PT Honda Prospect Motor',
@@ -531,7 +531,7 @@ class HomeController extends Controller
                     (object)[
                         'name' => 'Appreciation of Kaizen Contribution',
                         'picture' => asset('website/img/home/awards/aii/customer awards/morale/edit/Appreciation of Kaizen Contribution.jpg'),
-                        'description' => 'Appreciation of Kaizen Contribution in Recognition of Outstanding Performance and Support in 2023, held by PT Hino Motors Manufacturing Indonesia.'
+                        'description' => 'Appreciation of Kaizen Contribution in recognition of outstanding performance and support in 2023, held by PT Hino Motors Manufacturing Indonesia.'
                     ],
                     (object)[
                         'name' => 'Thematic Appreciation Structural Reform Monozukuri Evolution held by PT Toyota Motor Manufacturing Indonesia',
@@ -597,12 +597,12 @@ class HomeController extends Controller
                     (object)[
                         'name' => 'Best on Export Contribution & Growth',
                         'picture' => asset('website/img/home/awards/aii/others/edit/Best on Export Contribution & Growth.jpg'),
-                        'description' => 'Twice recognized for Achivement in Best on Export Contribution & Growth over the last 5 years, in 2020 and 2024, held by PT Astra Otoparts Tbk'
+                        'description' => 'Twice recognized for Achivement in Best on Export Contribution & Growth over the last 5 years, in 2020 and 2024, held by PT Astra Otoparts.'
                     ],
                     (object)[
                         'name' => 'Stategic x-EV Ecosystem Supply Pioneering Award',
                         'picture' => asset('website/img/home/awards/aii/others/edit/Stategic x-EV Ecosystem Supply Pioneering Award.jpg'),
-                        'description' => 'Achievement in Strategic x-EV Ecosystem Supply Pioneering Award in 2024, held by PT Astra Otoparts Tbk.'
+                        'description' => 'Achievement in Strategic x-EV Ecosystem Supply Pioneering Award in 2024, held by PT Astra Otoparts.'
                     ],
                     (object)[
                         'name' => 'Best Implementation of Digitalization & Industry 4.0',
@@ -631,7 +631,7 @@ class HomeController extends Controller
                         'name' => 'BLUE PROPER KLHK RI',
                         'picture' => asset('website/img/home/awards/aiia/sertifikat-blue-proper-klhk-ri.jpg'),
                         'description' => 'Achieved the BLUE PROPER Rating (Corporate Performance Rating Program in Environmental Management) 
-                        from the Ministry of Environment and Forestry (KLHK RI)  in 2022, 2023, 2024'
+                        from the Ministry of Environment and Forestry (KLHK RI)  in 2022, 2023, and 2024.'
                     ],
                     // (object)[
                     //     'name' => 'Kaizen Festival 36th by TMC',
@@ -663,12 +663,12 @@ class HomeController extends Controller
                     (object)[
                         'name' => 'Appreciation for Quality Target Achivement held by PT Toyota Boshoku Indonesia',
                         'picture' => asset('website/img/home/awards/aiia/Appreciation for Quality Target Achivement held by PT Toyota Boshoku Indonesia.png'),
-                        'description' => 'Appreciation for Quality Target Achivement In Recognition of The Outstanding Contribution in 2016, held by PT Toyota Boshoku Indonesia'
+                        'description' => 'Appreciation for Quality Target Achivement in recognition of the outstanding contribution in 2016, held by PT Toyota Boshoku Indonesia.'
                     ],
                     (object)[
                         'name' => 'Excellent Performance for Support After Sales Business held by PT Mitsubishi Motors Krama Yudha Indonesia',
                         'picture' => asset('website/img/home/awards/aiia/Excellent Performance for Support After Sales Business held by PT Mitsubishi Motors Krama Yudha Indonesia.png'),
-                        'description' => 'In Recognition for Excellent Performance for Support After Sales Business of MMKI in 2022 Period, held by PT Mitsubishi Motors Krama Yudha Indonesia.'
+                        'description' => 'In recognition for Excellent Performance for Support After Sales Business of MMKI in 2022 Period, held by PT Mitsubishi Motors Krama Yudha Indonesia.'
                     ],
                     (object)[
                         'name' => 'After Sales Performance Award held by PT Mitsubishi Motors Krama Yudha Indonesia',
@@ -688,14 +688,14 @@ class HomeController extends Controller
                     (object)[
                         'name' => 'Special Appreciation R-NR Project Contributionheld by PT Toyota Motor Manufacturing Indonesia',
                         'picture' => asset('website/img/home/awards/aiia/Special Appreciation R-NR Project Contributionheld by PT Toyota Motor Manufacturing Indonesia.png'),
-                        'description' => 'Special Appreciation R-NR Project Contribution in 2015, held by PT Toyota Motor Manufacturing Indonesia'
+                        'description' => 'Special Appreciation R-NR Project Contribution in 2015, held by PT Toyota Motor Manufacturing Indonesia.'
                     ],
                 ],
                 'TQM Awards' => [
                     (object)[
                         'name' => '3rd Winner Inspection Shop Team Member',
                         'picture' => asset('website/img/home/awards/aiia/3rd Winner Inspection Shop Team Member.png'),
-                        'description' => '3rd Winner Inspection Shop Team Member in 2023 Manufacturing Skill Interchange Festival'
+                        'description' => '3rd Winner Inspection Shop Team Member in 2023 Manufacturing Skill Interchange Festival.'
                     ],
                 ],
             ];
@@ -876,7 +876,7 @@ class HomeController extends Controller
                     (object) [
                         'name' => 'Water Pump Electronic Control Unit (ECU)',
                         'picture' => asset('website/img/home/products/electricalpart-ecu.png'),
-                        'description' => "The ECU Water Pump is an electronically controlled water pump in vehicles managed by the Electronic Control Unit (ECU). Its function is to regulate coolant circulation within the engine and cooling system, maintaining optimal engine temperature by adjusting the pump's speed and flow rate based on engine parameters monitored by the ECU, such as coolant temperature, engine load, and driving conditions. This ensures effective cooling while minimizing energy consumption, improving fuel efficiency, and reducing emissions.",
+                        'description' => "The Water Pump ECU is an electronically controlled water pump in vehicles managed by the Electronic Control Unit (ECU). Its function is to regulate coolant circulation within the engine and cooling system, maintaining optimal engine temperature by adjusting the pump's speed and flow rate based on engine parameters monitored by the ECU, such as coolant temperature, engine load, and driving conditions. This ensures effective cooling while minimizing energy consumption, improving fuel efficiency, and reducing emissions.",
                         'manufacturer' => 'PT AISIN Indonesia Automotive',
                     ],
                     (object) [
@@ -901,7 +901,7 @@ class HomeController extends Controller
 
         $breadcrumbs = [
             (object)[
-                'name' => 'Products',
+                'name' => 'Product',
                 'url' => route('products'),
                 'active' => true,
             ],

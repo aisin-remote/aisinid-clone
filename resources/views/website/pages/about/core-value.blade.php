@@ -52,7 +52,7 @@
           teamwork, we build a resilient organization that thrives on delivering exceptional service and value to those we
           serve." <br><br>
         </p>
-        <h3 class="primary-title">5. Harmony with society and Nature</h3>
+        <h3 class="primary-title">5. Harmony with Society and Nature</h3>
         <p>
           "We are committed to creating a positive impact by living in harmony with society and nature. Recognizing our
           responsibility to the communities we serve and the environment we share, we strive to make sustainable choices
@@ -61,7 +61,7 @@
           reflects our belief that a thriving business contributes to a healthier society and a sustainable world."
           <br><br>
         </p>
-        <h3 class="primary-title">6. Continuous process of Improvement</h3>
+        <h3 class="primary-title">6. Continuous Process of Improvement</h3>
         <p>
           "Embracing the spirit of continuous improvement, we see every challenge as an opportunity to grow and excel.
           Guided by the principles of kaizen (incremental improvement), genchi (going to the source), genbutsu (seeing the
