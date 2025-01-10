@@ -3,7 +3,7 @@
 @section('pages')
   <div class="mainContents">
     <x-banner image="{{ asset('website/img/about/banner-executive-aii.jpg') }}" title="About"
-      subtitle="Message from Top Management" dateUpdate="Update (December 1, 2024)" />
+      subtitle="Message from Top Management" dateUpdate="Update (January 10, 2025)" />
     <div class="main-container">
       <div class="row mb-5">
         <h1 class="text-center fw-bold" style="color: #001A72;letter-spacing: 0.5rem;">" COLLABORATION, INNOVATION "</h1>
@@ -48,7 +48,7 @@
           Mr. PB Ariawan Purwonugroho<br>
           President Director
         </p>
-        <p class="text-body-secondary">(Reference to President's Letter in 2024)</p>
+        <p class="text-body-secondary">(Reference to President's Letter in 2025)</p>
       </div>
     </div>
   </div>

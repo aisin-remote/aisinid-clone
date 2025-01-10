@@ -189,6 +189,8 @@ class HomeController extends Controller
     public function executives($company)
     {
         $executives = [];
+        $posY = 50;
+        $posYUnit = '%';
 
         if ($company == 'aii') {
             $subtitle = 'PT AISIN Indonesia';
@@ -235,6 +237,9 @@ class HomeController extends Controller
         } else {
             $subtitle = 'PT AISIN Indonesia Automotive';
             $banner = asset('website/img/about/bod-aiia-2.jpg');
+            $posY = -23;
+            $posYUnit = 'rem';
+
             $executives = [
                 (object) [
                     'members' => [
@@ -289,7 +294,7 @@ class HomeController extends Controller
             ],
         ];
 
-        return view('website.pages.about.executive.executive', compact('banner', 'subtitle', 'executives', 'breadcrumbs'));
+        return view('website.pages.about.executive.executive', compact('banner', 'subtitle', 'executives', 'breadcrumbs', 'posY', 'posYUnit'));
     }
 
     public function companyHistory()

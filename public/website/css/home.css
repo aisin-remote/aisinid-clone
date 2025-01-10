@@ -737,6 +737,7 @@ body#home .noticeSection .bnrArea .bnr a .icoCaution {
     background-size: cover;
     transition: ease-in-out 0.5s;
     padding: 8rem 25rem;
+    background-position-y: var(--pos-y);
 }
 
 .banner-container::before {

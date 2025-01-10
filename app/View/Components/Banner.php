@@ -15,7 +15,9 @@ class Banner extends Component
         public string $image,
         public string $title,
         public string $subtitle,
-        public ?string $dateUpdate = null
+        public ?string $dateUpdate = null,
+        public ?int $posY = 50,
+        public ?string $posYUnit = '%',
     ) {}
 
     /**

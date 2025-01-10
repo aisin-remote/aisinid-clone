@@ -3,7 +3,8 @@
 @section('pages')
   <div class="mainContents">
     <div class="mainContents">
-      <x-banner :image="$banner" title="Executive Management" :subtitle="$subtitle" dateUpdate="Update (December 1, 2024)" />
+      <x-banner :image="$banner" title="Executive Management" :subtitle="$subtitle" dateUpdate="Update (January 10, 2025)"
+        posY="{{ $posY }}" posYUnit="{{ $posYUnit }}" />
       <div class="main-container">
         <div class="row">
           <x-custom-breadcrumbs :breadcrumbs="$breadcrumbs" />
