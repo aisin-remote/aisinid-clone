@@ -215,9 +215,9 @@ class HomeController extends Controller
                 (object) [
                     'members' => [
                         (object) [
-                            'name' => 'Mr. Hisatomo Kato',
+                            'name' => 'Mr. Nobuyuki Umeda',
                             'position' => 'Plant Director',
-                            'picture' => asset('website/img/home/executives/Mr_Kato_2.png')
+                            'picture' => asset('website/img/home/executives/Mr_Umeda.png')
                         ],
                         (object) [
                             'name' => 'Mr. Michael Loandouw',

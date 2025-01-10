@@ -10,34 +10,39 @@
       </div>
       <div class="row justify-content-center mb-5">
         <img src="{{ asset('website/img/home/executives/presdir.png') }}" alt="President Director" class="img-fluid"
-        style="width: 300px">
+          style="width: 300px">
       </div>
       <div class="row p-3">
         <p>
-          The challenges and level of uncertainty that we will face in 2024 will be bigger and higher, so we must
-          continue to strengthen and build harmonization of mindsets, participation of all members, synergy and
-          collaboration between functions. <br><br>
+          The challenges and uncertainties we will face in 2025/2026 are becoming increasingly significant, making it
+          essential to consistently strengthen and foster the harmonization of mindsets, active participation from all
+          members, synergy, and cross-functional collaboration. <br><br>
         </p>
         <p>
-          Our focus [AII-AIIA] is how we improve efficiency and eliminate young operations [TPS, 3 Pillars] so as to
-          increase competitiveness in each product. This can be achieved by collaborating and integrating all existing
-          functions [Slim Organization]. We optimally use the resources available to us and carry out extra ordinary
-          [Change Mindset] activities so that we can increase the expected competitiveness. <br><br>
+          Our primary focus [PT AISIN Indonesia and PT AISIN Indonesia Automotive] is on improving efficiency and
+          eliminating wasteful operations [TPS.3Pillar], thereby enhancing the competitiveness of each product. This can
+          be achieved through collaboration and integration across all functions [Slim Organization]. We must optimize the
+          resources available to us and implement extraordinary activities to achieve the desired level of
+          competitiveness. <br><br>
         </p>
         <p>
-          SDGs and Carbon Neutral activities need to be increased in accordance with the programs we have planned and
-          in line with the business situation. <br><br>
+          SDGs and Carbon Neutral initiatives must be further enhanced in line with the programs we have planned, aligning
+          with future business conditions, including a 50% reduction in emissions by 2030. <br><br>
         </p>
         <p>
-          We are starting digitalization in all areas to make work easier, integration between parts and easier access
-          between functions [No Barrier]. There is no duplicate data procurement, it can be taken from available
-          sources. <br><br>
+          We are embarking on digitalization across all areas to streamline tasks, improve inter-departmental integration,
+          and facilitate cross-functional accessibility. This approach will eliminate duplicate data entries, ensuring
+          data is consistently retrieved from available sources [while adhering to ATSG regulations]. <br><br>
         </p>
         <p>
-          Resource development is important to form a company culture that is able to compete with rapidly changing
-          situations. It is not enough just to provide education, but adequate training must be carried out at all
-          levels. So that the sense of belonging to the company can grow and develop in all employees and this company
-          will become stronger in facing challenges that are not easy and fast. <br><br>
+          Developing human resources and preparing future leaders are crucial for cultivating a corporate culture that
+          thrives amidst rapid changes. Education alone is not sufficient; adequate training must be conducted at all
+          levels. This will foster a sense of ownership and belonging among all employees, enabling them to navigate
+          dynamic business environments and overcome challenges. <br><br>
+        </p>
+        <p>
+          Let us showcase our capabilities in making this company highly competitive, with speed and agility, to emerge as
+          winners in every opportunity and establish ourselves as an irreplaceable supplier. <br><br>
         </p>
         <p class="fw-bold">
           Mr. PB Ariawan Purwonugroho<br>

@@ -3,7 +3,7 @@
 @section('pages')
   <div class="mainContents">
     <div class="mainContents">
-      <x-banner image="{{ asset('website/img/about/main-career.jpg') }}" title="Career" :subtitle="$subtitle"
+      <x-banner image="{{ asset('website/img/about/Banner-Career-2.jpg') }}" title="Career" :subtitle="$subtitle"
         dateUpdate="Update (December 1, 2024)" />
       <div class="main-container">
         <div class="row">
