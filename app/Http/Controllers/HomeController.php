@@ -192,7 +192,7 @@ class HomeController extends Controller
 
         if ($company == 'aii') {
             $subtitle = 'PT AISIN Indonesia';
-            $banner = asset('website/img/about/bod-aii.jpg');
+            $banner = asset('website/img/about/bod-aii-2.jpg');
             $executives = [
                 (object) [
                     'members' => [
@@ -234,7 +234,7 @@ class HomeController extends Controller
             ];
         } else {
             $subtitle = 'PT AISIN Indonesia Automotive';
-            $banner = asset('website/img/about/bod-aiia.jpg');
+            $banner = asset('website/img/about/bod-aiia-2.jpg');
             $executives = [
                 (object) [
                     'members' => [
