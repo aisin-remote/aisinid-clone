@@ -310,56 +310,36 @@ class HomeController extends Controller
             (object) [
                 'year' => '1995',
                 'title' => 'Birth of PT AISIN Indonesia',
-                'description' => 'After ten years of collaboration between PT Dharma Sarana Perdana and AISIN Seiki Co., Ltd., in the 
-                    form of technical assistance, a joint venture was established, which became PT AISIN Indonesia in 1995. This marked 
-                    a solid foundation and strong foothold for the company in the automotive component manufacturing industry in Indonesia.',
+                'description' => 'After ten years of cooperation between PT Dharma Sarana Perdana (DSP) and AISIN Seiki Co., Ltd – in the form of technical assistance – the Company had definitely set a solid foundation and foothold in the automotive component manufacturing industry in Indonesia. The next breakthrough was to consolidate and strengthen this cooperation in the form of the Joint Venture Agreement signed between PT Astra Otoparts Tbk – shareholder of DSP – Aisin Seiki Japan on May 10, 1995. The Joint Venture was officially launched during a ceremony on September 3, 1996. Thus, by Joint Venture Agreement above, DSP was changed to PT AISIN Indonesia (AII).This merging led to new practices adapted with local culture, which are the Aisatsu (Greeting), 3S, Anzen (Safety), and San Gen Shugi.',
                 'picture' => asset('website/img/home/history/1996.jpg'),
             ],
             (object) [
                 'year' => '1998',
-                'title' => "New Culture and Economic Crisis",
-                'description' => 'Beyond the business attitude and technical and economic aspects, 
-                    the corporate cultures of both companies had to merge and adapt into a new, 
-                    distinct, and specific one. This merger led to the adoption of new practices 
-                    aligned with the local culture, including Kaizen, Aisatsu (Greeting), 3S, Anzen, 
-                    and San Gen Shugi.',
+                'title' => "Economic Crisis",
+                'description' => 'Two years after the established of PT AISIN Indonesia, a national crisis occurred in 1998. PT AISIN Indonesia, as supplier of 4-wheel (car) automotive components, surely suffered due to this condition. Various efforts ware undertaken to avoid bankruptcy. Support also came from the holding company, AISIN Seiki Japan, to keep the company on going.',
                 'picture' => asset('website/img/home/history/1998.jpg'),
             ],
             (object) [
-                'year' => '2006',
-                'title' => 'From Local to Global',
-                'description' => "PT AISIN Indonesia weathered the economic crisis of '98 and became 
-                    even more resilient. The company achieved numerous certifications, expanded its 
-                    Cikarang plant, improved internally, and celebrated its 10th anniversary. 
-                    In February 2006, the company’s shareholder structure underwent some changes, 
-                    with AISIN Seiki Co., Ltd. & PT Senantiasa Makmur becoming the dominant 
-                    shareholders.",
+                'year' => '1998-2006',
+                'title' => 'Rising After the Crisis',
+                'description' => "PT AISIN Indonesia weathered the economic crisis of 1998 and became more resilient. The company achieved many certifications, expanded its Cikarang plant, improve internally, and reached its 10th Anniversary.",
                 'picture' => asset('website/img/home/history/2006.jpg'),
             ],
             (object) [
-                'year' => '2013',
-                'title' => "PT AISIN Indonesia's Subsidiaries",
-                'description' => "As PT AISIN Indonesia grows, competition and demand also intensify, 
-                    and thus the company must expand both in terms of organization and physical space. 
-                    Therefore, in 2013, PT AISIN Indonesia established its subsidiaries: <strong>PT AISIN Indonesia Automotive 
-                    & PT ADVICS Manufacturing Indonesia.</strong>",
+                'year' => '2006-2016',
+                'title' => "From Local to Global and PT AISIN Indonesia's Subsidiaries",
+                'description' => 'After rising from the crisis of 1998, PT AISIN Indonesia then aims to go “From Local to Global” by applying good production system that allows for the development of new technologies and products, which are: the Door Lock, Intake Manifold, Cylinder Head Cover, Door Frame, Clutch Cover, and Clutch Disc.
+                        <br><br>
+                        As PT AISIN Indonesia grows, competition and demand also intensify, thus the Company must expand in terms of organization and actual space. In 2014, PT AISIN Indonesia founded its subsidiaries: <strong>PT AISIN Indonesia Automotive (AIIA) and PT ADVICS Manufacturing Indonesia</strong>. Meanwhile, the ground breaking for the Karawang plant was on January 22, 2014. AIIA’s initial production commenced on October 2014. In general AIIA started with two product types: body part and casting parts. For body parts, there were the Handle and Power Sliding Door; while in terms of casting parts there were Oil Pump, Water Pump, Timing Chain Cover, and Oil Pan products
+                        <br><br>
+                        PT AISIN Indonesia celebrated its 20th anniversary in 2016 with the slogan "Growing Together for a Better Future." This celebration served as a momentum to renew the working spirit, enabling PT AISIN Indonesia to remain competitive amidst the intense market competition.
+                        ',
                 'picture' => asset('website/img/home/history/2013.jpg'),
-            ],
-            (object) [
-                'year' => '2016',
-                'title' => "Growing Up Together for The Best Future",
-                'description' => 'PT AISIN Indonesia aims to go "From Local to Global" by implementing a strong 
-                    production system that enables the development of new technologies and products, 
-                    including: Door Lock, Intake Manifold, Cylinder Head Cover, Door Frame, Clutch Cover, 
-                    and Clutch Disc.',
-                'picture' => asset('website/img/home/history/2016.jpg'),
             ],
             (object) [
                 'year' => '2024',
                 'title' => "AISIN Collaboration (Satu AISIN)",
-                'description' => 'To strengthen and build the harmonization of mindsets, the participation of 
-                    all members, and the synergy and collaboration between functions from PT AISIN Indonesia 
-                    and PT AISIN Indonesia Automotive in the form of “Satu AISIN”.',
+                'description' => 'The renewal of the “Satu Aisin” program aims to raise awareness of shared ownership within the company and optimize its resources for collective progress. This program is part of the Structural Reform initiative, where the company is making improvements to adapt to future business changes by strengthening and fostering the harmonization of mindsets, active participation from all members, synergy, and collaboration across functions from PT AISIN Indonesia and PT AISIN Indonesia Automotive.',
                 'picture' => asset('website/img/home/history/2024.jpg'),
             ],
         ];

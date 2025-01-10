@@ -984,6 +984,14 @@ a:link.menu-banner-container {
         text-align: left;
     }
 
+    .history-card-container:not(:first-child):nth-child(odd) {
+        margin-top: 0;
+    }
+
+    .history-card-container:not(:first-child):nth-child(even) {
+        margin-top: 0;
+    }
+
     .custom-breadcrumb-container {
         flex-direction: column;
         align-items: start;
@@ -1065,7 +1073,7 @@ a:link.menu-banner-container {
     justify-content: center;
     align-items: center;
     padding-top: 5px;
-    color: #130F26;
+    color: #130f26;
     cursor: pointer;
 }
 
@@ -1077,5 +1085,3 @@ a:link.menu-banner-container {
 .xxx.parent a {
     font-weight: 700;
 }
-
-
