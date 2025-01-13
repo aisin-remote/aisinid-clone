@@ -237,7 +237,7 @@ class HomeController extends Controller
         } else {
             $subtitle = 'PT AISIN Indonesia Automotive';
             $banner = asset('website/img/about/bod-aiia-2.jpg');
-            $posY = -23;
+            $posY = -28;
             $posYUnit = 'rem';
 
             $executives = [

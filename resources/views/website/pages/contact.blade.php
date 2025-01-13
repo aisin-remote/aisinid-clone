@@ -92,6 +92,7 @@
                   <option selected value="">Select your title</option>
                   <option value="Mr." {{ old('title') == 'Mr.' ? 'selected' : '' }}>Mr.</option>
                   <option value="Ms." {{ old('title') == 'Ms.' ? 'selected' : '' }}>Ms.</option>
+                  <option value="Ms." {{ old('title') == 'Mrs.' ? 'selected' : '' }}>Mrs.</option>
                 </select>
               </div>
               <div class="col-md-5 mb-4">
