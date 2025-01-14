@@ -850,7 +850,7 @@ class HomeController extends Controller
                 break;
             case 'electrical-part':
                 $subtitle = 'Electronic Part';
-                $banner = asset('website/img/home/products/electricalpart-ecu.jpg');
+                $banner = asset('website/img/home/products/electricalpart-ecu.png');
                 $products = [
                     (object) [
                         'name' => 'Keyless Antenna',
