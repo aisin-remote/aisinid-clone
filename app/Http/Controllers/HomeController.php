@@ -181,6 +181,86 @@ class HomeController extends Controller
         return view('website.pages.about.management-message');
     }
 
+    public function managementPolicyIndex()
+    {
+        return view('website.pages.about.management-policy.index');
+    }
+
+    public function managementPolicy($company)
+    {
+        $title = 'Quality, Environment, Health, and Safety (QEHS) Policy';
+
+        if ($company === 'aii') {
+            $company =  'PT AISIN Indonesia (AII)';
+            $subtitle = 'Management Policy AII';
+            $paragraph = 'PT AISIN Indonesia (AII) located in the EJIP Industrial area, Cikarang is is a manufacturer of automotive components, including body-related parts, drive train parts, and engine parts for both domestic and export markets that prioritizes customer satisfaction committed to being a company that is responsible for the management of the Environment, Occupational Safety and Health.
+                <br><br>
+                PT AISIN Indonesia is determined to become the best automotive component manufacturer in ASEAN by :--
+                In its implementation, the company carries out continuous improvement of the Quality Environment and Occupational Health Safety Management System based on IATF 16949, ISO 14001, ISO 45001, SMK3, Astra Green Company (AGC), Astra Friendly Company (AFC).
+                <br><br>
+                This Management Policy is socialized and implemented by all employees of PT AISIN Indonesia and will be reviewed for continuous improvement as needed.
+                ';
+
+            $policies = [
+                (object)[
+                    'code' => 'A',
+                    'desc' => 'Actively provide a safe and healthy working environment to prevent work accidents and occupational diseases, maintain security systems, improve product quality and delivery according to customer wishes.'
+                ],
+                (object)[
+                    'code' => 'I',
+                    'desc' => 'Intensively protect the environment, including preventing pollution and eliminating hazards and reducing risks in all aspects.'
+                ],
+                (object)[
+                    'code' => 'S',
+                    'desc' => 'Strive to achieve cost efficiency by continuously reducing waste, optimizing resource & energy savings, by using appropriate technology.'
+                ],
+                (object)[
+                    'code' => 'I',
+                    'desc' => 'Intensively carry out consultations to increase employee participation and maintain harmonious and communicative relations with the community and governme'
+                ],
+                (object)[
+                    'code' => 'N',
+                    'desc' => 'Norms, law regulations and other requirements which applicable must be complied.'
+                ],
+            ];
+        } else {
+            $company =  'PT AISIN Indonesia Automotive (AIIA)';
+            $subtitle = 'Management Policy AIIA';
+            $paragraph = "PT AISIN Indonesia Automotive (AIIA) located in the KIIC Industrial Area, Karawang, is a manufacturer of automotive components, including body-related parts, engine parts, and electric parts for both domestic and export markets. With a focus on customer satisfaction, AIIA is committed to taking responsibility for the management of Quality, Environmental, Occupational Health and Safety. AIIA is determined to become the world's number one automotive component manufacturer through:--
+                In its implementation, the company emphasizes continuous improvement in the Quality, Environment, Health, and Safety Management System, based on the QEHS Management System aligned with IATF 16949:2016, ISO 14001:2015 and ISO 45001:2018 standards.
+                <br><br>
+                This Management Policy is communicated to all AIIA employees to be implemented with full responsibility. The policy will also be reviewed periodically to ensure continuous improvement in line with the company's needs and developments.
+            ";
+
+            $policies = [
+                (object)[
+                    'code' => 'A',
+                    'desc' => 'Actively and continuously creating the best quality as well as a healthy, safe, environmentally friendly workplace that supports carbon-neutral efforts to prevent injuries, reduce occupational disease risks, and preserve the environment.'
+                ],
+                (object)[
+                    'code' => 'I',
+                    'desc' => 'Involved in ensuring that all activities related to the production process and other processes comply with customer requirements, laws and regulations, and other relevant requirements. The company also builds harmonious relationships with the community, government, and other stakeholders.'
+                ],
+                (object)[
+                    'code' => 'I',
+                    'desc' => "Intensively developing programs for quality improvement, reduction of defective products, and the management of water, waste, energy, and emissions, as well as occupational health and safety. Additionally, the company facilitates consultations and employee participation as a form of top management's commitment to company policies. The company is also committed to fulfilling its Corporate Social Responsibility (CSR) as a positive contribution to society and the environment.",
+                ],
+                (object)[
+                    'code' => 'A',
+                    'desc' => 'Activities related to the Quality, Environment, Health, and Safety Management System are carried out continuously through ongoing improvement. This approach is supported by strong integration with international standards and applicable legal requirements.'
+                ],
+            ];
+        }
+
+        return view('website.pages.about.management-policy.management-policy', compact(
+            'company',
+            'subtitle',
+            'policies',
+            'title',
+            'paragraph'
+        ));
+    }
+
     public function executiveIndex()
     {
         return view('website.pages.about.executive.index');

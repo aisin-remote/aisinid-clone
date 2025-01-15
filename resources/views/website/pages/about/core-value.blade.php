@@ -1,5 +1,5 @@
 @extends('website.layouts.master')
-@section('title', 'Top Management Message')
+@section('title', 'Company Core Value')
 @section('pages')
   <div class="mainContents">
     <x-banner image="{{ asset('website/img/about/banner-core-value.jpg') }}" title="About" subtitle="Company Core Value" dateUpdate="Update (December 1, 2024)" />

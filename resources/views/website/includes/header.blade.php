@@ -46,6 +46,7 @@
                       <ul>
                         <li><a href="{{ route('management-message') }}">Message from Top Management</a></li>
                         <li><a href="{{ route('executives') }}">Executive Management</a></li>
+                        <li><a href="{{ route('management-policy') }}">Management Policy</a></li>
                       </ul>
                       <ul>
                         <li><a href="https://www.aisin.com/en/profile/brand/" target="_blank">Brand</a></li>

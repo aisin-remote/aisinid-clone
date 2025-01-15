@@ -13,6 +13,8 @@
           title="Message from Top Management" link="{{ route('management-message') }}" column="col-lg-12" />
         <x-menu-banner image="{{ asset('website/img/about/banner-executive-aiia.jpg') }}"
           title="Executive Management" link="{{ route('executives') }}" column="col-lg-12" />
+        <x-menu-banner image="{{ asset('website/img/about/banner-management-policy.jpg') }}"
+          title="Management Policy" link="{{ route('management-policy') }}" column="col-lg-12" />
         <x-menu-banner image="{{ asset('website/img/about/summary-aii.jpg') }}" title="Company Summary"
           link="{{ route('company-summary') }}" column="col-lg-6" />
         <x-menu-banner image="{{ asset('website/img/home/history/1996.jpg') }}" title="Company History"

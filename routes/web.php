@@ -23,6 +23,8 @@ Route::prefix('about')->group(function () {
     Route::get('/events', [HomeController::class, 'eventIndex'])->name('events');
     Route::get('/company-summary/{company?}', [HomeController::class, 'companySummary'])->name('company-summary');
     Route::get('/management-message', [HomeController::class, 'managementMessage'])->name('management-message');
+    Route::get('/management-policy', [HomeController::class, 'managementPolicyIndex'])->name('management-policy');
+    Route::get('/management-policy/{company}', [HomeController::class, 'managementPolicy'])->name('management-policy-list');
     Route::get('/company-history', [HomeController::class, 'companyHistory'])->name('company-history-main');
     Route::get('/company-history/{company}', [HomeController::class, 'companyHistory'])->name('company-history');
     Route::get('/brand', [HomeController::class, 'brand'])->name('brand');
