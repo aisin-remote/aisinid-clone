@@ -859,7 +859,7 @@ class HomeController extends Controller
                 $banner = asset('website/img/home/products/drivetrain-clutchcover.jpg');
                 $products = [
                     (object) [
-                        'name' => 'HV Damper',
+                        'name' => 'Hybrid Damper',
                         'picture' => asset('website/img/home/products/drivetrain-hvdumper.png'),
                         'description' => 'A mechanical device which transfer the rotational power from the engine to the wheels and generator motor. AISIN Indonesia is the first manufacturer of Hybrid Damper in Indonesia.',
                         'manufacturer' => 'PT AISIN Indonesia',

@@ -8,15 +8,15 @@
 
   <title>Satu AISIN - @yield('title')</title>
   <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
-  <meta name="description" content="DESCRIPTION">
-  <meta name="keywords" content="KEYWORD">
+  <meta name="description" content="AISIN INDONESIA">
+  <meta name="keywords" content="AISIN INDONESIA">
 
-  <meta property="og:title" content="サイト名">
+  <meta property="og:title" content="AISIN INDONESIA">
   <meta property="og:type" content="website">
-  <meta property="og:description" content="DESCRIPTION">
-  <meta property="og:url" content="https://aisin-web/">
+  <meta property="og:description" content="AISIN INDONESIA">
+  <meta property="og:url" content="https://aisin.id/">
   <meta property="og:image" content="{{ asset('website/img/common/ogp.png') }}">
-  <meta property="og:site_name" content="サイト名">
+  <meta property="og:site_name" content="AISIN INDONESIA">
 
   <link rel="stylesheet" href="{{ asset('website/css/global.css') }}" type="text/css" media="all">
   <link href="{{ asset('website/css/home.css') }}" rel="stylesheet" type="text/css" media="all">
