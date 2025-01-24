@@ -448,8 +448,6 @@ class HomeController extends Controller
     public function awards($company)
     {
         $subtitle  = '';
-
-
         $awards = [];
 
         if ($company == 'aii') {
@@ -461,7 +459,7 @@ class HomeController extends Controller
                 while continuously enhancing our products, processes, and services to meet the needs of our customers.';
 
             $awards = [
-                'Environment Awards' => [
+                'Government Awards' => [
                     (object)[
                         'name' => 'Gold Proper KLHK RI',
                         'picture' => asset('website/img/home/awards/aii/environment/edit/GOLD PROPER KLHK RI.jpg'),
@@ -472,6 +470,23 @@ class HomeController extends Controller
                         'picture' => asset('website/img/home/awards/aii/environment/edit/GREEN PROPER KLHK RI.jpg'),
                         'description' => 'Achieved the GREEN PROPER Rating (Corporate Performance Rating Program in Environmental Management) from the Ministry of Environment and Forestry (KLHK RI) seven times in 2015, 2016, 2017, 2018, 2019, 2020, and 2023.'
                     ],
+                    (object)[
+                        'name' => 'GOLD SMK3 KEMENAKER RI',
+                        'picture' => asset('website/img/home/awards/aii/environment/edit/GOLD SMK3 KEMENAKER RI.png'),
+                        'description' => 'Received the GOLD FLAG award for SMK3 certification  (Occupational Health Safety Management System) with a “Satisfactory” rating in the advanced level category of 166 criteria from the Ministry of Manpower (KEMENAKER RI) from 2017 to the present.'
+                    ],
+                    (object)[
+                        'name' => 'West Java Development Partner',
+                        'picture' => asset('website/img/home/awards/aii/corporate social responsibility/edit/West Java Development Partner.jpg'),
+                        'description' => "West Java Development Partner through the Company's CSR/PKBL Program in 2019."
+                    ],
+                    (object)[
+                        'name' => 'Active Participation in CSR Activities in Bekasi Regency',
+                        'picture' => asset('website/img/home/awards/aii/corporate social responsibility/edit/Active Participation in CSR Activities in Bekasi Regency.jpg'),
+                        'description' => 'Active Participation in CSR Activities in Bekasi Regency, Organized by the Bekasi Regency Government in 2019.'
+                    ],
+                ],
+                'Holding Company Awards' => [
                     (object)[
                         'name' => 'Astra Green Company (AGC) and Astra Friendly Company (AFC)',
                         'picture' => asset('website/img/home/awards/aii/environment/edit/AGC & AFC Award 2024.jpg'),
@@ -500,22 +515,20 @@ class HomeController extends Controller
                         'picture' => asset('website/img/home/awards/aii/environment/edit/Astra Green Innovation.jpg'),
                         'description' => '2nd Place Astra Green Innovation.'
                     ],
-                ],
-                'Corporate Social Responsibility Awards' => [
                     (object)[
-                        'name' => 'West Java Development Partner',
-                        'picture' => asset('website/img/home/awards/aii/corporate social responsibility/edit/West Java Development Partner.jpg'),
-                        'description' => "West Java Development Partner through the Company's CSR/PKBL Program in 2019."
+                        'name' => 'Best on Export Contribution & Growth',
+                        'picture' => asset('website/img/home/awards/aii/others/edit/Best on Export Contribution & Growth.jpg'),
+                        'description' => 'Twice recognized for Achivement in Best on Export Contribution & Growth over the last 5 years, in 2020 and 2024, held by PT Astra Otoparts.'
                     ],
                     (object)[
-                        'name' => 'Active Participation in CSR Activities in Bekasi Regency',
-                        'picture' => asset('website/img/home/awards/aii/corporate social responsibility/edit/Active Participation in CSR Activities in Bekasi Regency.jpg'),
-                        'description' => 'Active Participation in CSR Activities in Bekasi Regency, Organized by the Bekasi Regency Government in 2019.'
+                        'name' => 'Stategic x-EV Ecosystem Supply Pioneering Award',
+                        'picture' => asset('website/img/home/awards/aii/others/edit/Stategic x-EV Ecosystem Supply Pioneering Award.jpg'),
+                        'description' => 'Achievement in Strategic x-EV Ecosystem Supply Pioneering Award in 2024, held by PT Astra Otoparts.'
                     ],
                     (object)[
-                        'name' => 'A Program for the Construction of 3 Temporary Housing Units in Collaboration with PT Cikarang Listrindo Tbk and PT AISIN Indonesia',
-                        'picture' => asset('website/img/home/awards/aii/corporate social responsibility/edit/A Program for the Construction of 3 Temporary Housing Units in Collaboration with PT Cikarang Listrindo Tbk.JPG'),
-                        'description' => 'A Program for the Construction of 3 Temporary Housing Units in Collaboration between PT Cikarang Listrindo Tbk and PT AISIN Indonesia in Gumantar Village, East Lombok, in 2019.'
+                        'name' => 'Best Implementation of Digitalization & Industry 4.0',
+                        'picture' => asset('website/img/home/awards/aii/others/edit/Best Implementation of Digitalization & Industry 4.0.jpg'),
+                        'description' => 'Achievement in Best Implementation of Digitalization & Industry 4.0 in 2023, held by PT Astra Otoparts.'
                     ],
                 ],
                 'Customer Awards' => [
@@ -660,19 +673,9 @@ class HomeController extends Controller
                 ],
                 'Other Awards' => [
                     (object)[
-                        'name' => 'Best on Export Contribution & Growth',
-                        'picture' => asset('website/img/home/awards/aii/others/edit/Best on Export Contribution & Growth.jpg'),
-                        'description' => 'Twice recognized for Achivement in Best on Export Contribution & Growth over the last 5 years, in 2020 and 2024, held by PT Astra Otoparts.'
-                    ],
-                    (object)[
-                        'name' => 'Stategic x-EV Ecosystem Supply Pioneering Award',
-                        'picture' => asset('website/img/home/awards/aii/others/edit/Stategic x-EV Ecosystem Supply Pioneering Award.jpg'),
-                        'description' => 'Achievement in Strategic x-EV Ecosystem Supply Pioneering Award in 2024, held by PT Astra Otoparts.'
-                    ],
-                    (object)[
-                        'name' => 'Best Implementation of Digitalization & Industry 4.0',
-                        'picture' => asset('website/img/home/awards/aii/others/edit/Best Implementation of Digitalization & Industry 4.0.jpg'),
-                        'description' => 'Achievement in Best Implementation of Digitalization & Industry 4.0 in 2023, held by PT Astra Otoparts.'
+                        'name' => 'A Program for the Construction of 3 Temporary Housing Units in Collaboration with PT Cikarang Listrindo Tbk and PT AISIN Indonesia',
+                        'picture' => asset('website/img/home/awards/aii/corporate social responsibility/edit/A Program for the Construction of 3 Temporary Housing Units in Collaboration with PT Cikarang Listrindo Tbk.JPG'),
+                        'description' => 'A Program for the Construction of 3 Temporary Housing Units in Collaboration between PT Cikarang Listrindo Tbk and PT AISIN Indonesia in Gumantar Village, East Lombok, in 2019.'
                     ],
                 ]
             ];
@@ -685,7 +688,7 @@ class HomeController extends Controller
                 while continuously enhancing our products, processes, and services to meet the needs of our customers.';
 
             $awards = [
-                'Environment Awards' => [
+                'Government Awards' => [
                     // (object)[
                     //     'name' => 'Astra Green Company (AGC) and Astra Friendly Company (AFC)',
                     //     'picture' => asset('website/img/home/awards/environment.png'),
@@ -695,17 +698,8 @@ class HomeController extends Controller
                     (object)[
                         'name' => 'BLUE PROPER KLHK RI',
                         'picture' => asset('website/img/home/awards/aiia/sertifikat-blue-proper-klhk-ri.jpg'),
-                        'description' => 'Achieved the BLUE PROPER Rating (Corporate Performance Rating Program in Environmental Management) 
-                        from the Ministry of Environment and Forestry (KLHK RI)  in 2022, 2023, and 2024.'
+                        'description' => 'Achieved the BLUE PROPER Rating (Corporate Performance Rating Program in Environmental Management) from the Ministry of Environment and Forestry (KLHK RI) in 2022, 2023, and 2024.'
                     ],
-                    // (object)[
-                    //     'name' => 'Kaizen Festival 36th by TMC',
-                    //     'picture' => asset('website/img/home/awards/environment.png'),
-                    //     'description' => 'Achieve the Gold Category at QCC Kaizen Festival 36th carrying 
-                    //     the theme of Environmental Sustainability Initiatives'
-                    // ],
-                ],
-                'Government Awards' => [
                     (object)[
                         'name' => 'Lighthouse Industry 4.0 by the Ministry of Industry',
                         'picture' => asset('website/img/home/awards/aiia/Lighthouse Industry 4.0 by the Ministry of Industry.jpg'),
@@ -716,13 +710,17 @@ class HomeController extends Controller
                         'picture' => asset('website/img/home/awards/aiia/INDI 4.0 Award in the Supply Chain Management Category by the Ministry of Industry.png'),
                         'description' => 'INDI 4.0 Award in the Supply Chain Management Category by the Ministry of Industry in 2022.'
                     ],
-                ],
-                'Corporate Social Responsibility Awards' => [
                     (object)[
                         'name' => 'West Java Development Partner',
                         'picture' => asset('website/img/home/awards/aiia/West Java Development Partner.png'),
                         'description' => "West Java Development Partner through the Company's CSR/PKBL Program in 2017."
                     ],
+                    // (object)[
+                    //     'name' => 'Kaizen Festival 36th by TMC',
+                    //     'picture' => asset('website/img/home/awards/environment.png'),
+                    //     'description' => 'Achieve the Gold Category at QCC Kaizen Festival 36th carrying 
+                    //     the theme of Environmental Sustainability Initiatives'
+                    // ],
                 ],
                 'Customer Awards' => [
                     (object)[
