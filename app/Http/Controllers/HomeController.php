@@ -461,7 +461,7 @@ class HomeController extends Controller
             $awards = [
                 'Government Awards' => [
                     (object)[
-                        'name' => 'Gold Proper KLHK RI',
+                        'name' => 'GOLD PROPER KLHK RI',
                         'picture' => asset('website/img/home/awards/aii/environment/edit/GOLD PROPER KLHK RI.jpg'),
                         'description' => 'The First Automotive Component Manufacturing Company to Achieve the GOLD PROPER Rating (Corporate Performance Rating Program in Environmental Management) from the Ministry of Environment and Forestry (KLHK RI) in 2021.'
                     ],
