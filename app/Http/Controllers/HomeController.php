@@ -351,11 +351,11 @@ class HomeController extends Controller
                             'position' => 'Marketing HR IRL GA Director',
                             'picture' => asset('website/img/home/executives/Mr_Michael.png'),
                         ],
-                        (object) [
-                            'name' => 'Mr. Hisatomo Kato',
-                            'position' => 'FACC & Purchasing Director',
-                            'picture' => asset('website/img/home/executives/Mr_Kato_2.png'),
-                        ],
+                        // (object) [
+                        //     'name' => 'Mr. Hisatomo Kato',
+                        //     'position' => 'FACC & Purchasing Director',
+                        //     'picture' => asset('website/img/home/executives/Mr_Kato_2.png'),
+                        // ],
                     ]
                 ],
             ];
