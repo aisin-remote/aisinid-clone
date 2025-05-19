@@ -21,10 +21,18 @@
   <link rel="stylesheet" href="{{ asset('website/css/global.css') }}" type="text/css" media="all">
   <link href="{{ asset('website/css/home.css') }}" rel="stylesheet" type="text/css" media="all">
   <link rel="stylesheet" href="{{ asset('website/css/print.css') }}" media="print">
+  <link rel="stylesheet" href="{{ asset('website/css/select2.min.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('website/css/sweetalert2.min.css') }}" type="text/css" media="all">
+  <link rel="stylesheet" href="{{ asset('website/css/select2-bootstrap-5-theme.min.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('website/css/bootstrap.min.css') }}" type="text/css" media="all">
+      <link rel="stylesheet" href="{{ asset('website/css/bootstrap-icons.min.css') }}" type="text/css" media="all">
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script type="text/javascript" src="{{ asset('website/js/main.js') }}"></script>
   <script src="{{ asset('website/js/home.js') }}"></script>
+    <script src="{{ asset('website/js/select2.min.js') }}"></script>
+    <script src="{{ asset('website/js/sweetalert2.all.min.js') }}"></script>
+    <script src="{{ asset('website/js/bootstrap.bundle.min.js') }}"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
