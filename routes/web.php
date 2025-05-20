@@ -56,8 +56,3 @@ Route::post('/contact', [ContactController::class, 'sendContactMail'])->name('co
 Route::get('/search', function () {
     return view('website.pages.search');
 });
-
-
-Route::get('/test', function () {
-    return view('website.pages.test');
-});

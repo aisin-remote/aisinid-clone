@@ -10,31 +10,7 @@
       font-size: 14px
     }
   </style>
-  @if ($errors->any())
-    <script>
-      Swal.fire({
-        title: 'Validation Error',
-        html: '<ul>@foreach ($errors->all() as $error)<li>{{ $error }}</li>@endforeach</ul>',
-        icon: 'error',
-        confirmButtonText: 'OK'
-      });
-    </script>
-  @endif
-
-  @if (session('success'))
-    <script>
-      Swal.fire({
-        title: 'Success!',
-        text: '{{ session('success') }}',
-        icon: 'success',
-        confirmButtonText: 'OK'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          window.location.reload();
-        }
-      });
-    </script>
-  @endif
+  
 
   <div class="mainContents">
     <div class="mainContents">
@@ -154,10 +130,10 @@
 
   @section('scripts')
     <script>
-      $(document).ready(function() {
-        $('#country').select2({
-          theme: 'bootstrap-5',
-        });
-      })
+      window.pageData = {
+        errors: @json($errors->all()),
+        success: @json(session('success')),
+      };
     </script>
+    <script src="{{ asset('website/js/pages/contact.js') }}"></script>
   @endsection

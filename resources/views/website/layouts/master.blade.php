@@ -22,38 +22,21 @@
   <link href="{{ asset('website/css/home.css') }}" rel="stylesheet" type="text/css" media="all">
   <link rel="stylesheet" href="{{ asset('website/css/print.css') }}" media="print">
   <link rel="stylesheet" href="{{ asset('website/css/select2.min.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ asset('website/css/sweetalert2.min.css') }}" type="text/css" media="all">
+  <link rel="stylesheet" href="{{ asset('website/css/sweetalert2.min.css') }}" type="text/css" media="all">
   <link rel="stylesheet" href="{{ asset('website/css/select2-bootstrap-5-theme.min.css') }}" type="text/css" media="all">
     <link rel="stylesheet" href="{{ asset('website/css/bootstrap.min.css') }}" type="text/css" media="all">
-      <link rel="stylesheet" href="{{ asset('website/css/bootstrap-icons.min.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ asset('website/css/bootstrap-icons.min.css') }}" type="text/css" media="all">
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script type="text/javascript" src="{{ asset('website/js/main.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('website/js/jquery-3.7.1.min.js') }}"></script>
   <script src="{{ asset('website/js/home.js') }}"></script>
-    <script src="{{ asset('website/js/select2.min.js') }}"></script>
-    <script src="{{ asset('website/js/sweetalert2.all.min.js') }}"></script>
-    <script src="{{ asset('website/js/bootstrap.bundle.min.js') }}"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css"
-    integrity="sha256-qWVM38RAVYHA4W8TAlDdszO1hRaAq0ME7y2e9aab354=" crossorigin="anonymous">
-
-  <script src="https://unpkg.com/popper.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"
-    integrity="sha256-1m4qVbsdcSU19tulVTbeQReg0BjZiW6yGffnlr/NJu4=" crossorigin="anonymous"></script>
+  <script src="{{ asset('website/js/select2.min.js') }}"></script>
+  <script src="{{ asset('website/js/sweetalert2.all.min.js') }}"></script>
+  <script src="{{ asset('website/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('website/js/popper.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('website/js/main.js') }}"></script>
 
   <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
   <style>
     .newsSection {
